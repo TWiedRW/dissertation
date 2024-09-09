@@ -1,0 +1,6 @@
+[submodule "ch3-heat3d"]
+	path = ch3-heat3d
+	url = https://github.com/TWiedRW/ch3-heat3d
+[submodule "ch0-lit-review"]
+	path = ch0-lit-review
+	url = https://github.com/TWiedRW/ch0-lit-review
