@@ -4,3 +4,6 @@
 [submodule "ch0-lit-review"]
 	path = ch0-lit-review
 	url = https://github.com/TWiedRW/ch0-lit-review
+[submodule "ch1-bar3d"]
+	path = ch1-bar3d
+	url = https://github.com/TWiedRW/ch1-bar3d
