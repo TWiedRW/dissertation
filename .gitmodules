@@ -7,3 +7,6 @@
 [submodule "ch1-bar3d"]
 	path = ch1-bar3d
 	url = https://github.com/TWiedRW/ch1-bar3d
+[submodule "ch2-experiential-learning"]
+	path = ch2-experiential-learning
+	url = https://github.com/TWiedRW/ch2-experiential-learning
