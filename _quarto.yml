@@ -18,3 +18,5 @@ format:
     margin-right: "1in"
     margin-top: "1in"
     margin-bottom: "1in"
+    include-in-header:
+        text: '\usepackage{lineno}\linenumbers'
