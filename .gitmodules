@@ -10,3 +10,6 @@
 [submodule "ch2-experiential-learning"]
 	path = ch2-experiential-learning
 	url = https://github.com/TWiedRW/ch2-experiential-learning
+[submodule "comprehensive-exam"]
+	path = comprehensive-exam
+	url = https://github.com/TWiedRW/comprehensive-exam

@@ -1,0 +1,20 @@
+project:
+  type: book
+
+book:
+  title: "Dissertation"
+  author: "Tyler Wiederich"
+  date: today
+  chapters:
+    - index.qmd
+    - ch0-lit-review/one-last-start.qmd
+    - ch2-experiential-learning/manuscript/dissertation-copy.qmd
+    - ch3-heat3d/writeups/1-992-paper/index.qmd
+
+format:
+  pdf:
+    linestretch: 2
+    margin-left: "1.5in"
+    margin-right: "1in"
+    margin-top: "1in"
+    margin-bottom: "1in"
