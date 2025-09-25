@@ -19,3 +19,5 @@ format:
     margin-right: "1in"
     margin-top: "1in"
     margin-bottom: "1in"
+
+bibliography: master-references.bib
