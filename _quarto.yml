@@ -11,6 +11,7 @@ book:
     - ch1-bar3d/writeups/index.qmd
     - ch2-experiential-learning/manuscript/dissertation-copy.qmd
     - ch3-heat3d/writeups/1-992-paper/index.qmd
+    - ch99-references.qmd
 
 format:
   pdf:
@@ -19,5 +20,6 @@ format:
     margin-right: "1in"
     margin-top: "1in"
     margin-bottom: "1in"
+    fig-align: center
 
 bibliography: master-references.bib
