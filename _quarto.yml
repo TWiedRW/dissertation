@@ -7,7 +7,7 @@ book:
   date: today
   chapters:
     - index.qmd
-    - ch0-lit-review/one-last-start.qmd
+    #- ch0-lit-review/one-last-start.qmd
     - ch1-bar3d/writeups/index.qmd
     - ch2-experiential-learning/manuscript/dissertation-copy.qmd
     - ch3-heat3d/writeups/1-992-paper/index.qmd
