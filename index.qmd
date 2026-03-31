@@ -1,1 +1,26 @@
-This is the non-chapter stuff
+---
+numbered: false
+---
+
+```{=latex}
+\begin{abstract}
+```
+
+Data visualizations are a powerful tool for the communication of complex data structures. 
+
+```{=latex}
+\end{abstract}
+\begin{acknowledgments}
+```
+
+A section to thank those who have supported my research and academic journey!
+
+```{=latex}
+\end{acknowledgments}
+
+\tableofcontents
+\listoffigures
+\listoftables
+\mainmatter
+
+```

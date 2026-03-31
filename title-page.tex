@@ -1,0 +1,268 @@
+%%
+%% This is file `thesis-test.tex',
+%% generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% nuthesis.dtx  (with options: `thesis-test')
+%%
+
+\documentclass[ms,testing]{nuthesis}
+%% Needed to typset the math in this sample
+\usepackage{amsmath}
+\usepackage{amsfonts}
+%% Let's use a different font
+\usepackage[sc,osf]{mathpazo}
+
+%% Makes things look better
+\usepackage{microtype}
+
+%% Makes things look better
+\usepackage{booktabs}
+
+%% Gives us extra list environments
+\usepackage{paralist}
+
+%% Be able to include graphicsx
+\usepackage{graphicx}
+
+%% I like darker colors
+\usepackage{color}
+\definecolor{dark-red}{rgb}{0.6,0,0}
+\definecolor{dark-green}{rgb}{0,0.6,0}
+\definecolor{dark-blue}{rgb}{0,0,0.6}
+
+%% If you use hyperref, you need to load memhfixc *after* it.
+%% See the memoir docs for details.
+\usepackage[%
+pdfauthor={Ned W. Hummel},
+pdftitle={Test Thesis},
+pdfsubject={Thesis},
+pdfkeywords={LaTeX, Thesis, University of Nebrska, Test},
+linkcolor=dark-blue,
+pagecolor=dark-green,
+citecolor=dark-blue,
+urlcolor=dark-red,
+colorlinks=true,
+backref,
+plainpages=false,% This helps to fix the issue with hyperref with page numbering
+pdfpagelabels% This helps to fix the issue with hyperref with page numbering
+]{hyperref}
+
+%% Needed by memoir to fix things with hyperref
+\usepackage{memhfixc}
+\begin{document}
+%% Start formating the first few special pages
+%% frontmatter is needed to set the page numbering correctly
+\frontmatter
+
+\title{Test}
+\author{Ned W. Hummel}
+\adviser{Professor Someone}
+\adviserAbstract{Someone}
+\major{\LaTeX}
+\degreemonth{December}
+\degreeyear{2007}
+%%
+%% For most people the defaults will be correct, so they are commented
+%% out. To manually set these, just uncomment and make the needed
+%% changes.
+%% \college{Your college}
+%% \city{Your City}
+%%
+%% For most people the following can be changed with a class
+%% option. To manually set these, just uncomment the following and
+%% make the needed changes.
+%% \doctype{Thesis or Dissertation}
+%% \degree{Your degree}
+%% \degreeabbreviation{Your degree abbr.}
+%%
+%% Now that we know everything we need, we can generate the title page
+%% itself.
+%%
+\maketitle
+%% You have a maximum of 350, which includes your title, name, etc.
+\begin{abstract}
+  A simple test of using \textsf{nuthesis}, which demonstrates most
+  of the options the class has.
+\end{abstract}
+
+%% Optional
+\begin{copyrightpage}
+This file may be distributed and/or modified under the conditions of
+the \LaTeX{} Project Public License, either version 1.3c of this license
+or (at your option) any later version.  The latest version of this
+license is in:
+\begin{center}
+   \url{http://www.latex-project.org/lppl.txt}
+\end{center}
+and version 1.3c or later is part of all distributions of \LaTeX version
+2006/05/20 or later.
+\end{copyrightpage}
+
+%% Optional
+\begin{dedication}
+  Arma virumque cano, Troiae qui primus ab oris Italiam, fato
+  profugus, Laviniaque venit litora, multum ille et terris iactatus et
+  alto vi superum saevae memorem Iunonis ob iram; multa quoque et
+  bello passus, dum conderet urbem, inferretque deos Latio, genus unde
+  Latinum, Albanique patres, atque altae moenia Romae.
+\end{dedication}
+
+%% Optional
+\begin{acknowledgments}
+  Arma virumque cano, Troiae qui primus ab oris Italiam, fato
+  profugus, Laviniaque venit litora, multum ille et terris iactatus et
+  alto vi superum saevae memorem Iunonis ob iram; multa quoque et
+  bello passus, dum conderet urbem, inferretque deos Latio, genus unde
+  Latinum, Albanique patres, atque altae moenia Romae.
+\end{acknowledgments}
+
+%% Optional
+\begin{grantinfo}
+  I'm not funded by any grants.
+\end{grantinfo}
+%% The ToC is required
+%% Uncomment these if need be
+
+%% The ToC is required
+\tableofcontents
+%% Uncomment these if need be
+\listoffigures
+\listoftables
+
+%%   mainmatter is needed after the ToC, (LoF, and LoT) to set the
+%%   page numbering correctly for the main body
+\mainmatter
+
+%% Thesis goes here
+\chapter{The \AE{}NIED, Book I}\label{chap:aenied}
+
+\section{Start}
+
+Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus,
+Laviniaque venit litora, multum ille et terris iactatus et alto vi
+superum saevae memorem Iunonis ob iram; multa quoque et bello passus,
+dum conderet urbem, inferretque deos Latio, genus unde Latinum,
+Albanique patres, atque altae moenia Romae.\cite{virgil}
+
+\subsection{Middle}
+
+Dixit, et avertens rosea cervice refulsit, ambrosiaeque comae divinum
+vertice odorem spiravere, pedes vestis defluxit ad imos, et vera
+incessu patuit dea.  Ille ubi matrem adgnovit, tali fugientem est voce
+secutus: `Quid natum totiens, crudelis tu quoque, falsis iudis
+imaginibus?  Cur dextrae iungere dextram non datur, ac veras audire et
+reddere voces?'\cite{virgil}
+
+\subsubsection{End}
+
+Postquam prima quies epulis, mensaeque remotae, crateras magnos
+statuunt et vina coronant.  Fit strepitus tectis, vocemque per ampla
+volutant atria; dependent lychni laquearibus aureis incensi, et noctem
+flammis funalia vincunt.  Hic regina gravem gemmis auroque poposcit
+implevitque mero pateram, quam Belus et omnes a Belo soliti; tum facta
+silentia tectis: `Iuppiter, hospitibus nam te dare iura loquuntur,
+hunc laetum Tyriisque diem Troiaque profectis esse velis, nostrosque
+huius meminisse minores.  Adsit laetitiae Bacchus dator, et bona Iuno;
+et vos, O, coetum, Tyrii, celebrate faventes.'  Dixit, et in mensam
+laticum libavit honorem, primaque, libato, summo tenus attigit ore,
+tum Bitiae dedit increpitans; ille impiger hausit spumantem pateram,
+et pleno se proluit auro post alii proceres.  Cithara crinitus Iopas
+personat aurata, docuit quem maximus Atlas.  Hic canit errantem lunam
+solisque labores; unde hominum genus et pecudes; unde imber et ignes;
+Arcturum pluviasque Hyadas geminosque Triones; quid tantum Oceano
+properent se tinguere soles hiberni, vel quae tardis mora noctibus
+obstet.  Ingeminant plausu Tyrii, Troesque sequuntur.  Nec non et
+vario noctem sermone trahebat infelix Dido, longumque bibebat amorem,
+multa super Priamo rogitans, super Hectore multa; nunc quibus Aurorae
+venisset filius armis, nunc quales Diomedis equi, nunc quantus
+Achilles.  `Immo age, et a prima dic, hospes, origine nobis insidias,'
+inquit, `Danaum, casusque tuorum, erroresque tuos; nam te iam septima
+portat omnibus errantem terris et fluctibus aestas.'\cite{virgil}
+
+\chapter{Some Tables and Figures}
+
+\begin{table}[h]
+  \centering
+  \begin{tabular}{ll}\toprule
+    First & Last \\ \midrule
+    Ned & Hummel \\
+    Ned & Hummel \\
+    Ned & Hummel \\ \bottomrule
+  \end{tabular}
+  \caption{Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus,
+Laviniaque venit litora, multum ille et terris iactatus et alto vi
+superum saevae memorem Iunonis ob iram}
+  \label{tab:tabular}
+\end{table}
+
+\begin{table}[h]
+  \centering
+
+  \begin{compactitem}[\checkmark]
+    \item Foo
+    \item Foo
+    \item Foo
+    \end{compactitem}
+
+  \caption{Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus,
+Laviniaque venit litora, multum ille et terris iactatus et alto vi
+superum saevae memorem Iunonis ob iram}
+  \label{tab:list}
+\end{table}
+
+\begin{figure}[h]
+  \centering
+  \includegraphics[width=3in]{unl}
+  \caption{Arma virumque cano, Troiae qui primus ab oris Italiam, fato profugus,
+Laviniaque venit litora, multum ille et terris iactatus et alto vi
+superum saevae memorem Iunonis ob iram}
+  \label{fig:test}
+\end{figure}
+
+\chapter{Some Math}\label{chap:math}
+
+This is a triviality, but we include it for completeness.
+\begin{equation}
+\int_0^\infty f(x) \, dx =
+\begin{cases} 1 & \mbox{if $f=\delta$,} \\
+0 & \mbox{if $f=0$.} \end{cases}
+\end{equation}
+
+Here is an aligned set of equations.
+\begin{align}
+f(x) &= f(x) \cdot 1 \\
+     &= f(x) \cdot (2-1)\label{eq:fun}\\
+     &= f(x)
+\end{align}
+
+The clever step is~\eqref{eq:fun}.
+
+%% backmatter is needed at the end of the main body of your thesis to
+%% set up page numbering correctly for the remainder of the thesis
+\backmatter
+
+%% Start the correct formatting for the appendices
+\appendix
+
+\chapter{Testing, 1, 2, 3, \ldots}
+
+This has been a test of the thesis typesetting system.
+Had this been an actual thesis, this would have been
+preceded by an actual thesis.
+
+%% Bibliography goes here (You better have one)
+%% BibTeX is your friend
+\bibliographystyle{plain}
+\bibliography{nuthesis}
+%% Pull in all the entries in the bibtex file. Is is a useful trick to
+%% check all your references.
+\nocite{*}
+
+%% Index go here (if you have one)
+
+\end{document}
+\endinput
+%%
+%% End of file `thesis-test.tex'.

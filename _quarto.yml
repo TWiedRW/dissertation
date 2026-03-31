@@ -2,24 +2,26 @@ project:
   type: book
 
 book:
-  title: "Dissertation"
+  title: "Perception of 3D Data Visualizations"
   author: "Tyler Wiederich"
   date: today
   chapters:
     - index.qmd
-    #- ch0-lit-review/one-last-start.qmd
-    - ch1-bar3d/writeups/index.qmd
-    - ch2-experiential-learning/manuscript/dissertation-copy.qmd
-    - ch3-heat3d/writeups/1-992-paper/index.qmd
-    - ch99-references.qmd
+    - ch0-lit-review/one-last-start.qmd
+    #- ch1-bar3d/writeups/index.qmd
+    #- ch2-experiential-learning/manuscript/dissertation-copy.qmd
+    #- ch3-heat3d/writeups/1-992-paper/index.qmd
+    #- ch99-references.qmd
 
 format:
   pdf:
-    linestretch: 2
-    margin-left: "1.5in"
-    margin-right: "1in"
-    margin-top: "1in"
-    margin-bottom: "1in"
+    documentclass: nuthesis
+    classoption: [phd]
+    geometry: []
+    include-in-header:
+      - thesis-metadata.tex
     fig-align: center
+    toc: false
+
 
 bibliography: master-references.bib
