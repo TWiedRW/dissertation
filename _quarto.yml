@@ -22,6 +22,7 @@ format:
       - thesis-metadata.tex
     fig-align: center
     toc: false
+    shift-heading-level-by: -1
 
 
 bibliography: master-references.bib
