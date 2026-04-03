@@ -1,482 +1,275 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2026.1.16)  31 MAR 2026 15:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021) (preloaded format=pdflatex 2024.2.21)  2 APR 2026 21:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
 **"/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex"
 (/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex
-LaTeX2e <2025-11-01>
-L3 programming layer <2025-12-29>
-(./nuthesis.cls
-Document Class: nuthesis 2017/10/12 v0.7.2 University of Nebraska Thesis class
-(/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/base/ifthen.sty
-Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics/keyval.sty
-Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks17
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/setspace/setspace.sty
-Package: setspace 2022/12/04 v6.7b set line spacing
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrtime.sty
-Package: scrtime 2025/12/01 v3.49 KOMA-Script package (time of LaTeX run)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrkbase.sty
-Package: scrkbase 2025/12/01 v3.49 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrbase.sty
-Package: scrbase 2025/12/01 v3.49 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile.sty
-Package: scrlfile 2025/12/01 v3.49 KOMA-Script package (file load hooks)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
-Package: scrlfile-hook 2025/12/01 v3.49 KOMA-Script package (using LaTeX hooks)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/koma-script/scrlogo.sty
-Package: scrlogo 2025/12/01 v3.49 KOMA-Script package (logo)
-)))
-Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
-Already applied: [0000/00/00] Usage of raw or classic option list on input line 370.
-))) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/memoir/memoir.cls
-Document Class: memoir 2025/11/04 v3.8.4b configurable book, report, article document class
-(/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/xpatch/xpatch.sty (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2025-12-29 L3 programming layer (loader) 
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
-File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count275
-))
-Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
-Package: xparse 2025-10-09 L3 Experimental document command parser
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/etoolbox/etoolbox.sty
-Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count276
-))
-\onelineskip=\skip49
-\lxvchars=\skip50
-\xlvchars=\skip51
-\@memcnta=\count277
-\c@@memmarkcntra=\count278
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
-Package: iftex 2024/12/12 v1.0g TeX engine tests
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrreprt.cls
+Document Class: scrreprt 2021/03/17 v3.33 KOMA-Script document class (report)
+(/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrkbase.sty
+Package: scrkbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-dependent basics and keyval usage)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrbase.sty
+Package: scrbase 2021/03/17 v3.33 KOMA-Script package (KOMA-Script-independent basics and keyval usage)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile.sty
+Package: scrlfile 2021/03/17 v3.33 KOMA-Script package (file load hooks)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlfile-hook.sty
+Package: scrlfile-hook 2021/03/17 v3.33 KOMA-Script package (using LaTeX hooks)
+
+LaTeX3 Info: Defining command \BeforeFile with sig. 'm' on line 61.
+
+
+LaTeX3 Info: Defining command \AfterFile with sig. 'm' on line 65.
+
+
+LaTeX3 Info: Defining command \BeforeClass with sig. 'm' on line 69.
+
+
+LaTeX3 Info: Defining command \BeforePackage with sig. 'm' on line 73.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfClass with sig. 'smo+m' on line 83.
+
+
+LaTeX3 Info: Defining command \AfterAtEndOfPackage with sig. 'smo+m' on line
+(LaTeX3)     93.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterClass with sig. 'smo+m' on line
+(LaTeX3)     173.
+
+
+LaTeX3 Info: Defining command \AfterClass with sig. '' on line 174.
+
+
+LaTeX3 Info: Defining command \scrlfile@AfterPackage with sig. 'smo+m' on line
+(LaTeX3)     191.
+
+
+LaTeX3 Info: Defining command \AfterPackage with sig. '' on line 192.
+
+
+LaTeX3 Info: Defining command \ReplaceInput with sig. '' on line 193.
+
+
+LaTeX3 Info: Defining command \ReplaceClass with sig. 'mm' on line 196.
+
+
+LaTeX3 Info: Defining command \ReplacePackage with sig. 'mm' on line 199.
+
+
+LaTeX3 Info: Defining command \UnReplaceInput with sig. '' on line 200.
+
+
+LaTeX3 Info: Defining command \UnReplaceClass with sig. 'm' on line 203.
+
+
+LaTeX3 Info: Defining command \UnReplacePackage with sig. 'mm' on line 206.
+
+
+LaTeX3 Info: Defining command \PreventPackageFromLoading with sig. 's+om' on
+(LaTeX3)     line 234.
+
+
+LaTeX3 Info: Defining command \StorePreventPackageFromLoading with sig. 'm' on
+(LaTeX3)     line 242.
+
+
+LaTeX3 Info: Defining command \ResetPreventPackageFromLoading with sig. '' on
+(LaTeX3)     line 247.
+
+
+LaTeX3 Info: Defining command \UnPreventPackageFromLoading with sig. 'sm' on
+(LaTeX3)     line 261.
+
+
+LaTeX3 Info: Defining command \BeforeClosingMainAux with sig. 'om' on line
+(LaTeX3)     274.
+
+
+LaTeX3 Info: Defining command \AfterReadingMainAux with sig. 'om' on line 287.
+
+
+LaTeX3 Info: Defining command \protected@immediate@write with sig. 'm+m+m' on
+(LaTeX3)     line 298.
+
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrlogo.sty
+Package: scrlogo 2021/03/17 v3.33 KOMA-Script package (logo)
+))) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
 )
-\trimtop=\skip52
-\trimedge=\skip53
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/memoir/mem12.clo
-File: mem12.clo 2022/07/29 v0.5 memoir class 12pt size option
+Skipping: [2021/05/01] Usage of raw option list on input line 252.
+Applying: [0000/00/00] compatibility for LaTeX before 2021/05/01 on input line 337.
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/tocbasic.sty
+Package: tocbasic 2021/03/17 v3.33 KOMA-Script package (handling toc-files)
+\scr@dte@tocline@numberwidth=\skip47
+\scr@dte@tocline@numbox=\box47
 )
-\binding=\skip54
-\spinemargin=\skip55
-\foremargin=\skip56
-\uppermargin=\skip57
-\lowermargin=\skip58
-\headdrop=\skip59
-\normalrulethickness=\skip60
-\mem@maxheadheight=\skip61
-\mem@maxfootheight=\skip62
-\headwidth=\skip63
-\c@storedpagenumber=\count279
-\memPD=\dimen148
-\m@mabparskip=\skip64
-\thanksmarkwidth=\skip65
-\thanksmarksep=\skip66
-\droptitle=\skip67
-\c@book=\count280
-\c@part=\count281
-\c@chapter=\count282
-\c@section=\count283
-\c@subsection=\count284
-\c@subsubsection=\count285
-\c@paragraph=\count286
-\c@subparagraph=\count287
-\beforechapskip=\skip68
-\midchapskip=\skip69
-\afterchapskip=\skip70
-\chapindent=\skip71
-\bottomsectionskip=\skip72
-\secindent=\skip73
-\beforesecskip=\skip74
-\aftersecskip=\skip75
-\subsecindent=\skip76
-\beforesubsecskip=\skip77
-\aftersubsecskip=\skip78
-\subsubsecindent=\skip79
-\beforesubsubsecskip=\skip80
-\aftersubsubsecskip=\skip81
-\paraindent=\skip82
-\beforeparaskip=\skip83
-\afterparaskip=\skip84
-\subparaindent=\skip85
-\beforesubparaskip=\skip86
-\aftersubparaskip=\skip87
-\pfbreakskip=\skip88
-\c@@ppsavesec=\count288
-\c@@ppsaveapp=\count289
-\ragrparindent=\dimen149
-\everylistparindent=\dimen150
-\parsepi=\skip89
-\topsepi=\skip90
-\itemsepi=\skip91
-\parsepii=\skip92
-\topsepii=\skip93
-\topsepiii=\skip94
-\itemsepii=\skip95
-\itemsepiii=\skip96
-\partopsepii=\skip97
-\partopsepiii=\skip98
-\m@msavetopsep=\skip99
-\m@msavepartopsep=\skip100
-\@enLab=\toks18
-\abstitleskip=\skip101
-\absleftindent=\skip102
-\abs@leftindent=\dimen151
-\absrightindent=\skip103
-\absparindent=\skip104
-\absparsep=\skip105
-\c@vslineno=\count290
-\c@poemline=\count291
-\c@modulo@vs=\count292
-\c@memfvsline=\count293
-\vleftskip=\skip106
-\vrightskip=\skip107
-\stanzaskip=\skip108
-\versewidth=\skip109
-\vgap=\skip110
-\vindent=\skip111
-\vleftmargin=\dimen152
-\c@verse=\count294
-\c@chrsinstr=\count295
-\beforepoemtitleskip=\skip112
-\afterpoemtitleskip=\skip113
-\c@poem=\count296
-\beforePoemTitleskip=\skip114
-\midPoemTitleskip=\skip115
-\afterPoemTitleskip=\skip116
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/tools/array.sty
-Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
-\col@sep=\dimen153
-\ar@mcellbox=\box53
-\extrarowheight=\dimen154
-\NC@list=\toks19
-\extratabsurround=\skip117
-\backup@length=\skip118
-\ar@cellbox=\box54
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/tools/dcolumn.sty
-Package: dcolumn 2025/10/21 v1.06 decimal alignment package (DPC)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/tools/delarray.sty
-Package: delarray 2014/10/28 v1.01 array delimiter package (DPC)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/tools/tabularx.sty
-Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
-\TX@col@width=\dimen155
-\TX@old@table=\dimen156
-\TX@old@col=\dimen157
-\TX@target=\dimen158
-\TX@delta=\dimen159
-\TX@cols=\count297
-\TX@ftn=\toks20
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/booktabs/booktabs.sty
-Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
-\heavyrulewidth=\dimen160
-\lightrulewidth=\dimen161
-\cmidrulewidth=\dimen162
-\belowrulesep=\dimen163
-\belowbottomsep=\dimen164
-\aboverulesep=\dimen165
-\abovetopsep=\dimen166
-\cmidrulesep=\dimen167
-\cmidrulekern=\dimen168
-\defaultaddspace=\dimen169
-\@cmidla=\count298
-\@cmidlb=\count299
-\@aboverulesep=\dimen170
-\@belowrulesep=\dimen171
-\@thisruleclass=\count300
-\@lastruleclass=\count301
-\@thisrulewidth=\dimen172
+Package tocbasic Info: babel extension for `toc' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 137.
+Class scrreprt Info: File `scrsize11pt.clo' used instead of
+(scrreprt)           file `scrsize11.clo' to setup font sizes on input line 2451.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/scrsize11pt.clo
+File: scrsize11pt.clo 2021/03/17 v3.33 KOMA-Script font size class option (11pt)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/koma-script/typearea.sty
+Package: typearea 2021/03/17 v3.33 KOMA-Script package (type area)
+\ta@bcor=\skip48
+\ta@div=\count179
+Package typearea Info: You've used standard option `letterpaper'.
+(typearea)             This is correct!
+(typearea)             Internally I'm using `paper=letter'.
+(typearea)             If you'd like to set the option with \KOMAoptions,
+(typearea)             you'd have to use `paper=letter' there
+(typearea)             instead of `letterpaper', too.
+\ta@hblk=\skip49
+\ta@vblk=\skip50
+\ta@temp=\skip51
+\footheight=\skip52
+Package typearea Info: These are the values describing the layout:
+(typearea)             DIV  = 11
+(typearea)             BCOR = 0.0pt
+(typearea)             \paperwidth      = 614.295pt
+(typearea)              \textwidth      = 446.76004pt
+(typearea)              DIV departure   = -14%
+(typearea)              \evensidemargin = 11.49748pt
+(typearea)              \oddsidemargin  = 11.49748pt
+(typearea)             \paperheight     = 794.96999pt
+(typearea)              \textheight     = 582.20026pt
+(typearea)              \topmargin      = -37.40001pt
+(typearea)              \headheight     = 17.0pt
+(typearea)              \headsep        = 20.40001pt
+(typearea)              \topskip        = 11.0pt
+(typearea)              \footskip       = 47.6pt
+(typearea)              \baselineskip   = 13.6pt
+(typearea)              on input line 1741.
 )
-\ctableftskip=\skip119
-\ctabrightskip=\skip120
-\abovecolumnspenalty=\count302
-\@linestogo=\count303
-\@cellstogo=\count304
-\@cellsincolumn=\count305
-\crtok=\toks21
-\@mincolumnwidth=\dimen173
-\c@newflo@tctr=\count306
-\mem@margin@floatbox=\box55
-\@contcwidth=\skip121
-\@contindw=\skip122
-\abovecaptionskip=\skip123
-\belowcaptionskip=\skip124
-\subfloattopskip=\skip125
-\subfloatcapskip=\skip126
-\subfloatcaptopadj=\skip127
-\subfloatbottomskip=\skip128
-\subfloatlabelskip=\skip129
-\subfloatcapmargin=\dimen174
-\c@@contsubnum=\count307
-\m@mscap@capbox=\box56
-\m@mscap@fbox=\box57
-\sidecapsep=\dimen175
-\sidecapwidth=\dimen176
-\m@m@tempdima=\dimen177
-\m@mscapraise=\dimen178
-\sidecapraise=\dimen179
-\m@mscapmainwidth=\dimen180
-\m@mscaplkern=\dimen181
-\beforeepigraphskip=\skip130
-\afterepigraphskip=\skip131
-\epigraphwidth=\skip132
-\epigraphrule=\skip133
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
-Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
-Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/infwarerr/infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
-Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
-Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/kvsetkeys/kvsetkeys.sty
-Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
-)))
-\c@section@level=\count308
-)
-\tocentryskip=\skip134
-\tocbaseline=\skip135
-\cftparskip=\skip136
-\cftbeforebookskip=\skip137
-\cftbookindent=\dimen182
-\cftbooknumwidth=\dimen183
-\cftbeforepartskip=\skip138
-\cftpartindent=\skip139
-\cftpartnumwidth=\skip140
-\cftbeforechapterskip=\skip141
-\cftchapterindent=\skip142
-\cftchapternumwidth=\skip143
-\cftbeforesectionskip=\skip144
-\cftsectionindent=\skip145
-\cftsectionnumwidth=\skip146
-\cftbeforesubsectionskip=\skip147
-\cftsubsectionindent=\skip148
-\cftsubsectionnumwidth=\skip149
-\cftbeforesubsubsectionskip=\skip150
-\cftsubsubsectionindent=\skip151
-\cftsubsubsectionnumwidth=\skip152
-\cftbeforeparagraphskip=\skip153
-\cftparagraphindent=\skip154
-\cftparagraphnumwidth=\skip155
-\cftbeforesubparagraphskip=\skip156
-\cftsubparagraphindent=\skip157
-\cftsubparagraphnumwidth=\skip158
-\prechapterprecisshift=\dimen184
-\c@maxsecnumdepth=\count309
-\bibindent=\dimen185
-\bibitemsep=\skip159
-\indexcolsep=\skip160
-\indexrule=\skip161
-\indexmarkstyle=\toks22
-\@indexbox=\insert252
-LaTeX Info: Redefining \raggedbottom on input line 8095.
-LaTeX Info: Redefining \flushbottom on input line 8099.
-\glossarycolsep=\dimen186
-\glossaryrule=\dimen187
-\sideparvshift=\skip162
-\sideins=\insert251
-\sidebartopsep=\skip163
-\sidebarhsep=\skip164
-\sidebarvsep=\skip165
-\sidebarwidth=\skip166
-\footmarkwidth=\skip167
-\footmarksep=\skip168
-\footparindent=\skip169
-\footinsdim=\skip170
-\footinsv@r=\insert250
-\@mpfootinsv@r=\insert249
-\m@m@k=\count310
-\m@m@h=\dimen188
-\m@mipn@skip=\skip171
-\sidefootins=\insert248
-\sidefootadjust=\skip172
-\sidefootheight=\skip173
-\sidefoothsep=\skip174
-\sidefootvsep=\skip175
-\sidefootwidth=\skip176
-\m@mdownsf=\skip177
-\c@sidefootnote=\count311
-\sidefootmarkwidth=\skip178
-\sidefootmarksep=\skip179
-\sidefootparindent=\skip180
-\c@pagenote=\count312
-\c@pagenoteshadow=\count313
-\mem@pn@lastkern=\skip181
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/tools/verbatim.sty
-Package: verbatim 2024-01-22 v1.5x LaTeX2e package for verbatim enhancements
-\every@verbatim=\toks23
-\verbatim@line=\toks24
-\verbatim@in@stream=\read2
-)
-\verbatimindent=\skip182
-\verbatim@out=\write3
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/base/shortvrb.sty
-Package: shortvrb 2024/12/25 v3.0q Standard LaTeX documentation package V3 (FMi)
-)
-\bvboxsep=\skip183
-\c@memfbvline=\count314
-\c@bvlinectr=\count315
-\bvnumlength=\skip184
-\fb@frw=\dimen189
-\fb@frh=\dimen190
-\FrameRule=\dimen191
-\FrameSep=\dimen192
-\c@cp@cntr=\count316
-\c@ism@mctr=\count317
-\c@xsm@mctr=\count318
-\c@csm@mctr=\count319
-\c@ksm@mctr=\count320
-\c@xksm@mctr=\count321
-\c@cksm@mctr=\count322
-\c@msm@mctr=\count323
-\c@xmsm@mctr=\count324
-\c@cmsm@mctr=\count325
-\c@bsm@mctr=\count326
-\c@workm@mctr=\count327
-\c@sheetsequence=\count328
-\c@lastsheet=\count329
-\c@lastpage=\count330
-\c@figure=\count331
-\c@lofdepth=\count332
-\cftbeforefigureskip=\skip185
-\cftfigureindent=\skip186
-\cftfigurenumwidth=\skip187
-\c@table=\count333
-\c@lotdepth=\count334
-\cftbeforetableskip=\skip188
-\cfttableindent=\skip189
-\cfttablenumwidth=\skip190
-Package abstract [2008/07/23] emulated by memoir.
-Package appendix [2008/07/23] emulated by memoir.
-Package ccaption [2008/07/23] emulated by memoir.
-Package changepage [2008/07/23] emulated by memoir.
-Package chngcntr [2008/07/23] emulated by memoir.
-Package chngpage [2008/07/23] emulated by memoir.
-Package crop emulated by memoir.
-Package enumerate [2008/07/23] emulated by memoir.
-Package epigraph [2008/07/23] emulated by memoir.
-Package ifmtarg [2008/07/23] emulated by memoir.
-Package index [2008/07/23] emulated by memoir.
-Package makeidx [2008/07/23] emulated by memoir.
-Package moreverb [2008/07/23] emulated by memoir.
-Package needspace [2008/07/23] emulated by memoir.
-Package newfile [2008/07/23] emulated by memoir.
-Package nextpage [2008/07/23] emulated by memoir.
-Package pagenote [2008/07/23] emulated by memoir.
-Package parskip [2008/07/23] emulated by memoir.
-Package patchcmd [2008/07/23] emulated by memoir.
-Package setspace [2008/07/23] emulated by memoir.
-Package showidx [2008/07/23] emulated by memoir.
-Package titleref [2008/07/23] emulated by memoir.
-Package titling [2008/07/23] emulated by memoir.
-Package tocbibind [2008/07/23] emulated by memoir.
-Package tocloft [2008/07/23] emulated by memoir.
-Package tocvsec2 [2008/07/23] emulated by memoir.
-Package verse [2008/07/23] emulated by memoir.
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/geometry/geometry.sty
-Package: geometry 2020/01/02 v5.9 Page Geometry
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/iftex/ifvtex.sty
-Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
-)
-\Gm@cnth=\count335
-\Gm@cntv=\count336
-\c@Gm@tempcnt=\count337
-\Gm@bindingoffset=\dimen193
-\Gm@wd@mp=\dimen194
-\Gm@odd@mp=\dimen195
-\Gm@even@mp=\dimen196
-\Gm@layoutwidth=\dimen197
-\Gm@layoutheight=\dimen198
-\Gm@layouthoffset=\dimen199
-\Gm@layoutvoffset=\dimen256
-\Gm@dimlist=\toks25
-)) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2025/07/09 v2.17z AMS math features
-\@mathmargin=\skip191
+\c@part=\count180
+\c@chapter=\count181
+\c@section=\count182
+\c@subsection=\count183
+\c@subsubsection=\count184
+\c@paragraph=\count185
+\c@subparagraph=\count186
+\scr@dte@chapter@maxnumwidth=\skip53
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\chapter on input line 5678.
+\scr@dte@section@maxnumwidth=\skip54
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\section on input line 5689.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\section on input line 5689.
+\scr@dte@part@maxnumwidth=\skip55
+Class scrreprt Info: using compatibility default `afterindent=true'
+(scrreprt)           for `\part on input line 5698.
+\scr@dte@subsection@maxnumwidth=\skip56
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subsection on input line 5708.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subsection on input line 5708.
+\scr@dte@subsubsection@maxnumwidth=\skip57
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subsubsection on input line 5718.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subsubsection on input line 5718.
+\scr@dte@paragraph@maxnumwidth=\skip58
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\paragraph on input line 5729.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\paragraph on input line 5729.
+\scr@dte@subparagraph@maxnumwidth=\skip59
+Class scrreprt Info: using compatibility default `runin=bysign'
+(scrreprt)           for `\subparagraph on input line 5739.
+Class scrreprt Info: using compatibility default `afterindent=bysign'
+(scrreprt)           for `\subparagraph on input line 5739.
+\abovecaptionskip=\skip60
+\belowcaptionskip=\skip61
+\c@pti@nb@sid@b@x=\box48
+Package tocbasic Info: babel extension for `lof' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6976.
+\scr@dte@figure@maxnumwidth=\skip62
+\c@figure=\count187
+Package tocbasic Info: babel extension for `lot' omitted
+(tocbasic)             because of missing \bbl@set@language on input line 6993.
+\scr@dte@table@maxnumwidth=\skip63
+\c@table=\count188
+Class scrreprt Info: Redefining `\numberline' on input line 7162.
+\bibindent=\dimen138
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2021/10/15 v2.17l AMS math features
+\@mathmargin=\skip64
 
 For additional information on amsmath, use the `?' option.
-(/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amstext.sty
-Package: amstext 2024/11/17 v2.01 AMS text
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0 generic functions
-\@emptytoks=\toks26
-\ex@=\dimen257
-)) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsbsy.sty
+\@emptytoks=\toks16
+\ex@=\dimen139
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d Bold Symbols
-\pmbraise@=\dimen258
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsmath/amsopn.sty
-Package: amsopn 2022/04/08 v2.04 operator names
+\pmbraise@=\dimen140
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2021/08/26 v2.02 operator names
 )
-\inf@bad=\count338
-LaTeX Info: Redefining \frac on input line 233.
-\uproot@=\count339
-\leftroot@=\count340
-LaTeX Info: Redefining \overline on input line 398.
-LaTeX Info: Redefining \colon on input line 409.
-\classnum@=\count341
-\DOTSCASE@=\count342
-LaTeX Info: Redefining \ldots on input line 495.
-LaTeX Info: Redefining \dots on input line 498.
-LaTeX Info: Redefining \cdots on input line 619.
-\Mathstrutbox@=\box58
-\strutbox@=\box59
-LaTeX Info: Redefining \big on input line 721.
-LaTeX Info: Redefining \Big on input line 722.
-LaTeX Info: Redefining \bigg on input line 723.
-LaTeX Info: Redefining \Bigg on input line 724.
-\big@size=\dimen259
-LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
-\macc@depth=\count343
-LaTeX Info: Redefining \bmod on input line 904.
-LaTeX Info: Redefining \pmod on input line 909.
-LaTeX Info: Redefining \smash on input line 939.
-LaTeX Info: Redefining \relbar on input line 969.
-LaTeX Info: Redefining \Relbar on input line 970.
-\c@MaxMatrixCols=\count344
-\dotsspace@=\muskip17
-\c@parentequation=\count345
-\dspbrk@lvl=\count346
-\tag@help=\toks27
-\row@=\count347
-\column@=\count348
-\maxfields@=\count349
-\andhelp@=\toks28
-\eqnshift@=\dimen260
-\alignsep@=\dimen261
-\tagshift@=\dimen262
-\tagwidth@=\dimen263
-\totwidth@=\dimen264
-\lineht@=\dimen265
-\@envbody=\toks29
-\multlinegap=\skip192
-\multlinetaggap=\skip193
-\mathdisplay@stack=\toks30
-LaTeX Info: Redefining \[ on input line 2950.
-LaTeX Info: Redefining \] on input line 2951.
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amssymb.sty
+\inf@bad=\count189
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count190
+\leftroot@=\count191
+LaTeX Info: Redefining \overline on input line 399.
+\classnum@=\count192
+\DOTSCASE@=\count193
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box49
+\strutbox@=\box50
+\big@size=\dimen141
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count194
+\c@MaxMatrixCols=\count195
+\dotsspace@=\muskip16
+\c@parentequation=\count196
+\dspbrk@lvl=\count197
+\tag@help=\toks17
+\row@=\count198
+\column@=\count199
+\maxfields@=\count266
+\andhelp@=\toks18
+\eqnshift@=\dimen142
+\alignsep@=\dimen143
+\tagshift@=\dimen144
+\tagwidth@=\dimen145
+\totwidth@=\dimen146
+\lineht@=\dimen147
+\@envbody=\toks19
+\multlinegap=\skip65
+\multlinetaggap=\skip66
+\mathdisplay@stack=\toks20
+LaTeX Info: Redefining \[ on input line 2938.
+LaTeX Info: Redefining \] on input line 2939.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amssymb.sty
 Package: amssymb 2013/01/14 v3.01 AMS font symbols
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 \symAMSa=\mathgroup4
 \symAMSb=\mathgroup5
 LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
-)) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/base/fontenc.sty
-Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/base/inputenc.sty
-Package: inputenc 2024/02/08 v1.3d Input encoding file
-\inpenc@prehook=\toks31
-\inpenc@posthook=\toks32
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/lm/lmodern.sty
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2020/08/10 v2.0s Standard LaTeX package
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2020/08/01 v1.3d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/lmodern.sty
 Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
 (Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
@@ -510,426 +303,2070 @@ LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
 (Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 (Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/upquote/upquote.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/upquote/upquote.sty
 Package: upquote 2012/04/19 v1.3 upright-quote and grave-accent glyphs in verbatim
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.sty
-Package: microtype 2025/07/09 v3.2b Micro-typographical refinements (RS)
-\MT@toks=\toks33
-\MT@tempbox=\box60
-\MT@count=\count350
-LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
-LaTeX Info: Redefining \leftprotrusion on input line 1088.
-\MT@prot@toks=\toks34
-LaTeX Info: Redefining \rightprotrusion on input line 1107.
-LaTeX Info: Redefining \textls on input line 1449.
-\MT@outer@kern=\dimen266
-LaTeX Info: Redefining \microtypecontext on input line 2053.
-LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count351
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype-pdftex.def
-File: microtype-pdftex.def 2025/07/09 v3.2b Definitions specific to pdftex (RS)
-LaTeX Info: Redefining \lsstyle on input line 944.
-LaTeX Info: Redefining \lslig on input line 944.
-\MT@outer@space=\skip194
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2021/03/14 v2.8c Micro-typographical refinements (RS)
+\MT@toks=\toks23
+\MT@count=\count267
+LaTeX Info: Redefining \textls on input line 790.
+\MT@outer@kern=\dimen148
+LaTeX Info: Redefining \textmicrotypecontext on input line 1374.
+\MT@listname@count=\count268
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype-pdftex.def
+File: microtype-pdftex.def 2021/03/14 v2.8c Definitions specific to pdftex (RS)
+LaTeX Info: Redefining \lsstyle on input line 915.
+LaTeX Info: Redefining \lslig on input line 915.
+\MT@outer@space=\skip67
 )
 Package microtype Info: Loading configuration file microtype.cfg.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/microtype/microtype.cfg
-File: microtype.cfg 2025/07/09 v3.2b microtype main configuration file (RS)
-)
-LaTeX Info: Redefining \microtypesetup on input line 3065.
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/xcolor/xcolor.sty
-Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/color.cfg
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2021/03/14 v2.8c microtype main configuration file (RS)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
 File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
-Package xcolor Info: Driver file: pdftex.def on input line 274.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics-def/pdftex.def
-File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics/mathcolor.ltx)
-Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
-Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
-Package xcolor Info: Model `RGB' extended on input line 1365.
-Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
-Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
-Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
-Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
-Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
-Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics/dvipsnam.def
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/xcolor/svgnam.def
-File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/xcolor/x11nam.def
-File: x11nam.def 2024/09/29 v3.02 Predefined colors according to Unix/X11 (UK)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/tools/longtable.sty
-Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
-\LTleft=\skip195
-\LTright=\skip196
-\LTpre=\skip197
-\LTpost=\skip198
-\LTchunksize=\count352
-\LTcapwidth=\dimen267
-\LT@head=\box61
-\LT@firsthead=\box62
-\LT@foot=\box63
-\LT@lastfoot=\box64
-\LT@gbox=\box65
-\LT@cols=\count353
-\LT@rows=\count354
-\c@LT@tables=\count355
-\c@LT@chunks=\count356
-\LT@p@ftn=\toks35
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/tools/calc.sty
-Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
-\calc@Acount=\count357
-\calc@Bcount=\count358
-\calc@Adimen=\dimen268
-\calc@Bdimen=\dimen269
-\calc@Askip=\skip199
-\calc@Bskip=\skip256
-LaTeX Info: Redefining \setlength on input line 86.
-LaTeX Info: Redefining \addtolength on input line 87.
-\calc@Ccount=\count359
-\calc@Cskip=\skip257
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/mdwtools/footnote.sty
-Package: footnote 1997/01/28 1.13 Save footnotes around boxes
-\fn@notes=\box66
-\fn@width=\dimen270
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics/trig.sty
-Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2016/05/11 v2.12 Predefined colors according to SVG 1.1 (UK)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xcolor/x11nam.def
+File: x11nam.def 2016/05/11 v2.12 Predefined colors according to Unix/X11 (UK)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2021/01/20 v3.7 verbatim text (tvz,hv)
+\FV@CodeLineNo=\count269
+\FV@InFile=\read2
+\FV@TabBox=\box51
+\c@FancyVerbLine=\count270
+\FV@StepNumber=\count271
+\FV@OutFile=\write3
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip68
+\fb@frw=\dimen149
+\fb@frh=\dimen150
+\FrameRule=\dimen151
+\FrameSep=\dimen152
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2020/01/07 v4.13 Multi-page Table package (DPC)
+\LTleft=\skip69
+\LTright=\skip70
+\LTpre=\skip71
+\LTpost=\skip72
+\LTchunksize=\count272
+\LTcapwidth=\dimen153
+\LT@head=\box52
+\LT@firsthead=\box53
+\LT@foot=\box54
+\LT@lastfoot=\box55
+\LT@cols=\count273
+\LT@rows=\count274
+\c@LT@tables=\count275
+\c@LT@chunks=\count276
+\LT@p@ftn=\toks24
+)
+Class scrreprt Info: longtable captions redefined on input line 112.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen154
+\lightrulewidth=\dimen155
+\cmidrulewidth=\dimen156
+\belowrulesep=\dimen157
+\belowbottomsep=\dimen158
+\aboverulesep=\dimen159
+\abovetopsep=\dimen160
+\cmidrulesep=\dimen161
+\cmidrulekern=\dimen162
+\defaultaddspace=\dimen163
+\@cmidla=\count277
+\@cmidlb=\count278
+\@aboverulesep=\dimen164
+\@belowrulesep=\dimen165
+\@thisruleclass=\count279
+\@lastruleclass=\count280
+\@thisrulewidth=\dimen166
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/array.sty
+Package: array 2020/10/01 v2.5c Tabular extension package (FMi)
+\col@sep=\dimen167
+\ar@mcellbox=\box56
+\extrarowheight=\dimen168
+\NC@list=\toks25
+\extratabsurround=\skip73
+\backup@length=\skip74
+\ar@cellbox=\box57
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count281
+\calc@Bcount=\count282
+\calc@Adimen=\dimen169
+\calc@Bdimen=\dimen170
+\calc@Askip=\skip75
+\calc@Bskip=\skip76
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count283
+\calc@Cskip=\skip77
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count284
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/footnotehyper/footnotehyper.sty
+Package: footnotehyper 2021/02/04 v1.1d hyperref aware footnote.sty (JFB)
+\FNH@notes=\box58
+\FNH@width=\dimen171
+\FNH@toks=\toks26
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
-Package graphics Info: Driver file: pdftex.def on input line 106.
+Package graphics Info: Driver file: pdftex.def on input line 105.
 )
-\Gin@req@height=\dimen271
-\Gin@req@width=\dimen272
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bookmark.sty
-Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
-Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/pdfescape/pdfescape.sty
-Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+\Gin@req@height=\dimen172
+\Gin@req@width=\dimen173
+)
+
+LaTeX3 Info: Defining command \citeproctext with sig. '' on line 135.
+
+
+LaTeX3 Info: Defining command \citeproc with sig. 'mm' on line 137.
+
+\cslhangindent=\skip78
+\csllabelwidth=\skip79
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip80
+\multirow@cntb=\count285
+\multirow@dima=\skip81
+\bigstrutjot=\dimen174
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen175
+\WF@size=\dimen176
+\c@WF@wrappedlines=\count286
+\WF@box=\box59
+\WF@everypar=\toks27
+Package: wrapfig 2003/01/31  v 3.6
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count287
+\float@exts=\toks28
+\float@box=\box60
+\@float@everytoks=\toks29
+\@floatcapt=\box61
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2020/01/04 v1.0e Color table columns (DPC)
+\everycr=\toks30
+\minrowclearance=\skip82
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box62
+\sift@deathcycles=\count288
+\@vwid@loff=\dimen177
+\@vwid@roff=\dimen178
+)
+\c@taburow=\count289
+\tabu@nbcols=\count290
+\tabu@cnt=\count291
+\tabu@Xcol=\count292
+\tabu@alloc=\count293
+\tabu@nested=\count294
+\tabu@target=\dimen179
+\tabu@spreadtarget=\dimen180
+\tabu@naturalX=\dimen181
+\tabucolX=\dimen182
+\tabu@Xsum=\dimen183
+\extrarowdepth=\dimen184
+\abovetabulinesep=\dimen185
+\belowtabulinesep=\dimen186
+\tabustrutrule=\dimen187
+\tabu@thebody=\toks31
+\tabu@footnotes=\toks32
+\tabu@box=\box63
+\tabu@arstrutbox=\box64
+\tabu@hleads=\box65
+\tabu@vleads=\box66
+\tabu@cellskip=\skip83
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box67
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip84
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box68
+\UL@hyphenbox=\box69
+\UL@skip=\skip85
+\UL@hook=\toks33
+\UL@height=\dimen188
+\UL@pe=\count295
+\UL@pixel=\dimen189
+\ULC@box=\box70
+Package: ulem 2019/11/18
+\ULdepth=\dimen190
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen191
+\c@nlinenum=\count296
+\TeXr@lab=\toks34
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcolorbox.sty
+Package: tcolorbox 2020/10/09 version 4.42 text color boxes
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+\pgfutil@everybye=\toks35
+\pgfutil@tempdima=\dimen192
+\pgfutil@tempdimb=\dimen193
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box71
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/12/27 v3.1.8b (3.1.8b)
+))
+Package: pgf 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks36
+\pgfkeys@temptoks=\toks37
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.tex
+\pgfkeys@tmptoks=\toks38
+))
+\pgf@x=\dimen194
+\pgf@y=\dimen195
+\pgf@xa=\dimen196
+\pgf@ya=\dimen197
+\pgf@xb=\dimen198
+\pgf@yb=\dimen199
+\pgf@xc=\dimen256
+\pgf@yc=\dimen257
+\pgf@xd=\dimen258
+\pgf@yd=\dimen259
+\w@pgf@writea=\write4
+\r@pgf@reada=\read3
+\c@pgf@counta=\count297
+\c@pgf@countb=\count298
+\c@pgf@countc=\count299
+\c@pgf@countd=\count300
+\t@pgf@toka=\toks39
+\t@pgf@tokb=\toks40
+\t@pgf@tokc=\toks41
+\pgf@sys@id@count=\count301
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/12/27 v3.1.8b (3.1.8b)
+)
+Driver file for pgf: pgfsys-pdftex.def
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-pdftex.def
+File: pgfsys-pdftex.def 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfsyssoftpath@smallbuffer@items=\count302
+\pgfsyssoftpath@bigbuffer@items=\count303
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen260
+\pgfmath@count=\count304
+\pgfmath@box=\box72
+\pgfmath@toks=\toks42
+\pgfmath@stack@operand=\toks43
+\pgfmath@stack@operation=\toks44
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonometric.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerarithmetics.code.tex))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count305
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfint.code.tex) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@picminx=\dimen261
+\pgf@picmaxx=\dimen262
+\pgf@picminy=\dimen263
+\pgf@picmaxy=\dimen264
+\pgf@pathminx=\dimen265
+\pgf@pathmaxx=\dimen266
+\pgf@pathminy=\dimen267
+\pgf@pathmaxy=\dimen268
+\pgf@xx=\dimen269
+\pgf@xy=\dimen270
+\pgf@yx=\dimen271
+\pgf@yy=\dimen272
+\pgf@zx=\dimen273
+\pgf@zy=\dimen274
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@path@lastx=\dimen275
+\pgf@path@lasty=\dimen276
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@shorten@end@additional=\dimen277
+\pgf@shorten@start@additional=\dimen278
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfpic=\box73
+\pgf@hbox=\box74
+\pgf@layerbox@main=\box75
+\pgf@picture@serial@count=\count306
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgflinewidth=\dimen279
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@pt@x=\dimen280
+\pgf@pt@y=\dimen281
+\pgf@pt@temp=\dimen282
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfarrowsep=\dimen283
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@max=\dimen284
+\pgf@sys@shading@range@num=\count307
+\pgf@shadingcount=\count308
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfexternal@startupbox=\box76
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+))) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfnodeparttextbox=\box77
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@nodesepstart=\dimen285
+\pgf@nodesepend=\dimen286
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2020/12/27 v3.1.8b (3.1.8b)
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks45
+\verbatim@line=\toks46
+\verbatim@in@stream=\read4
+)
+\tcb@titlebox=\box78
+\tcb@upperbox=\box79
+\tcb@lowerbox=\box80
+\tcb@phantombox=\box81
+\c@tcbbreakpart=\count309
+\c@tcblayer=\count310
+\c@tcolorbox@number=\count311
+\tcb@temp=\box82
+\tcb@temp=\box83
+\tcb@temp=\box84
+\tcb@temp=\box85
+\tcb@out=\write5
+\tcb@record@out=\write6
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbskins.code.tex
+Library (tcolorbox): 'tcbskins.code.tex' version '4.42'
+(/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgffor.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/latex/pgf/math/pgfmath.sty (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen287
+\pgffor@skip=\dimen288
+\pgffor@stack=\toks47
+\pgffor@toks=\toks48
+)) (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.code.tex
+Package: tikz 2020/12/27 v3.1.8b (3.1.8b)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgf@plot@mark@count=\count312
+\pgfplotmarksize=\dimen289
+)
+\tikz@lastx=\dimen290
+\tikz@lasty=\dimen291
+\tikz@lastxsaved=\dimen292
+\tikz@lastysaved=\dimen293
+\tikz@lastmovetox=\dimen294
+\tikz@lastmovetoy=\dimen295
+\tikzleveldistance=\dimen296
+\tikzsiblingdistance=\dimen297
+\tikz@figbox=\box86
+\tikz@figbox@bg=\box87
+\tikz@tempbox=\box88
+\tikz@tempbox@bg=\box89
+\tikztreelevel=\count313
+\tikznumberofchildren=\count314
+\tikznumberofcurrentchild=\count315
+\tikz@fig@count=\count316
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+\pgfmatrixcurrentrow=\count317
+\pgfmatrixcurrentcolumn=\count318
+\pgf@matrix@numberofcolumns=\count319
+)
+\tikz@expandcount=\count320
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/12/27 v3.1.8b (3.1.8b)
+)))
+\tcb@waterbox=\box90
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbskinsjigsaw.code.tex
+Library (tcolorbox): 'tcbskinsjigsaw.code.tex' version '4.42'
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/tcolorbox/tcbbreakable.code.tex
+Library (tcolorbox): 'tcbbreakable.code.tex' version '4.42'
+(/usr/local/texlive/2021/texmf-dist/tex/generic/oberdiek/pdfcol.sty
+Package: pdfcol 2019/12/29 v1.6 Handle new color stacks for pdfTeX (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+))
+Package pdfcol Info: New color stack `tcb@breakable' = 1 on input line 23.
+\tcb@testbox=\box91
+\tcb@totalupperbox=\box92
+\tcb@totallowerbox=\box93
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/fontawesome5.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2021-02-18 L3 programming layer (loader) 
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count321
+\l__pdf_internal_box=\box94
+))
+Package: fontawesome5 2020/03/24 v5.13.0 Font Awesome 5
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2021-03-12 LaTeX2e option processing using LaTeX3 keys
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-2020-10-01.sty (/usr/local/texlive/2021/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex))) (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/fontawesome5-generic-helper.sty
+Package: fontawesome5-generic-helper 2020/03/24 v5.13.0 non-uTeX helper for fontawesome5
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/fontawesome5-mapping.def))) (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bookmark.sty
+Package: bookmark 2020-11-06 v1.29 PDF bookmarks (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2021-02-27 v7.00k Hypertext links for LaTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO)
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-)) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/hycolor/hycolor.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hycolor/hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/auxhook/auxhook.sty
+Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2020-10-07 v3.14 Key value format for package options (HO)
 )
-\@linkdim=\dimen273
-\Hy@linkcounter=\count360
-\Hy@pagecounter=\count361
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+\@linkdim=\dimen298
+\Hy@linkcounter=\count322
+\Hy@pagecounter=\count323
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2021-02-27 v7.00k Hyperref: PDFDocEncoding definition (HO)
 Now handling font encoding PD1 ...
 ... no UTF-8 mapping file for font encoding PD1
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hyperref-langpatches.def
+File: hyperref-langpatches.def 2021-02-27 v7.00k Hyperref: patches for babel languages
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count362
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+\Hy@SavedSpaceFactor=\count324
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/puenc.def
+File: puenc.def 2021-02-27 v7.00k Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `unicode' set `true' on input line 4066.
-Package hyperref Info: Hyper figures OFF on input line 4195.
-Package hyperref Info: Link nesting OFF on input line 4200.
-Package hyperref Info: Hyper index ON on input line 4203.
-Package hyperref Info: Plain pages OFF on input line 4210.
-Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Option `unicode' set `true' on input line 4073.
+Package hyperref Info: Hyper figures OFF on input line 4192.
+Package hyperref Info: Link nesting OFF on input line 4197.
+Package hyperref Info: Hyper index ON on input line 4200.
+Package hyperref Info: Plain pages OFF on input line 4207.
+Package hyperref Info: Backreferencing OFF on input line 4212.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
-Package hyperref Info: Bookmarks ON on input line 4462.
-\c@Hy@tempcnt=\count363
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/url/url.sty
-\Urlmuskip=\muskip18
+Package hyperref Info: Bookmarks ON on input line 4445.
+\c@Hy@tempcnt=\count325
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
-LaTeX Info: Redefining \url on input line 4801.
-\XeTeXLinkMargin=\dimen274
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
+LaTeX Info: Redefining \url on input line 4804.
+\XeTeXLinkMargin=\dimen299
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count364
-\Field@Width=\dimen275
-\Fld@charsize=\dimen276
-Package hyperref Info: Hyper figures OFF on input line 6078.
-Package hyperref Info: Link nesting OFF on input line 6083.
-Package hyperref Info: Hyper index ON on input line 6086.
-Package hyperref Info: backreferencing OFF on input line 6093.
-Package hyperref Info: Link coloring OFF on input line 6098.
-Package hyperref Info: Link coloring with OCG OFF on input line 6103.
-Package hyperref Info: PDF/A mode OFF on input line 6108.
-\Hy@abspage=\count365
-\c@Item=\count366
-\c@Hfootnote=\count367
+\Fld@menulength=\count326
+\Field@Width=\dimen300
+\Fld@charsize=\dimen301
+Package hyperref Info: Hyper figures OFF on input line 6075.
+Package hyperref Info: Link nesting OFF on input line 6080.
+Package hyperref Info: Hyper index ON on input line 6083.
+Package hyperref Info: backreferencing OFF on input line 6090.
+Package hyperref Info: Link coloring OFF on input line 6095.
+Package hyperref Info: Link coloring with OCG OFF on input line 6100.
+Package hyperref Info: PDF/A mode OFF on input line 6105.
+LaTeX Info: Redefining \ref on input line 6145.
+LaTeX Info: Redefining \pageref on input line 6149.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atbegshi-ltx.sty
+Package: atbegshi-ltx 2020/08/17 v1.0a Emulation of the original atbegshi package
+with kernel methods
+)
+\Hy@abspage=\count327
+\c@Item=\count328
+\c@Hfootnote=\count329
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/hyperref/hpdftex.def
-File: hpdftex.def 2025-07-12 v7.01o Hyperref driver for pdfTeX
-\Fld@listcount=\count368
-\c@bookmark@seq@number=\count369
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
-Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2021-02-27 v7.00k Hyperref driver for pdfTeX
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/base/atveryend-ltx.sty
+Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atvery package
+with kernel methods
+)
+\Fld@listcount=\count330
+\c@bookmark@seq@number=\count331
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
+ (/usr/local/texlive/2021/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
-Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 284.
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 286.
 )
-\Hy@SectionHShift=\skip258
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/memoir/memhfixc.sty
-Package: memhfixc 2025/09/16 v1.24 hyperref package fixes for memoir class
-\c@memhycontfloat=\count370
-\c@mem@Hpagenote=\count371
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
-File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count372
-)) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2023/08/05 v3.6o Customizing captions (AR)
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
-\caption@tempdima=\dimen277
-\captionmargin=\dimen278
-\caption@leftmargin=\dimen279
-\caption@rightmargin=\dimen280
-\caption@width=\dimen281
-\caption@indent=\dimen282
-\caption@parindent=\dimen283
-\caption@hangindent=\dimen284
-Package caption Info: memoir document class detected.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/caption/caption-memoir.sto
-File: caption-memoir.sto 2023/09/08 v2.2c Adaption of the caption package to the memoir document class (AR)
+\Hy@SectionHShift=\skip86
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
+File: bkm-pdftex.def 2020-11-06 v1.29 bookmark driver for pdfTeX (HO)
+\BKM@id=\count332
+)) (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/10/26 v3.5g Customizing captions (AR)
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/10/21 v2.2e caption3 kernel (AR)
+\captionmargin=\dimen302
+\captionmargin@=\dimen303
+\captionwidth=\dimen304
+\caption@tempdima=\dimen305
+\caption@indent=\dimen306
+\caption@parindent=\dimen307
+\caption@hangindent=\dimen308
+Package caption Info: KOMA-Script document class detected.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/caption-koma.sto
+File: caption-koma.sto 2020/09/21 v2.0b Adaption of the caption package to the KOMA-Script document classes (AR)
 ))
-\c@caption@flags=\count373
-\c@continuedfloat=\count374
-Package caption Info: changepage package is loaded.
-\caption@adjustwidth@hsize=\dimen285
-\caption@adjustwidth@linewidth=\dimen286
+\c@caption@flags=\count333
+\c@continuedfloat=\count334
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/caption/ltcaption.sty
-Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
-)) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/float/float.sty
-Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count375
-\float@exts=\toks36
-\float@box=\box67
-\@float@everytoks=\toks37
-\@floatcapt=\box68
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2020/05/30 v1.4b longtable captions (AR)
 )
-\@float@every@codelisting=\toks38
-\c@codelisting=\count376
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/caption/subcaption.sty
-Package: subcaption 2023/07/28 v1.6b Sub-captions (AR)
-Package caption Info: New subtype `subfigure' on input line 238.
-\c@subfigure=\count377
-Package caption Info: New subtype `subtable' on input line 238.
-\c@subtable=\count378
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 161.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 168.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/lm/t1lmr.fd
+\@float@every@codelisting=\toks49
+\c@codelisting=\count335
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/10/07 v1.3j Sub-captions (AR)
+\c@subfigure=\count336
+\c@subtable=\count337
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2020/12/30 v 0.09a modify URL breaks
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 259.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 266.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (./Perception-of-3D-Data-Visualizations.aux)
+) (/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.aux)
 \openout1 = `Perception-of-3D-Data-Visualizations.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 168.
-LaTeX Font Info:    ... okay on input line 168.
-
-*geometry* driver: auto-detecting
-*geometry* detected driver: pdftex
-*geometry* verbose mode - [ preamble ] result:
-* driver: pdftex
-* paper: letterpaper
-* layout: <same size as paper>
-* layoutoffset:(h,v)=(0.0pt,0.0pt)
-* modes: includehead 
-* h-part:(L,W,R)=(72.26999pt, 469.75502pt, 72.26999pt)
-* v-part:(T,H,B)=(72.26999pt, 650.43001pt, 72.26999pt)
-* \paperwidth=614.295pt
-* \paperheight=794.96999pt
-* \textwidth=469.75502pt
-* \textheight=616.05621pt
-* \oddsidemargin=0.0pt
-* \evensidemargin=0.0pt
-* \topmargin=0.0pt
-* \headheight=14.5pt
-* \headsep=19.8738pt
-* \topskip=12.0pt
-* \footskip=0.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=7.0pt
-* \columnsep=10.0pt
-* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
-* \hoffset=0.0pt
-* \voffset=0.0pt
-* \mag=1000
-* \@twocolumnfalse
-* \@twosidefalse
-* \@mparswitchfalse
-* \@reversemarginfalse
-* (1in=72.27pt=25.4mm, 1cm=28.453pt)
-
-LaTeX Info: Redefining \microtypecontext on input line 168.
-Package microtype Info: Applying patch `item' on input line 168.
-Package microtype Info: Applying patch `toc' on input line 168.
-Package microtype Info: Applying patch `eqnum' on input line 168.
-Package microtype Info: Applying patch `footnote' on input line 168.
-Package microtype Info: Applying patch `verbatim' on input line 168.
-LaTeX Info: Redefining \microtypesetup on input line 168.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 266.
+LaTeX Font Info:    ... okay on input line 266.
+Package scrbase Info: activating english \contentsname on input line 266.
+Package scrbase Info: activating english \listfigurename on input line 266.
+Package scrbase Info: activating english \listtablename on input line 266.
+LaTeX Info: Redefining \microtypecontext on input line 266.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-Package microtype Info: Patching command `\showhyphens'.
+LaTeX Info: Redefining \showhyphens on input line 266.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
-(/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+) (/usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count338
+\scratchdimen=\dimen309
+\scratchbox=\box95
+\nofMPsegments=\count339
+\nofMParguments=\count340
+\everyMPshowfont=\toks50
+\MPscratchCnt=\count341
+\MPscratchDim=\dimen310
+\MPnumerator=\count342
+\makeMPintoPDFobject=\count343
+\everyMPtoPDFconversion=\toks51
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 168.
+Package hyperref Info: Link coloring ON on input line 266.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+) (/usr/local/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+)
+\c@section@level=\count344
+)
+LaTeX Info: Redefining \ref on input line 266.
+LaTeX Info: Redefining \pageref on input line 266.
+LaTeX Info: Redefining \nameref on input line 266.
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
- [1
-
-
-{/Users/tylerwiederich/Library/TinyTeX/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/Users/tylerwiederich/Library/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-
-Class memoir Warning: The material used in the footer is too large
-(10.14995pt) for the given foot skip (0.0pt), it is recommended to
-either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 177.
-
-[2
-
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.182 \end{abstract}
-                     [1
-
-]
-pdfTeX warning (ext4): destination with the same identifier (name{page.ii}) has been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.185 \end{acknowledgments}
-                            [2
-
-] (./Perception-of-3D-Data-Visualizations.toc
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 268.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmss.fd
+File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 268.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 268.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 1.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 268.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 1.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 268.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 1.
+(Font)              <14.4> on input line 268.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 1.
+(Font)              <10> on input line 268.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 1.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 1.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
+(Font)              <7> on input line 268.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 268.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msa.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 1.
- (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
+LaTeX Font Info:    Trying to load font information for U+msb on input line 268.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) (/Users/tylerwiederich/Library/TinyTeX/texmf-dist/tex/latex/microtype/mt-msb.cfg
+) (/usr/local/texlive/2021/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
-)) [3
+) [1
 
 
-] (./Perception-of-3D-Data-Visualizations.lof) [4
 
-] (./Perception-of-3D-Data-Visualizations.lot) [5
+{/usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Package tocbasic Info: character protrusion at toc deactivated on input line 273.
+ (/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.toc)
+\tf@toc=\write7
+\openout7 = `Perception-of-3D-Data-Visualizations.toc'.
+
+ [2
+
+]
+chapter 1.
+
+Class scrreprt Warning: \float@addtolists detected!
+(scrreprt)              Implementation of \float@addtolist became
+(scrreprt)              deprecated in KOMA-Script v3.01 2008/11/14 and
+(scrreprt)              has been replaced by several more flexible
+(scrreprt)              features of package `tocbasic`.
+(scrreprt)              Since Version 3.12 support for deprecated
+(scrreprt)              \float@addtolist interface has been
+(scrreprt)              restricted to only some of the KOMA-Script
+(scrreprt)              features and been removed from others.
+(scrreprt)              Loading of package `scrhack' may help to
+(scrreprt)              avoid this warning, if you are using a
+(scrreprt)              a package that still implements the
+(scrreprt)              deprecated \float@addtolist interface.
+
+[3
+
+] [4
+
 
 ]
 
-Class memoir Warning: The material used in the footer is too large
-(10.14995pt) for the given foot skip (0.0pt), it is recommended to
-either increase the foot skip or redesign the footer
-(in both cases you will find help in the memoir manual). on input line 195.
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:297: LaTeX Error: Environment acknowledgments undefined.
 
-\tf@toc=\write4
-\openout4 = `Perception-of-3D-Data-Visualizations.toc'.
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.297 \begin{acknowledgments}
+                             
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
-\tf@lof=\write5
-\openout5 = `Perception-of-3D-Data-Visualizations.lof'.
 
-\tf@lot=\write6
-\openout6 = `Perception-of-3D-Data-Visualizations.lot'.
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:302: LaTeX Error: \begin{document} ended by \end{acknowledgments}.
 
-(./Perception-of-3D-Data-Visualizations.aux)
- ***********
-LaTeX2e <2025-11-01>
-L3 programming layer <2020/03/25>
- ***********
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.302 \end{acknowledgments}
+                           
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:304: Undefined control sequence.
+l.304 \settocdepth
+                  {section}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[5]
+Package tocbasic Info: character protrusion at toc deactivated on input line 305.
+ (/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.toc)
+\tf@toc=\write8
+\openout8 = `Perception-of-3D-Data-Visualizations.toc'.
+
+ [6
+
+]
+Package tocbasic Info: character protrusion at lof deactivated on input line 306.
+ (/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.lof)
+\tf@lof=\write9
+\openout9 = `Perception-of-3D-Data-Visualizations.lof'.
+
+ [7
+
+]
+Package tocbasic Info: character protrusion at lot deactivated on input line 307.
+ (/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.lot)
+\tf@lot=\write10
+\openout10 = `Perception-of-3D-Data-Visualizations.lot'.
+
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:308: Undefined control sequence.
+l.308 \mainmatter
+                 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:309: Undefined control sequence.
+l.309 \newgeometry
+                  {top=1in,bottom=1in,right=1in,left=1.5in,includehead,nofoot}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:310: Undefined control sequence.
+l.310 \doublespacing
+                    
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[8
+
+]
+chapter 2.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 341.
+(/usr/local/texlive/2021/texmf-dist/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+LaTeX Warning: Reference `fig-quick-plot' on page 9 undefined on input line 354.
+
+[9
+
+] [10]
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-quick-plot-1.pdf, id=66, 381.425pt x 242.9075pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-quick-plot-1.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-quick-plot-1.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-quick-plot-1.pdf  used on input line 384.
+(pdftex.def)             Requested size: 381.42406pt x 242.90689pt.
+ [11 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-quick-plot-1.pdf>]
+<ch0-lit-review/images/treemap-3d.png, id=79, 500.87125pt x 304.13625pt>
+File: ch0-lit-review/images/treemap-3d.png Graphic file (type png)
+<use ch0-lit-review/images/treemap-3d.png>
+Package pdftex.def Info: ch0-lit-review/images/treemap-3d.png  used on input line 418.
+(pdftex.def)             Requested size: 446.78282pt x 271.29298pt.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10.95> on input line 447.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <8> on input line 447.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <6> on input line 447.
+ [12 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/treemap-3d.png>]
+<ch0-lit-review/images/wsj-print.jpg, id=90, 1027.84pt x 770.88pt>
+File: ch0-lit-review/images/wsj-print.jpg Graphic file (type jpg)
+<use ch0-lit-review/images/wsj-print.jpg>
+Package pdftex.def Info: ch0-lit-review/images/wsj-print.jpg  used on input line 456.
+(pdftex.def)             Requested size: 446.76175pt x 335.07132pt.
+<ch0-lit-review/images/wsj-myprint.jpg, id=91, 2055.68pt x 949.5475pt>
+File: ch0-lit-review/images/wsj-myprint.jpg Graphic file (type jpg)
+<use ch0-lit-review/images/wsj-myprint.jpg>
+Package pdftex.def Info: ch0-lit-review/images/wsj-myprint.jpg  used on input line 468.
+(pdftex.def)             Requested size: 446.76176pt x 206.36554pt.
+
+
+LaTeX Warning: Float too large for page by 33.4366pt on input line 479.
+
+
+LaTeX Warning: Reference `fig-wsj-orig' on page 13 undefined on input line 481.
+
+
+LaTeX Warning: Reference `fig-wsj-myprint' on page 13 undefined on input line 482.
+
+[13] [14 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/wsj-print.jpg> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/wsj-myprint.jpg>]
+
+LaTeX Warning: Reference `fig-make-bar-3d' on page 15 undefined on input line 547.
+
+<ch0-lit-review/images/make-bar-3d-1.png, id=103, 393.324pt x 398.361pt>
+File: ch0-lit-review/images/make-bar-3d-1.png Graphic file (type png)
+<use ch0-lit-review/images/make-bar-3d-1.png>
+Package pdftex.def Info: ch0-lit-review/images/make-bar-3d-1.png  used on input line 556.
+(pdftex.def)             Requested size: 111.69038pt x 113.12071pt.
+<ch0-lit-review/images/make-bar-3d-2.png, id=104, 393.324pt x 398.361pt>
+File: ch0-lit-review/images/make-bar-3d-2.png Graphic file (type png)
+<use ch0-lit-review/images/make-bar-3d-2.png>
+Package pdftex.def Info: ch0-lit-review/images/make-bar-3d-2.png  used on input line 568.
+(pdftex.def)             Requested size: 111.69038pt x 113.12071pt.
+<ch0-lit-review/images/make-bar-3d-3.png, id=105, 393.324pt x 398.361pt>
+File: ch0-lit-review/images/make-bar-3d-3.png Graphic file (type png)
+<use ch0-lit-review/images/make-bar-3d-3.png>
+Package pdftex.def Info: ch0-lit-review/images/make-bar-3d-3.png  used on input line 580.
+(pdftex.def)             Requested size: 111.69038pt x 113.12071pt.
+<ch0-lit-review/images/make-bar-3d-4.png, id=106, 393.324pt x 398.361pt>
+File: ch0-lit-review/images/make-bar-3d-4.png Graphic file (type png)
+<use ch0-lit-review/images/make-bar-3d-4.png>
+Package pdftex.def Info: ch0-lit-review/images/make-bar-3d-4.png  used on input line 592.
+(pdftex.def)             Requested size: 111.69038pt x 113.12071pt.
+[15 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/make-bar-3d-1.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/make-bar-3d-2.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/make-bar-3d-3.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/make-bar-3d-4.png>]
+
+LaTeX Warning: Reference `fig-skewed' on page 16 undefined on input line 643.
+
+<ch0-lit-review/images/skewed-angle.jpg, id=118, 318.7107pt x 570.933pt>
+File: ch0-lit-review/images/skewed-angle.jpg Graphic file (type jpg)
+<use ch0-lit-review/images/skewed-angle.jpg>
+Package pdftex.def Info: ch0-lit-review/images/skewed-angle.jpg  used on input line 652.
+(pdftex.def)             Requested size: 242.10591pt x 433.7045pt.
+[16] [17 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/skewed-angle.jpg>]
+
+LaTeX Warning: Reference `fig-skewed' on page 18 undefined on input line 730.
+
+
+LaTeX Warning: Reference `fig-fov' on page 18 undefined on input line 734.
+
+<ch0-lit-review/images/fov-30.png, id=132, 493.845pt x 526.96875pt>
+File: ch0-lit-review/images/fov-30.png Graphic file (type png)
+<use ch0-lit-review/images/fov-30.png>
+Package pdftex.def Info: ch0-lit-review/images/fov-30.png  used on input line 744.
+(pdftex.def)             Requested size: 147.43123pt x 157.31992pt.
+<ch0-lit-review/images/fov-60.png, id=133, 493.845pt x 526.96875pt>
+File: ch0-lit-review/images/fov-60.png Graphic file (type png)
+<use ch0-lit-review/images/fov-60.png>
+Package pdftex.def Info: ch0-lit-review/images/fov-60.png  used on input line 756.
+(pdftex.def)             Requested size: 147.43123pt x 157.31992pt.
+<ch0-lit-review/images/fov-90.png, id=134, 493.845pt x 526.96875pt>
+File: ch0-lit-review/images/fov-90.png Graphic file (type png)
+<use ch0-lit-review/images/fov-90.png>
+Package pdftex.def Info: ch0-lit-review/images/fov-90.png  used on input line 768.
+(pdftex.def)             Requested size: 147.43123pt x 157.31992pt.
+<ch0-lit-review/images/fov-120.png, id=135, 493.845pt x 526.96875pt>
+File: ch0-lit-review/images/fov-120.png Graphic file (type png)
+<use ch0-lit-review/images/fov-120.png>
+Package pdftex.def Info: ch0-lit-review/images/fov-120.png  used on input line 780.
+(pdftex.def)             Requested size: 147.43123pt x 157.31992pt.
+<ch0-lit-review/images/fov-150.png, id=136, 493.845pt x 526.96875pt>
+File: ch0-lit-review/images/fov-150.png Graphic file (type png)
+<use ch0-lit-review/images/fov-150.png>
+Package pdftex.def Info: ch0-lit-review/images/fov-150.png  used on input line 792.
+(pdftex.def)             Requested size: 147.43123pt x 157.31992pt.
+[18] [19 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/fov-30.png (PNG copy)> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/fov-60.png (PNG copy)> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/fov-90.png (PNG copy)> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/fov-120.png (PNG copy)> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/fov-150.png (PNG copy)>]
+
+LaTeX Warning: Reference `fig-ag-bar' on page 20 undefined on input line 835.
+
+<ch0-lit-review/images/preferance-example1.png, id=150, 400.49625pt x 520.94624pt>
+File: ch0-lit-review/images/preferance-example1.png Graphic file (type png)
+<use ch0-lit-review/images/preferance-example1.png>
+Package pdftex.def Info: ch0-lit-review/images/preferance-example1.png  used on input line 848.
+(pdftex.def)             Requested size: 223.38416pt x 290.56735pt.
+<ch0-lit-review/images/preferance-example2.png, id=151, 390.45876pt x 414.54875pt>
+File: ch0-lit-review/images/preferance-example2.png Graphic file (type png)
+<use ch0-lit-review/images/preferance-example2.png>
+Package pdftex.def Info: ch0-lit-review/images/preferance-example2.png  used on input line 861.
+(pdftex.def)             Requested size: 223.38004pt x 237.16183pt.
+<ch0-lit-review/images/tufte-bad-graph.png, id=152, 311.1625pt x 531.9875pt>
+File: ch0-lit-review/images/tufte-bad-graph.png Graphic file (type png)
+<use ch0-lit-review/images/tufte-bad-graph.png>
+Package pdftex.def Info: ch0-lit-review/images/tufte-bad-graph.png  used on input line 900.
+(pdftex.def)             Requested size: 149.59845pt x 255.76509pt.
+
+Overfull \hbox (2.16682pt too wide) in paragraph at lines 900--901
+ [][] 
+ []
+
+<ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-2.pdf, id=153, 243.91125pt x 240.9pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-2.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-2.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-2.pdf  used on input line 914.
+(pdftex.def)             Requested size: 147.43091pt x 145.61076pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-3.pdf, id=154, 351.3125pt x 243.91125pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-3.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-3.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-3.pdf  used on input line 928.
+(pdftex.def)             Requested size: 147.43767pt x 102.36386pt.
+
+LaTeX Warning: Reference `fig-gestalt' on page 20 undefined on input line 958.
+
+[20] [21 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/preferance-example1.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/preferance-example2.png>] [22 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/tufte-bad-graph.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-2.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/unnamed-chunk-2-3.pdf>]
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-1.pdf, id=193, 331.2375pt x 242.9075pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-1.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-1.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-1.pdf  used on input line 966.
+(pdftex.def)             Requested size: 201.03867pt x 147.42834pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-2.pdf, id=194, 331.2375pt x 242.9075pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-2.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-2.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-2.pdf  used on input line 978.
+(pdftex.def)             Requested size: 201.03867pt x 147.42834pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-3.pdf, id=195, 331.2375pt x 242.9075pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-3.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-3.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-3.pdf  used on input line 990.
+(pdftex.def)             Requested size: 201.03867pt x 147.42834pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-4.pdf, id=196, 336.25626pt x 242.9075pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-4.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-4.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-4.pdf  used on input line 1002.
+(pdftex.def)             Requested size: 201.04211pt x 145.23041pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-5.pdf, id=197, 336.25626pt x 242.9075pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-5.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-5.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-5.pdf  used on input line 1014.
+(pdftex.def)             Requested size: 201.04211pt x 145.23041pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-6.pdf, id=198, 375.4025pt x 242.9075pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-6.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-6.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-6.pdf  used on input line 1026.
+(pdftex.def)             Requested size: 201.0417pt x 130.0858pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-heatmap2d-1.pdf, id=199, 358.33875pt x 243.91125pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-heatmap2d-1.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-heatmap2d-1.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-heatmap2d-1.pdf  used on input line 1058.
+(pdftex.def)             Requested size: 223.38158pt x 152.04964pt.
+<ch0-lit-review/images/heatmap3d.png, id=200, 529.98pt x 379.4175pt>
+File: ch0-lit-review/images/heatmap3d.png Graphic file (type png)
+<use ch0-lit-review/images/heatmap3d.png>
+Package pdftex.def Info: ch0-lit-review/images/heatmap3d.png  used on input line 1070.
+(pdftex.def)             Requested size: 254.3875pt x 182.11832pt.
+
+Overfull \hbox (31.00748pt too wide) in paragraph at lines 1070--1071
+ [][] 
+ []
+
+<ch0-lit-review/images/height-color-0.3.png, id=201, 256.96pt x 256.96pt>
+File: ch0-lit-review/images/height-color-0.3.png Graphic file (type png)
+<use ch0-lit-review/images/height-color-0.3.png>
+Package pdftex.def Info: ch0-lit-review/images/height-color-0.3.png  used on input line 1104.
+(pdftex.def)             Requested size: 223.38478pt x 223.38478pt.
+<ch0-lit-review/images/height-color-2.png, id=202, 256.96pt x 256.96pt>
+File: ch0-lit-review/images/height-color-2.png Graphic file (type png)
+<use ch0-lit-review/images/height-color-2.png>
+Package pdftex.def Info: ch0-lit-review/images/height-color-2.png  used on input line 1116.
+(pdftex.def)             Requested size: 223.38478pt x 223.38478pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-1.pdf, id=203, 34.1275pt x 230.8625pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-1.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-1.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-1.pdf  used on input line 1145.
+(pdftex.def)             Requested size: 34.1274pt x 230.86192pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-2.pdf, id=204, 34.1275pt x 230.8625pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-2.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-2.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-2.pdf  used on input line 1157.
+(pdftex.def)             Requested size: 34.1274pt x 230.86192pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-3.pdf, id=205, 34.1275pt x 230.8625pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-3.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-3.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-3.pdf  used on input line 1169.
+(pdftex.def)             Requested size: 34.1274pt x 230.86192pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-4.pdf, id=206, 34.1275pt x 230.8625pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-4.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-4.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-4.pdf  used on input line 1181.
+(pdftex.def)             Requested size: 34.1274pt x 230.86192pt.
+[23] [24 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-2.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-3.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-4.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-5.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-gestalt-6.pdf>] [25 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-heatmap2d-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/heatmap3d.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/height-color-0.3.png (PNG copy)> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/images/height-color-2.png (PNG copy)>] [26 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-2.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-3.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-colorblind-4.pdf>]
+
+LaTeX Warning: Reference `fig-ratios' on page 27 undefined on input line 1276.
+
+[27]
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-1.pdf, id=311, 387.4475pt x 177.66376pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-1.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-1.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-1.pdf  used on input line 1305.
+(pdftex.def)             Requested size: 201.04228pt x 92.18777pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-2.pdf, id=312, 387.4475pt x 177.66376pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-2.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-2.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-2.pdf  used on input line 1317.
+(pdftex.def)             Requested size: 201.04228pt x 92.18777pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-3.pdf, id=313, 387.4475pt x 177.66376pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-3.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-3.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-3.pdf  used on input line 1329.
+(pdftex.def)             Requested size: 201.04228pt x 92.18777pt.
+<ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-4.pdf, id=314, 387.4475pt x 177.66376pt>
+File: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-4.pdf Graphic file (type pdf)
+<use ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-4.pdf>
+Package pdftex.def Info: ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-4.pdf  used on input line 1341.
+(pdftex.def)             Requested size: 201.04228pt x 92.18777pt.
+ [28 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-2.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-3.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch0-lit-review/one-last-start_files/figure-pdf/fig-ratios-4.pdf>] [29]
+chapter 3.
+[30
+
+]
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-1.png, id=361, 278.2395pt x 278.2395pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-1.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-1.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-1.png  used on input line 1455.
+(pdftex.def)             Requested size: 223.38158pt x 223.38158pt.
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-2.png, id=362, 278.2395pt x 278.4804pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-2.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-2.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-2.png  used on input line 1475.
+(pdftex.def)             Requested size: 223.38158pt x 223.57497pt.
+
+
+LaTeX Warning: Reference `fig-sine-illusion' on page 31 undefined on input line 1506.
+
+
+LaTeX Warning: Reference `fig-sine-illusion' on page 31 undefined on input line 1510.
+
+[31 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-1.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-2.png>]
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-1.png, id=372, 264.0264pt x 217.7736pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-1.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-1.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-1.png  used on input line 1521.
+(pdftex.def)             Requested size: 147.43478pt x 121.60678pt.
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-2.png, id=373, 234.6366pt x 160.4394pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-2.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-2.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-2.png  used on input line 1529.
+(pdftex.def)             Requested size: 147.43517pt x 100.81296pt.
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-3.png, id=374, 264.0264pt x 211.992pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-3.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-3.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-3.png  used on input line 1537.
+(pdftex.def)             Requested size: 147.43478pt x 118.37828pt.
+ [32] [33 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-1.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-2.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-3.png>]
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:1627: Missing $ inserted.
+<inserted text> 
+                $
+l.1627 {[}s\_i=10\cdot
+                       10\^{}\{(i-1)/12\}, \qquad i=1,\ldots,10{]}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+LaTeX Warning: Command \^ invalid in math mode on input line 1627.
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:1627: Please use \mathaccent for accents in math mode.
+\MT@orig@add@accent ...gnorespaces \relax \accent 
+                                                  #1 #2\egroup \spacefactor ...
+l.1627 {[}s\_i=10\cdot 10\^{}
+                             \{(i-1)/12\}, \qquad i=1,\ldots,10{]}
+I'm changing \accent to \mathaccent here; wish me luck.
+(Accents are not the same in formulas as they are in text.)
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:1627: Missing { inserted.
+<to be read again> 
+                   \egroup 
+l.1627 {[}s\_i=10\cdot 10\^{}
+                             \{(i-1)/12\}, \qquad i=1,\ldots,10{]}
+A left brace was mandatory here, so I've put one in.
+You might want to delete and/or insert some corrections
+so that I will find a matching right brace soon.
+(If you're confused by all this, try typing `I}' now.)
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:1627: You can't use `\spacefactor' in math mode.
+\MT@orig@add@accent ... #1 #2\egroup \spacefactor 
+                                                  \accent@spacefactor 
+l.1627 {[}s\_i=10\cdot 10\^{}
+                             \{(i-1)/12\}, \qquad i=1,\ldots,10{]}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:1628: Missing $ inserted.
+<inserted text> 
+                $
+l.1628 
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.tex:1628: Missing } inserted.
+<inserted text> 
+                }
+l.1628 
+       
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+Missing character: There is no è in font lmex10!
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.1 on input line 1654.
+
+[34]
+<ch1-bar3d/writeups/_images/Type1-Rep01.png, id=392, 156.585pt x 120.45pt>
+File: ch1-bar3d/writeups/_images/Type1-Rep01.png Graphic file (type png)
+<use ch1-bar3d/writeups/_images/Type1-Rep01.png>
+Package pdftex.def Info: ch1-bar3d/writeups/_images/Type1-Rep01.png  used on input line 1680.
+(pdftex.def)             Requested size: 134.03447pt x 103.10342pt.
+<ch1-bar3d/writeups/_images/RenderedChart.png, id=393, 2401.97375pt x 1597.97pt>
+File: ch1-bar3d/writeups/_images/RenderedChart.png Graphic file (type png)
+<use ch1-bar3d/writeups/_images/RenderedChart.png>
+Package pdftex.def Info: ch1-bar3d/writeups/_images/RenderedChart.png  used on input line 1693.
+(pdftex.def)             Requested size: 133.99649pt x 89.14435pt.
+<ch1-bar3d/writeups/_images/Kit_of_charts.png, id=394, 762.4485pt x 400.3758pt>
+File: ch1-bar3d/writeups/_images/Kit_of_charts.png Graphic file (type png)
+<use ch1-bar3d/writeups/_images/Kit_of_charts.png>
+Package pdftex.def Info: ch1-bar3d/writeups/_images/Kit_of_charts.png  used on input line 1706.
+(pdftex.def)             Requested size: 156.36111pt x 82.10811pt.
+ [35 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/_images/Type1-Rep01.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/_images/RenderedChart.png>]
+
+LaTeX Warning: Reference `fig-studyDesign' on page 36 undefined on input line 1760.
+
+[36 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/_images/Kit_of_charts.png>]
+<ch1-bar3d/writeups/_images/design.pdf, id=411, 395.20497pt x 229.98685pt>
+File: ch1-bar3d/writeups/_images/design.pdf Graphic file (type pdf)
+<use ch1-bar3d/writeups/_images/design.pdf>
+Package pdftex.def Info: ch1-bar3d/writeups/_images/design.pdf  used on input line 1779.
+(pdftex.def)             Requested size: 395.204pt x 229.98628pt.
+
+
+LaTeX Warning: Reference `fig-demographics' on page 37 undefined on input line 1811.
+
+[37 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/_images/design.pdf>]
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-demographics-1.png, id=433, 628.749pt x 228.855pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-demographics-1.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-demographics-1.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-demographics-1.png  used on input line 1817.
+(pdftex.def)             Requested size: 446.77948pt x 162.62088pt.
+
+
+LaTeX Warning: Reference `fig-practice' on page 38 undefined on input line 1848.
+
+<ch1-bar3d/writeups/_images/03-Practice-2.png, id=434, 1517.16812pt x 947.03813pt>
+File: ch1-bar3d/writeups/_images/03-Practice-2.png Graphic file (type png)
+<use ch1-bar3d/writeups/_images/03-Practice-2.png>
+Package pdftex.def Info: ch1-bar3d/writeups/_images/03-Practice-2.png  used on input line 1857.
+(pdftex.def)             Requested size: 357.39111pt x 223.08865pt.
+[38 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-demographics-1.png>]
+<ch1-bar3d/writeups/_images/05-Experiment-05-filled-in.png, id=441, 1116.67188pt x 656.95438pt>
+File: ch1-bar3d/writeups/_images/05-Experiment-05-filled-in.png Graphic file (type png)
+<use ch1-bar3d/writeups/_images/05-Experiment-05-filled-in.png>
+Package pdftex.def Info: ch1-bar3d/writeups/_images/05-Experiment-05-filled-in.png  used on input line 1881.
+(pdftex.def)             Requested size: 357.41046pt x 210.26979pt.
+
+
+LaTeX Warning: Reference `fig-experiment3dRender' on page 39 undefined on input line 1897.
+
+[39 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/_images/03-Practice-2.png>]
+
+LaTeX Warning: Reference `fig-midmeans-log-errors' on page 40 undefined on input line 1932.
+
+[40 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/_images/05-Experiment-05-filled-in.png>]
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-midmeans-log-errors-1.png, id=456, 391.9443pt x 182.3613pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-midmeans-log-errors-1.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-midmeans-log-errors-1.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-midmeans-log-errors-1.png  used on input line 1942.
+(pdftex.def)             Requested size: 391.94334pt x 182.36084pt.
+
+
+LaTeX Warning: Reference `fig-midmeans-log-errors' on page 41 undefined on input line 1971.
+
+[41 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-midmeans-log-errors-1.png>]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1986.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.2 on input line 2056.
+
+[42]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 3.3 on input line 2077.
+
+
+LaTeX Warning: Reference `fig-midmeans-log-errors' on page 43 undefined on input line 2083.
+
+
+LaTeX Warning: Reference `fig-gam-pred-chart' on page 43 undefined on input line 2084.
+
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-gam-pred-chart-1.png, id=469, 496.254pt x 200.4288pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-gam-pred-chart-1.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-gam-pred-chart-1.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-gam-pred-chart-1.png  used on input line 2098.
+(pdftex.def)             Requested size: 446.76076pt x 180.43929pt.
+[43]
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-1.png, id=477, 278.4804pt x 276.0714pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-1.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-1.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-1.png  used on input line 2155.
+(pdftex.def)             Requested size: 278.48395pt x 276.07492pt.
+<ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-2.png, id=478, 278.2395pt x 275.8305pt>
+File: ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-2.png Graphic file (type png)
+<use ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-2.png>
+Package pdftex.def Info: ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-2.png  used on input line 2172.
+(pdftex.def)             Requested size: 278.25578pt x 275.84665pt.
+ [44 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-gam-pred-chart-1.png>] [45 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-1.png>] [46 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-2.png>] [47] [48]
+chapter 4.
+[49
+
+] [50] [51]
+
+LaTeX Warning: Reference `eq-vals' on page 52 undefined on input line 2438.
+
+[52] [53] [54] [55] [56] [57] [58] [59]
+chapter 5.
+[60
+
+] [61] [62]
+
+LaTeX Warning: Reference `fig-stimuli-values' on page 63 undefined on input line 2916.
+
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-stimuli-values-1.pdf, id=599, 391.4625pt x 200.75pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-stimuli-values-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-stimuli-values-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-stimuli-values-1.pdf  used on input line 2922.
+(pdftex.def)             Requested size: 391.48541pt x 200.76173pt.
+
+LaTeX Warning: Reference `eq-random-z' on page 63 undefined on input line 2947.
+
+
+LaTeX Warning: Reference `fig-random-z' on page 63 undefined on input line 2948.
+
+[63 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-stimuli-values-1.pdf>]
+<ch3-heat3d/writeups/7-dissertation/plots/z100.png, id=616, 481.8pt x 481.8pt>
+File: ch3-heat3d/writeups/7-dissertation/plots/z100.png Graphic file (type png)
+<use ch3-heat3d/writeups/7-dissertation/plots/z100.png>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/plots/z100.png  used on input line 2960.
+(pdftex.def)             Requested size: 89.34479pt x 89.34479pt.
+<ch3-heat3d/writeups/7-dissertation/plots/z75.png, id=617, 481.8pt x 481.8pt>
+File: ch3-heat3d/writeups/7-dissertation/plots/z75.png Graphic file (type png)
+<use ch3-heat3d/writeups/7-dissertation/plots/z75.png>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/plots/z75.png  used on input line 2972.
+(pdftex.def)             Requested size: 89.34479pt x 89.34479pt.
+<ch3-heat3d/writeups/7-dissertation/plots/z50.png, id=618, 481.8pt x 481.8pt>
+File: ch3-heat3d/writeups/7-dissertation/plots/z50.png Graphic file (type png)
+<use ch3-heat3d/writeups/7-dissertation/plots/z50.png>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/plots/z50.png  used on input line 2984.
+(pdftex.def)             Requested size: 89.34479pt x 89.34479pt.
+<ch3-heat3d/writeups/7-dissertation/plots/z25.png, id=619, 481.8pt x 481.8pt>
+File: ch3-heat3d/writeups/7-dissertation/plots/z25.png Graphic file (type png)
+<use ch3-heat3d/writeups/7-dissertation/plots/z25.png>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/plots/z25.png  used on input line 2996.
+(pdftex.def)             Requested size: 89.34479pt x 89.34479pt.
+<ch3-heat3d/writeups/7-dissertation/plots/z0.png, id=620, 481.8pt x 481.8pt>
+File: ch3-heat3d/writeups/7-dissertation/plots/z0.png Graphic file (type png)
+<use ch3-heat3d/writeups/7-dissertation/plots/z0.png>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/plots/z0.png  used on input line 3008.
+(pdftex.def)             Requested size: 89.34479pt x 89.34479pt.
+
+
+LaTeX Warning: Reference `eq-random-z' on page 64 undefined on input line 3019.
+
+
+LaTeX Warning: Reference `eq-random-z' on page 64 undefined on input line 3019.
+
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-1.pdf, id=621, 238.8925pt x 233.87375pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-1.pdf  used on input line 3048.
+(pdftex.def)             Requested size: 212.20903pt x 207.75084pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-2.pdf, id=622, 238.8925pt x 233.87375pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-2.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-2.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-2.pdf  used on input line 3060.
+(pdftex.def)             Requested size: 212.20903pt x 207.75084pt.
+
+LaTeX Warning: Reference `fig-3dp' on page 64 undefined on input line 3095.
+
+[64 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/plots/z100.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/plots/z75.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/plots/z50.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/plots/z25.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/plots/z0.png>]
+<ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set1.JPG, id=636, 728.4816pt x 728.4816pt>
+File: ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set1.JPG Graphic file (type jpg)
+<use ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set1.JPG>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set1.JPG  used on input line 3103.
+(pdftex.def)             Requested size: 223.3815pt x 223.3815pt.
+<ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set2.JPG, id=637, 728.4816pt x 728.4816pt>
+File: ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set2.JPG Graphic file (type jpg)
+<use ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set2.JPG>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set2.JPG  used on input line 3115.
+(pdftex.def)             Requested size: 223.3815pt x 223.3815pt.
+
+
+LaTeX Warning: Reference `fig-3dd' on page 65 undefined on input line 3135.
+
+<ch3-heat3d/writeups/7-dissertation/images/chart-3dd.png, id=638, 445.665pt x 448.67625pt>
+File: ch3-heat3d/writeups/7-dissertation/images/chart-3dd.png Graphic file (type png)
+<use ch3-heat3d/writeups/7-dissertation/images/chart-3dd.png>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/images/chart-3dd.png  used on input line 3141.
+(pdftex.def)             Requested size: 445.6707pt x 448.68199pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-color-pal-1.pdf, id=639, 363.3575pt x 37.13875pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-color-pal-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-color-pal-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-color-pal-1.pdf  used on input line 3162.
+(pdftex.def)             Requested size: 363.36768pt x 37.13979pt.
+[65 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-2.pdf>] [66 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set1.JPG> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set2.JPG>] [67 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/images/chart-3dd.png> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-color-pal-1.pdf>] [68]
+
+LaTeX Warning: Reference `fig-exp-page' on page 69 undefined on input line 3261.
+
+<ch3-heat3d/writeups/7-dissertation/images/experiment-page.png, id=684, 972.63374pt x 468.75125pt>
+File: ch3-heat3d/writeups/7-dissertation/images/experiment-page.png Graphic file (type png)
+<use ch3-heat3d/writeups/7-dissertation/images/experiment-page.png>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/images/experiment-page.png  used on input line 3274.
+(pdftex.def)             Requested size: 446.7491pt x 215.30632pt.
+[69 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/images/experiment-page.png>]
+
+LaTeX Warning: Reference `tbl-demographics' on page 70 undefined on input line 3336.
+
+
+LaTeX Warning: Reference `tbl-exp-times' on page 70 undefined on input line 3379.
+
+
+LaTeX Warning: Reference `fig-total-time' on page 70 undefined on input line 3380.
+
+[70] [71]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.2 on input line 3400.
+
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-total-time-1.pdf, id=703, 381.425pt x 177.66376pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-total-time-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-total-time-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-total-time-1.pdf  used on input line 3406.
+(pdftex.def)             Requested size: 381.43568pt x 177.66873pt.
+
+LaTeX Warning: Reference `fig-user-strategies' on page 72 undefined on input line 3425.
+
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-user-strategies-1.pdf, id=704, 421.575pt x 280.04625pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-user-strategies-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-user-strategies-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-user-strategies-1.pdf  used on input line 3431.
+(pdftex.def)             Requested size: 421.58038pt x 280.04982pt.
+
+LaTeX Warning: Reference `fig-q1-eda' on page 72 undefined on input line 3471.
+
+[72 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-total-time-1.pdf>] [73 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-user-strategies-1.pdf>]
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-1.pdf, id=735, 390.45876pt x 238.8925pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-1.pdf  used on input line 3479.
+(pdftex.def)             Requested size: 201.03786pt x 123.00002pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-2.pdf, id=736, 390.45876pt x 238.8925pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-2.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-2.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-2.pdf  used on input line 3491.
+(pdftex.def)             Requested size: 201.03786pt x 123.00002pt.
+
+
+LaTeX Warning: Reference `eq-error_cm' on page 74 undefined on input line 3510.
+
+[74 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-2.pdf>]
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-media-1.pdf, id=760, 387.4475pt x 205.76875pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-media-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-media-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-media-1.pdf  used on input line 3548.
+(pdftex.def)             Requested size: 387.44655pt x 205.76823pt.
+
+
+LaTeX Warning: Reference `fig-em-set-pair' on page 75 undefined on input line 3564.
+
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-set-pair-1.pdf, id=761, 385.44pt x 168.63pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-set-pair-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-set-pair-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-set-pair-1.pdf  used on input line 3572.
+(pdftex.def)             Requested size: 385.43906pt x 168.62958pt.
+[75 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-media-1.pdf>]
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-1.pdf, id=775, 307.1475pt x 243.91125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-1.pdf  used on input line 3607.
+(pdftex.def)             Requested size: 201.04013pt x 159.64952pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-2.pdf, id=776, 307.1475pt x 243.91125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-2.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-2.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-2.pdf  used on input line 3619.
+(pdftex.def)             Requested size: 201.04013pt x 159.64952pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-1.pdf, id=777, 252.945pt x 243.91125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-1.pdf  used on input line 3638.
+(pdftex.def)             Requested size: 201.04399pt x 193.86385pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-2.pdf, id=778, 252.945pt x 243.91125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-2.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-2.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-2.pdf  used on input line 3650.
+(pdftex.def)             Requested size: 201.04399pt x 193.86385pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-1.pdf, id=779, 254.9525pt x 243.91125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-1.pdf  used on input line 3669.
+(pdftex.def)             Requested size: 201.04846pt x 192.34164pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-2.pdf, id=780, 252.945pt x 243.91125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-2.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-2.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-2.pdf  used on input line 3681.
+(pdftex.def)             Requested size: 201.04399pt x 193.86385pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-start-1.pdf, id=781, 252.945pt x 243.91125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-start-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-start-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-start-1.pdf  used on input line 3698.
+(pdftex.def)             Requested size: 252.94823pt x 243.91435pt.
+ [76 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-set-pair-1.pdf>] [77 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-2.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-2.pdf>] [78 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-2.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-start-1.pdf>]
+
+LaTeX Warning: Reference `fig-q1-eda' on page 79 undefined on input line 3753.
+
+
+LaTeX Warning: Reference `sec-remove-random-categories' on page 79 undefined on input line 3763.
+
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-pair5-issues-1.pdf, id=877, 275.0275pt x 203.76125pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-pair5-issues-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-pair5-issues-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-pair5-issues-1.pdf  used on input line 3777.
+(pdftex.def)             Requested size: 275.03941pt x 203.77007pt.
+
+LaTeX Warning: Reference `sec-remove-random-categories' on page 79 undefined on input line 3792.
+
+[79]
+Overfull \hbox (3.80858pt too wide) in paragraph at lines 3837--3837
+[]|\T1/lmr/m/n/10.95 (-20) set:pair_id|  
+ []
+
+
+Overfull \hbox (18.65248pt too wide) in paragraph at lines 3838--3838
+[]|\T1/lmr/m/n/10.95 (-20) media:pair_id|  
+ []
+
+
+Overfull \hbox (34.80879pt too wide) in paragraph at lines 3839--3839
+[]|\T1/lmr/m/n/10.95 (-20) set:media:pair_id|  
+ []
+
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int1-1.pdf, id=884, 405.515pt x 415.5525pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int1-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int1-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int1-1.pdf  used on input line 3846.
+(pdftex.def)             Requested size: 405.52637pt x 415.56416pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int2-1.pdf, id=885, 415.5525pt x 234.8775pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int2-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int2-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int2-1.pdf  used on input line 3859.
+(pdftex.def)             Requested size: 415.55148pt x 234.87692pt.
+<ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int3-1.pdf, id=886, 350.30875pt x 234.8775pt>
+File: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int3-1.pdf Graphic file (type pdf)
+<use ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int3-1.pdf>
+Package pdftex.def Info: ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int3-1.pdf  used on input line 3872.
+(pdftex.def)             Requested size: 350.30789pt x 234.87692pt.
+[80 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-pair5-issues-1.pdf>] [81 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int1-1.pdf>] [82 </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int2-1.pdf> </Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int3-1.pdf>]
+LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on input line 3883.
+ (/usr/local/texlive/2021/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd)
+
+LaTeX Warning: Reference `fig-model-int1' on page 83 undefined on input line 3891.
+
+
+LaTeX Warning: Reference `fig-model-int2' on page 83 undefined on input line 3891.
+
+
+LaTeX Warning: Reference `fig-model-int3' on page 83 undefined on input line 3892.
+
+
+Underfull \hbox (badness 1286) in paragraph at lines 3901--3911
+\T1/lmr/m/n/10.95 (+20) the \T1/lmtt/m/n/10.95 flexmix \T1/lmr/m/n/10.95 (+20) pack-age (Gruen and Leisch 2025) to ac-count for care-less re-spon-dents
+ []
+
+[83]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.4 on input line 3976.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.5 on input line 3997.
+
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.6 on input line 4020.
+
+[84]
+
+Package longtable Warning: Column widths have changed
+(longtable)                in table 5.7 on input line 4041.
+
+
+Overfull \hbox (10.52837pt too wide) in paragraph at lines 4093--4132
+ [][] 
+ []
+
+[85] [86] [87] [88] [89] [90] [91] [92] [93]
+chapter 6.
+pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-cdi_hathitrust_hathifiles_uva_x030492864}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4738 ...di_hathitrust_hathifiles_uva_x030492864}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-barfield_effects_1989}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4744 ...citeproctext]{ref-barfield_effects_1989}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-barfield1989}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4751 \bibitem[\citeproctext]{ref-barfield1989}
+                                                pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-bateman2010}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4757 \bibitem[\citeproctext]{ref-bateman2010}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-borgo2012}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4763 \bibitem[\citeproctext]{ref-borgo2012}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-brath_3d_2014}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4770 \bibitem[\citeproctext]{ref-brath_3d_2014}
+                                                 pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-breslow2009}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4776 \bibitem[\citeproctext]{ref-breslow2009}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-carver}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4783 \bibitem[\citeproctext]{ref-carver}
+                                          pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-shiny}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4788 \bibitem[\citeproctext]{ref-shiny}
+                                         pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-clevelandGraphical1984}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4794 ...iteproctext]{ref-clevelandGraphical1984}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-cleveland1984}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4801 \bibitem[\citeproctext]{ref-cleveland1984}
+                                                 pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-croxtonGraphicComparisonsBars1932}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4807 ...]{ref-croxtonGraphicComparisonsBars1932}
+                                                   [94
+
+]pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-croxton1932}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4813 \bibitem[\citeproctext]{ref-croxton1932}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-croxtonBarChartsCircle1927}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4818 ...roctext]{ref-croxtonBarChartsCircle1927}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-croxton1927}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4823 \bibitem[\citeproctext]{ref-croxton1927}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-daySineIllusion1991}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4828 ...[\citeproctext]{ref-daySineIllusion1991}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-dodziuk2016}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4832 \bibitem[\citeproctext]{ref-dodziuk2016}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-eellsRelativeMeritsCircles1926}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4837 ...ext]{ref-eellsRelativeMeritsCircles1926}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-eells1926}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4843 \bibitem[\citeproctext]{ref-eells1926}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-fischer2000}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4849 \bibitem[\citeproctext]{ref-fischer2000}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-fischer2005}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4855 \bibitem[\citeproctext]{ref-fischer2005}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-fisher_data_1997}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4860 ...tem[\citeproctext]{ref-fisher_data_1997}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-fisher1997}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4867 \bibitem[\citeproctext]{ref-fisher1997}
+                                              pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-fleetHowTactileGraphics2023}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4873 ...octext]{ref-fleetHowTactileGraphics2023}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-friendly2021}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4878 \bibitem[\citeproctext]{ref-friendly2021}
+                                                pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-viridis}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4883 \bibitem[\citeproctext]{ref-viridis}
+                                           pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-graphicsHowDoes3D}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4888 ...em[\citeproctext]{ref-graphicsHowDoes3D}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-grinstein2001}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4893 \bibitem[\citeproctext]{ref-grinstein2001}
+                                                 pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-flexmix}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4898 \bibitem[\citeproctext]{ref-flexmix}
+                                            [95]pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-hagerty1978}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4902 \bibitem[\citeproctext]{ref-hagerty1978}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-hastie2017generalized}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4908 ...citeproctext]{ref-hastie2017generalized}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-heer2010}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4912 \bibitem[\citeproctext]{ref-heer2010}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-heerCrowdsourcingGraphicalPerception2010b}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4917 ...erCrowdsourcingGraphicalPerception2010b}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-rlang}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4924 \bibitem[\citeproctext]{ref-rlang}
+                                         pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-herzog1981}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4929 \bibitem[\citeproctext]{ref-herzog1981}
+                                              pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-hofmann2012}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4934 \bibitem[\citeproctext]{ref-hofmann2012}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-hofmannCommonAnglePlots2013}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4940 ...octext]{ref-hofmannCommonAnglePlots2013}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-hollandsBiasProportionJudgments2000}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4946 ...ref-hollandsBiasProportionJudgments2000}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-holloway2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4951 \bibitem[\citeproctext]{ref-holloway2019}
+                                                pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-penguins}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4957 \bibitem[\citeproctext]{ref-penguins}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-huffHowLieStatistics1954}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4962 ...eproctext]{ref-huffHowLieStatistics1954}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-hughes}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4966 \bibitem[\citeproctext]{ref-hughes}
+                                          pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-hullmanPursuitErrorSurvey2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4970 ...text]{ref-hullmanPursuitErrorSurvey2019}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-huronMakingDataPhysical2023}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4977 ...octext]{ref-huronMakingDataPhysical2023}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-jansen2013}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4983 \bibitem[\citeproctext]{ref-jansen2013}
+                                               [96]pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-jeong2025}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4989 \bibitem[\citeproctext]{ref-jeong2025}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-katsioloudis2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.4995 ...tem[\citeproctext]{ref-katsioloudis2018}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-kelly2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5002 \bibitem[\citeproctext]{ref-kelly2018}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-kingdom2016}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5009 \bibitem[\citeproctext]{ref-kingdom2016}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-kintelOpenSCADDocumentation2023}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5014 ...xt]{ref-kintelOpenSCADDocumentation2023}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-kraus2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5018 \bibitem[\citeproctext]{ref-kraus2020}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-levy1996}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5024 \bibitem[\citeproctext]{ref-levy1996}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-liuSomewhereRainbowEmpirical2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5029 ...t]{ref-liuSomewhereRainbowEmpirical2018}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-liu2018}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5036 \bibitem[\citeproctext]{ref-liu2018}
+                                           pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-loy2021a}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5041 \bibitem[\citeproctext]{ref-loy2021a}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-maineriSliderBarsMultiDevice2021}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5046 ...t]{ref-maineriSliderBarsMultiDevice2021}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-mandal2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5051 \bibitem[\citeproctext]{ref-mandal2020}
+                                              pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-margaret1994}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5057 \bibitem[\citeproctext]{ref-margaret1994}
+                                                pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-mcgowan2011}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5062 \bibitem[\citeproctext]{ref-mcgowan2011}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-melodycarswell1991}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5067 ...m[\citeproctext]{ref-melodycarswell1991}
+                                                   [97]pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-msexcel}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5074 \bibitem[\citeproctext]{ref-msexcel}
+                                           pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-molinalopezEffectColorPalettes2023}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5077 ...{ref-molinalopezEffectColorPalettes2023}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-morganwallIntroducing3DGgplots20191006}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5082 ...-morganwallIntroducing3DGgplots20191006}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-rayshader}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5087 \bibitem[\citeproctext]{ref-rayshader}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-mozillafoundationWebGL2D3D2023}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5091 ...ext]{ref-mozillafoundationWebGL2D3D2023}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-muff2022}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5096 \bibitem[\citeproctext]{ref-muff2022}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-munzner}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5103 \bibitem[\citeproctext]{ref-munzner}
+                                           pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-rgl}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5107 \bibitem[\citeproctext]{ref-rgl}
+                                       pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-park2021}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5111 \bibitem[\citeproctext]{ref-park2021}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-peuxf1a2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5118 \bibitem[\citeproctext]{ref-peuxf1a2020}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-volcano}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5124 \bibitem[\citeproctext]{ref-volcano}
+                                           pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-reda2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5129 \bibitem[\citeproctext]{ref-reda2019}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-rice2024}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5134 \bibitem[\citeproctext]{ref-rice2024}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-ruudUncertaintyCausesRounding2014a}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5140 ...{ref-ruudUncertaintyCausesRounding2014a}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-sas9.4}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5146 \bibitem[\citeproctext]{ref-sas9.4}
+                                          pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-satyanarayan2017}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5149 ...tem[\citeproctext]{ref-satyanarayan2017}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-schmid1983}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5155 \bibitem[\citeproctext]{ref-schmid1983}
+                                               [98]pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-siegrist1996}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5159 \bibitem[\citeproctext]{ref-siegrist1996}
+                                                pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-plotly}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5165 \bibitem[\citeproctext]{ref-plotly}
+                                          pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-spenceVisualPsychophysicsSimple1990}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5169 ...ref-spenceVisualPsychophysicsSimple1990}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-stevens}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5175 \bibitem[\citeproctext]{ref-stevens}
+                                           pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-stevens1986}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5178 \bibitem[\citeproctext]{ref-stevens1986}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-stewart2009}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5183 \bibitem[\citeproctext]{ref-stewart2009}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-stusak2015}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5190 \bibitem[\citeproctext]{ref-stusak2015}
+                                              pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-tarr2001}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5195 \bibitem[\citeproctext]{ref-tarr2001}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-thingiversecomChartSales3D}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5200 ...roctext]{ref-thingiversecomChartSales3D}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-Tintle2021}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5205 \bibitem[\citeproctext]{ref-Tintle2021}
+                                              pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-tractinsky1999}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5210 \bibitem[\citeproctext]{ref-tractinsky1999}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-tufte2001}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5216 \bibitem[\citeproctext]{ref-tufte2001}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-tukey1965}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5220 \bibitem[\citeproctext]{ref-tukey1965}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-v2023}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5225 \bibitem[\citeproctext]{ref-v2023}
+                                         pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-vanderplasTestingStatisticalCharts2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5232 ...-vanderplasTestingStatisticalCharts2020}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-vanderplas2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5238 \bibitem[\citeproctext]{ref-vanderplas2020}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-vanderplasSignsSineIllusion2015}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5243 ...xt]{ref-vanderplasSignsSineIllusion2015}
+                                                   [99]pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-vanderplas2019}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5249 \bibitem[\citeproctext]{ref-vanderplas2019}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-veit}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5255 \bibitem[\citeproctext]{ref-veit}
+                                        pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-vonhuhnFurtherStudiesGraphic1927}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5259 ...t]{ref-vonhuhnFurtherStudiesGraphic1927}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-wang2022}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5265 \bibitem[\citeproctext]{ref-wang2022}
+                                            pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-wickham2010}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5272 \bibitem[\citeproctext]{ref-wickham2010}
+                                               pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-ggplot2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5277 \bibitem[\citeproctext]{ref-ggplot2}
+                                           pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-wiederich2023}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5281 \bibitem[\citeproctext]{ref-wiederich2023}
+                                                 pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-wiederich}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5286 \bibitem[\citeproctext]{ref-wiederich}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-wilkeDonGo3D2020}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5290 ...tem[\citeproctext]{ref-wilkeDonGo3D2020}
+                                                  pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-wilkinson2005}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5295 \bibitem[\citeproctext]{ref-wilkinson2005}
+                                                 pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-mgcv2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5299 \bibitem[\citeproctext]{ref-mgcv2}
+                                         pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-mgcv3}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5303 \bibitem[\citeproctext]{ref-mgcv3}
+                                         pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-mgcv1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5307 \bibitem[\citeproctext]{ref-mgcv1}
+                                         pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-mgcv}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5312 \bibitem[\citeproctext]{ref-mgcv}
+                                        pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-zacks1998}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5317 \bibitem[\citeproctext]{ref-zacks1998}
+                                             pdfTeX warning (ext4): destination with the same identifier (name{cite.ref-zhangJustNoticeableDifference2023a}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.5323 ...{ref-zhangJustNoticeableDifference2023a}
+                                                   [100]
+
+Package longtable Warning: Table widths have changed. Rerun LaTeX.
+
+(/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.aux)
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 19773 strings out of 469458
- 323378 string characters out of 5466226
- 842032 words of memory out of 5000000
- 48125 multiletter control sequences out of 15000+600000
- 654571 words of font info for 77 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 123i,11n,121p,1157b,496s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</Users/tylerwiederich/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></Users/tylerwiederich/Library/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb>
-Output written on Perception-of-3D-Data-Visualizations.pdf (7 pages, 60017 bytes).
+ 36408 strings out of 478994
+ 730874 string characters out of 5858184
+ 1212163 words of memory out of 5000000
+ 52566 multiletter control sequences out of 15000+600000
+ 485378 words of font info for 214 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 111i,11n,116p,10755b,912s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{section*.4} has been referenced but does not exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{section*.3} has been referenced but does not exist, replaced by a fixed one
+
+{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{/usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}</usr/local/texlive/2021/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmmi8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmsy8.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/lm/lmtt10.pfb></usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "/Users/tylerwiederich/Library/CloudStorage/OneDrive-UniversityofNebraska-Lincoln/4 - Obsidian Vault/Research/dissertation/Perception-of-3D-Data-Visualizations.pdf" (100 pages, 21613543 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 54 compressed objects within 1 object stream
- 11 named destinations out of 1000 (max. 500000)
- 14361 words of extra memory for PDF output out of 14400 (max. 10000000)
+ 1725 PDF objects out of 1728 (max. 8388607)
+ 1405 compressed objects within 15 object streams
+ 367 named destinations out of 1000 (max. 500000)
+ 43948 words of extra memory for PDF output out of 51595 (max. 10000000)
 

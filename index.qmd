@@ -4,9 +4,14 @@ numbered: false
 
 ```{=latex}
 \begin{abstract}
+\thispagestyle{empty}
 ```
 
-Data visualizations are a powerful tool for the communication of complex data structures. 
+Data visualizations are a powerful tool for the communication of complex data structures.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
 ```{=latex}
 \end{abstract}
@@ -18,9 +23,12 @@ A section to thank those who have supported my research and academic journey!
 ```{=latex}
 \end{acknowledgments}
 
+\settocdepth{section}
 \tableofcontents
 \listoffigures
 \listoftables
 \mainmatter
+\newgeometry{top=1in,bottom=1in,right=1in,left=1.5in,includehead,nofoot}
+\doublespacing
 
 ```

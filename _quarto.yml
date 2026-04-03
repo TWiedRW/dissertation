@@ -7,22 +7,22 @@ book:
   date: today
   chapters:
     - index.qmd
-    - ch0-lit-review/one-last-start.qmd
+    #- ch0-lit-review/one-last-start.qmd
     #- ch1-bar3d/writeups/index.qmd
     #- ch2-experiential-learning/manuscript/dissertation-copy.qmd
-    #- ch3-heat3d/writeups/1-992-paper/index.qmd
+    #- ch3-heat3d/writeups/7-dissertation/index.qmd
     #- ch99-references.qmd
 
 format:
   pdf:
     documentclass: nuthesis
     classoption: [phd]
-    geometry: []
     include-in-header:
       - thesis-metadata.tex
     fig-align: center
     toc: false
-    shift-heading-level-by: -1
-
+    toc-depth: 2
+    shift-heading-level-by: 0 #Might need to have -1 if literature review chapter needs to be chapter 0; as of now it actually messes up the chapters
+    freeze: auto
 
 bibliography: master-references.bib

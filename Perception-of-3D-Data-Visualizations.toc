@@ -1,3 +1,75 @@
-\contentsline {chapter}{Does this do anything?}{ii}{chapter*.2}%
-\contentsline {chapter}{List of Figures}{iv}{chapter*.4}%
-\contentsline {chapter}{List of Tables}{v}{chapter*.5}%
+\contentsline {chapter}{\numberline {2}Literature Review}{9}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Motivation and Background}{9}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Overview of Physical 3D Visualizations}{12}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Creating 3D-Printed Visualizations}{13}{subsection.2.2.1}%
+\contentsline {section}{\numberline {2.3}Bar Charts in Research and Practice}{15}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Against 3D Bar Charts}{15}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}For 3D Bar Charts}{16}{subsection.2.3.2}%
+\contentsline {subsection}{\numberline {2.3.3}Conflicting Empirical Studies}{18}{subsection.2.3.3}%
+\contentsline {subsubsection}{\numberline {2.3.3.1}Accuracy}{18}{subsubsection.2.3.3.1}%
+\contentsline {subsubsection}{\numberline {2.3.3.2}Response Times}{18}{subsubsection.2.3.3.2}%
+\contentsline {subsubsection}{\numberline {2.3.3.3}Preference}{20}{subsubsection.2.3.3.3}%
+\contentsline {section}{\numberline {2.4}Heatmaps in Research and Practice}{20}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Empirical Studies of 2D and 3D Heatmaps}{23}{subsection.2.4.1}%
+\contentsline {section}{\numberline {2.5}State of Data Physicalization in 3D Statistical Graphics}{26}{section.2.5}%
+\contentsline {section}{\numberline {2.6}Methods for Evaluating Visualization Effectiveness}{26}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}What makes a good chart?}{26}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Designing studies for numerical estimations}{27}{subsection.2.6.2}%
+\contentsline {section}{\numberline {2.7}Research Gaps and Study Motivation}{28}{section.2.7}%
+\contentsline {chapter}{\numberline {3}CHAPTER 1}{30}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{30}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Elementary Graphical Tasks}{30}{subsection.3.1.1}%
+\contentsline {subsection}{\numberline {3.1.2}3D Graphical Perception}{31}{subsection.3.1.2}%
+\contentsline {section}{\numberline {3.2}Methods}{34}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Replicating Cleveland and McGill}{34}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Stimuli Construction}{35}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Experiment Design}{36}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Participant Recruitment}{37}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Data Collection}{38}{subsection.3.2.5}%
+\contentsline {section}{\numberline {3.3}Results}{40}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Midmeans of Log Absolute Errors}{40}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Generalized Additive Model}{41}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Interactivity with 3D Rendered Charts}{44}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.4}Discussion and Future Work}{47}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Supplemental Material}{48}{subsection.3.4.1}%
+\contentsline {chapter}{\numberline {4}CHAPTER 2}{49}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Abstract}{49}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Introduction}{49}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Methods}{50}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Overview and Motivation}{50}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Experiential Learning}{51}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Data Analysis}{52}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Graphics Experiment}{52}{subsection.4.3.4}%
+\contentsline {subsubsection}{\numberline {4.3.4.1}Constructing Stimuli}{52}{subsubsection.4.3.4.1}%
+\contentsline {subsubsection}{\numberline {4.3.4.2}Experimental Design}{53}{subsubsection.4.3.4.2}%
+\contentsline {section}{\numberline {4.4}Results}{53}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Recruitment of Students and Instructors}{53}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Selected Responses from Experiment Participation}{54}{subsection.4.4.2}%
+\contentsline {subsubsection}{\numberline {4.4.2.1}Pre-Experiment Reflection}{54}{subsubsection.4.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.4.2.2}Post-Experiment Reflection}{54}{subsubsection.4.4.2.2}%
+\contentsline {subsection}{\numberline {4.4.3}Selected Responses from Research Reflections}{55}{subsection.4.4.3}%
+\contentsline {section}{\numberline {4.5}Discussion}{56}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Figure legends}{57}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Tables}{58}{section.4.7}%
+\contentsline {chapter}{\numberline {5}Chapter 3}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Introduction}{60}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Literature Review}{61}{subsection.5.1.1}%
+\contentsline {section}{\numberline {5.2}Methods}{62}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Stimuli}{62}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Charts}{64}{subsection.5.2.2}%
+\contentsline {subsection}{\numberline {5.2.3}Subject Recruitment}{66}{subsection.5.2.3}%
+\contentsline {subsection}{\numberline {5.2.4}Experimental Design}{66}{subsection.5.2.4}%
+\contentsline {subsubsection}{\numberline {5.2.4.1}Shiny Application}{68}{subsubsection.5.2.4.1}%
+\contentsline {subsubsection}{\numberline {5.2.4.2}Method of Analysis}{69}{subsubsection.5.2.4.2}%
+\contentsline {section}{\numberline {5.3}Results}{70}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Demographics}{70}{subsection.5.3.1}%
+\contentsline {subsection}{\numberline {5.3.2}Addressing Random Categorical Responses}{74}{subsection.5.3.2}%
+\contentsline {subsection}{\numberline {5.3.3}Analysis of Error}{74}{subsection.5.3.3}%
+\contentsline {subsection}{\numberline {5.3.4}Participant Interactions with Shiny Application}{76}{subsection.5.3.4}%
+\contentsline {section}{\numberline {5.4}Discussion and Conclusion}{76}{section.5.4}%
+\contentsline {section}{\numberline {5.5}Appendix}{79}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Generalized Additive Model}{83}{subsection.5.5.1}%
+\contentsline {section}{\numberline {5.6}References}{86}{section.5.6}%
+\contentsline {chapter}{\numberline {6}REFERENCES}{94}{chapter.6}%
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
+\providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 
