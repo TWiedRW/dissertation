@@ -1,0 +1,100 @@
+% Adapted from Emily's dissertation template
+\documentclass$if(classoption)$[$for(classoption)$$classoption$$sep$,$endfor$]$endif${$documentclass$}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{calc}
+\usepackage{graphicx}
+\usepackage[hidelinks]{hyperref}
+\usepackage{indentfirst}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2]
+ {\begin{thebibliography}{999}
+	\setlength{\itemsep}{#2\baselineskip}}
+ {\end{thebibliography}}
+\newcommand{\citeproctext}{}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+$endif$
+
+\title{$title$}
+\author{$author$}
+
+$if(nuthesis-frontmatter)$
+\AtBeginDocument{\frontmatter}
+$endif$
+$if(nuthesis-geometry)$
+\geometry{$nuthesis-geometry$}
+$endif$
+$if(nuthesis-raggedright)$
+\AtBeginDocument{\raggedright}
+$endif$
+\AtBeginDocument{%
+	\setlength{\parindent}{2em}%
+	\setlength{\parskip}{0pt}%
+}
+
+$if(major)$
+\major{$major$}
+$endif$
+$if(adviser)$
+\adviser{$adviser$}
+$endif$
+$if(adviser-abstract)$
+\adviserAbstract{$adviser-abstract$}
+$endif$
+$if(degree-month)$
+\degreemonth{$degree-month$}
+$endif$
+$if(degree-year)$
+\degreeyear{$degree-year$}
+$endif$
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+$abstract$
+\end{abstract}
+
+\begin{acknowledgments}
+$acknowledgments$
+\end{acknowledgments}
+
+\setcounter{tocdepth}{$if(toc-depth)$$toc-depth$$else$2$endif$}
+$if(toc)$
+\tableofcontents
+$endif$
+\listoffigures
+\listoftables
+
+\mainmatter
+
+$body$
+
+\backmatter
+
+$if(bibliography)$
+\bibliographystyle{abbrv}
+\bibliography{$for(bibliography)$$bibliography$$sep$, $endfor$}
+$endif$
+
+\end{document}

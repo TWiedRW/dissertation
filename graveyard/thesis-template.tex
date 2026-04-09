@@ -1,0 +1,59 @@
+% Adapted from Emily's dissertation template
+\documentclass[phd]{nuthesis}
+\usepackage{amssymb, amsmath, amsfonts}
+\usepackage{calc}
+
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+$for(header-includes)$
+$header-includes$
+$endfor$
+
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newenvironment{CSLReferences}[2]
+ {\begin{thebibliography}{999}
+	\setlength{\itemsep}{#2\baselineskip}}
+ {\end{thebibliography}}
+\newcommand{\citeproctext}{}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+$endif$
+
+\title{$title$}
+\author{$author$}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+$abstract$
+\end{abstract}
+
+\begin{acknowledgments}
+$acknowledgments$
+\end{acknowledgments}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\mainmatter
+
+$body$
+
+\backmatter
+
+$if(bibliography)$
+\bibliographystyle{abbrv}
+\bibliography{$for(bibliography)$$bibliography$$sep$, $endfor$}
+$endif$
+
+\end{document}
