@@ -8,10 +8,10 @@ book:
   chapters:
     - index.qmd
     #- ch0-lit-review/one-last-start.qmd #This one was put into index.qmd and is now defunct
-    #- ch1-bar3d/writeups/index.qmd
-    #- ch2-experiential-learning/manuscript/dissertation-copy.qmd
-    #- ch3-heat3d/writeups/7-dissertation/index.qmd
-    #- ch99-references.qmd
+    - ch1-bar3d/writeups/index.qmd
+    - ch2-experiential-learning/manuscript/dissertation-copy.qmd
+    - ch3-heat3d/writeups/7-dissertation/index.qmd
+    - ch99-references.qmd
 
 major: "Statistics"
 adviser: "Professor Susan VanderPlas"

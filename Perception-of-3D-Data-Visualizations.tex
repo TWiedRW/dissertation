@@ -5,6 +5,7 @@
 \usepackage{graphicx}
 \usepackage[hidelinks]{hyperref}
 \usepackage{indentfirst}
+\usepackage{longtable}
 \makeatletter
 \def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
 \def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
@@ -52,6 +53,36 @@
 \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.13,0.47,0.30}{#1}}
 \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.37,0.37,0.37}{\textit{#1}}}
 
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\makeatletter
+\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
+\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
+\definecolor{quarto-callout-color}{HTML}{909090}
+\definecolor{quarto-callout-note-color}{HTML}{0758E5}
+\definecolor{quarto-callout-important-color}{HTML}{CC1914}
+\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
+\definecolor{quarto-callout-tip-color}{HTML}{00A047}
+\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
+\definecolor{quarto-callout-color-frame}{HTML}{acacac}
+\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
+\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
+\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
+\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
+\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
+\makeatother
 \makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
@@ -168,14 +199,14 @@ the structure of data. They allow for a programmatic mapping of data
 into a ``picture'' that can be used to gather insight from the viewer
 (Tufte, 2001; Tukey, 1965; Wilkinson \& Wills, 2005). Since the early
 20th century, researchers have been exploring the question: what makes a
-good graph? (Cleveland \& McGill, 1984; Croxton \& Stein, 1932; Croxton
-\& Stryker, 1927; Vanderplas et al., 2020). Many attempts to answer this
-question have provided good recommendations, but are largely limited to
-the projection of graphs onto 2-dimensional (2D) surfaces. While this
-addresses many of the typical use cases for data visualizations, the
-process of creating modern statistical graphics in our 3-dimensional
-(3D) world is a relatively new phenomenon that does not have widespread
-usage (Huron et al., 2023).
+good graph? (Cleveland \& McGill, 1984a; Croxton \& Stein, 1932a;
+Croxton \& Stryker, 1927a; Vanderplas et al., 2020a). Many attempts to
+answer this question have provided good recommendations, but are largely
+limited to the projection of graphs onto 2-dimensional (2D) surfaces.
+While this addresses many of the typical use cases for data
+visualizations, the process of creating modern statistical graphics in
+our 3-dimensional (3D) world is a relatively new phenomenon that does
+not have widespread usage (Huron et al., 2023).
 
 Many charts exist within the confines of a 2D projected space due to the
 practicality of computer renderings. These computer-generated graphics
@@ -239,13 +270,14 @@ dataset (Horst et al., 2020) showing the construction of a plot using
 \end{figure}%
 
 While there have been many attempts to establish good data visualization
-practices (Tufte, 2001; Vanderplas et al., 2020), we do not know how
+practices (Tufte, 2001; Vanderplas et al., 2020a), we do not know how
 well these recommendations translate from 2D projections into our 3D
 world. The advent of 3D printing allows us to precisely construct the 3D
 charts that have been widely studied through their 2D representations
-(Barfield \& Robless, 1989; Croxton \& Stein, 1932; Zacks et al., 1998).
-With limited research on 3D-printed data manifestations, we explore some
-of the first empirical findings of physical 3D statistical graphics.
+(Barfield \& Robless, 1989a; Croxton \& Stein, 1932a; Zacks et al.,
+1998). With limited research on 3D-printed data manifestations, we
+explore some of the first empirical findings of physical 3D statistical
+graphics.
 
 \section{Overview of Physical 3D
 Visualizations}\label{overview-of-physical-3d-visualizations}
@@ -345,11 +377,11 @@ graphics, but lack the ability to easily export the graphics into files
 suitable for 3D printing.
 
 Numerous software programs can create digital renderings of 3D charts.
-Excel (Microsoft Corporation, 2025) has native support for creating
+Excel (Microsoft Corporation, 2018) has native support for creating
 charts with 3D depth cues, but requires add-ins to produce charts using
 3 axes. R (R Core Team, 2025) has several options for creating 3D charts
 that have data on 3 axes (Morgan-Wall, 2024; e.g., Murdoch \& Adler,
-2024; Sievert, 2020), but lacks support for creating depth charts. SAS
+2023; Sievert, 2020), but lacks support for creating depth charts. SAS
 9.4 (\emph{SAS 9.4 ODS Graphics}, n.d.) has options such as PROC GCHART
 for adding depth cues and PROC G3D for surface charts. Other popular
 software programs contain similar capabilities, such as JavaScript
@@ -358,7 +390,7 @@ libraries, MATLAB, and Python.
 While a number of tools exist for creating 3D data visualizations, the
 pipeline of getting these charts into files compatible with 3D printing
 is not widely automated. For example, R has some options using the
-\texttt{rgl} (Murdoch \& Adler, 2024) and \texttt{rayshader}
+\texttt{rgl} (Murdoch \& Adler, 2023) and \texttt{rayshader}
 (Morgan-Wall, 2024) packages, but both packages have limited tuning
 parameters for their output files. Another option is to use 3D software,
 such as OpenSCAD (Kintel, 2023), to manually create the charts, but
@@ -473,7 +505,7 @@ clutter to the data visualization. Other researchers (Stewart et al.,
 is fairly intuitive: why include additional noise when simpler
 alternatives exist?
 
-The seminal work of Cleveland \& McGill (1984) theorized that encoding
+The seminal work of Cleveland \& McGill (1984a) theorized that encoding
 information in volumes would provide worse numerical estimation than for
 encodings using positions, lengths, and areas. Their reasoning stems
 from Stevens' Power Law (Stevens, 1957), a psychophysics formulation
@@ -485,7 +517,7 @@ estimated \(\alpha\) to be approximately 1.1 for visual length and as
 low as 0.9 for visual area. While the 3D bar charts do not lose their 2D
 encodings, they do gain depth, and thus volume encodings. The effect of
 volume versus area comparisons was noted earlier by Croxton \& Stein
-(1932), where accuracy for ratio estimations was worse for cubes as
+(1932a), where accuracy for ratio estimations was worse for cubes as
 compared to bars and circles. When considering the dimensionality,
 comparisons of lower dimensions tend to be less distorted to human
 perception than higher dimensions.
@@ -533,7 +565,7 @@ chart. If the chart is visually appealing, it may increase the
 memorability by having those distinctive elements. A study of chart
 tasks was conducted by Levy et al. (1996), where it was suggested that
 3D charts are preferred for these reasons. Another study conducted by
-Fisher et al. (1997) suggested similar preferences. In each of these
+Fisher et al. (1997a) suggested similar preferences. In each of these
 studies, 2D charts were preferred for extracting information, and
 approximately half of participants preferred 3D charts for displaying
 information. Levy et al. (1996) speculated that the preference for 3D
@@ -668,7 +700,7 @@ the use of statistical graphics.
 
 \caption{\label{fig-fov}Multiple charts of the volcano dataset (R Core
 Team, 2024) rendered using the \texttt{rgl} package (Murdoch \& Adler,
-2024) in R. Each chart has a different field-of-view parameter, with the
+2023) in R. Each chart has a different field-of-view parameter, with the
 amount of distortion increasing as the field-of-view (FOV) increases.}
 
 \end{figure}%
@@ -680,7 +712,7 @@ studies comparing types of charts. In theory, charts where questions can
 be answered more quickly implies that the chart is better at
 communicating information. However, response time is a poor metric in
 situations of exploratory data analysis and long term interactions with
-complex graphics (Vanderplas et al., 2020). When a question of interest
+complex graphics (Vanderplas et al., 2020a). When a question of interest
 is known in advance, response time becomes a more viable metric.
 
 Depth cues from 3D bar charts tend to increase the amount of time
@@ -761,7 +793,7 @@ factor in deciding which chart type to use for displaying a dataset
 (Levy et al., 1996).
 
 When not tasked with estimating values, 3D bar charts tend to be more
-visually appealing (Fisher et al., 1997; Levy et al., 1996; Stewart et
+visually appealing (Fisher et al., 1997a; Levy et al., 1996; Stewart et
 al., 2009). This may be in part due to the forced illusion of depth
 which creates additional embellishments that would increase the
 impression and memorability of the chart, as seen by other types of
@@ -787,7 +819,7 @@ Practice}\label{heatmaps-in-research-and-practice}
 When creating charts for three or more variables, it becomes
 increasingly complex to visualize data (Grinstein \& Trutschl, 2001).
 One option is to map the additional variables to aesthetics using
-gestalt principles (Vanderplas et al., 2020), which includes making use
+gestalt principles (Vanderplas et al., 2020a), which includes making use
 of color, size, and/or shapes to denote information. However, not every
 aesthetic is compatible with every type of variable. Color can be used
 to map either continuous variables with gradient scales or categorical
@@ -991,7 +1023,7 @@ translation of color into the measurable height.}
 
 In 2D heatmaps, the choice of color palettes can influence the
 perception of numerical estimations (Liu \& Heer, 2018b; Molina Lopez et
-al., 2023; Zhang et al., 2023). Some gradient scales are easier to
+al., 2023; Zhang et al., 2023a). Some gradient scales are easier to
 extract values from than others, and other gradient scales are better at
 displaying contrasts between values. Additionally, the use of colors
 requires accessibility considerations for people with color
@@ -1074,15 +1106,15 @@ Graphics}\label{state-of-data-physicalization-in-3d-statistical-graphics}
 
 While numerous studies explored the dimensionality of statistical
 graphics in 2D renderings, only a few studies empirically evaluated
-their effectiveness in 3D environments. Jansen et al. (2013) conducted
+their effectiveness in 3D environments. Jansen et al. (2013a) conducted
 one of the first studies with physical 3D heatmaps and focused on task
 completion times for estimations, suggesting that physical 3D heatmaps
-were better for extracting information. Jansen et al. (2013) also
+were better for extracting information. Jansen et al. (2013a) also
 measured errors in estimations, but did not detect differences
 attributed to chart types. A series of experiments by Simon Stusak
 evaluated the memorability of digital and physical bar charts, which
 suggested that physical 3D bar charts may improve the ability to recall
-information (Stusak et al., 2015; Stusak et al., 2016). To date,
+information (Stusak et al., 2015a; Stusak et al., 2016). To date,
 physical statistical graphics is a niche area in data visualizations and
 is largely unexplored.
 
@@ -1092,10 +1124,10 @@ Effectiveness}\label{methods-for-evaluating-visualization-effectiveness}
 \subsection{What makes a good chart?}\label{what-makes-a-good-chart}
 
 There are many aspects for designing good data visualizations.
-Vanderplas et al. (2020) discussed various approaches to testing
+Vanderplas et al. (2020a) discussed various approaches to testing
 graphics, including numerical estimations, speed, and error rates. These
 metrics are fairly common to measure when comparing 2D and 3D charts
-(Cleveland \& McGill, 1984; Croxton \& Stein, 1932; Hughes, n.d.), but
+(Cleveland \& McGill, 1984a; Croxton \& Stein, 1932a; Hughes, n.d.), but
 they do not represent the full picture of what makes one type of chart
 better than another. As observed by Levy et al. (1996), the objectives
 of the chart can determine which type of chart should be used. While
@@ -1116,22 +1148,22 @@ completion times.
 estimations}\label{designing-studies-for-numerical-estimations}
 
 Many studies in graphical perception follow the same general format as
-Cleveland \& McGill (1984). Their work has been credited with over 2,500
-citations, which indicates the importance of testing features of
+Cleveland \& McGill (1984a). Their work has been credited with over
+2,500 citations, which indicates the importance of testing features of
 statistical graphics. Since 1984, the methods of analyzing and
 conducting studies on statistical graphics have evolved alongside
 statistical methods and technological progress (e.g., Hofmann et al.,
-2012; Vanderplas et al., 2020), but the structure of experimental
+2012; Vanderplas et al., 2020a), but the structure of experimental
 designs involving numerical estimations tends to remain similar. Tasks
 typically involve the comparison of two stimuli, where the question is
 ``how much bigger/smaller is one value compared to the other?'' The
 phrasing of this question needs careful consideration since mental
 subtractive processes are perceived differently from mental ratio
-processes (Hagerty \& Birnbaum, 1978; Veit, n.d.). Our work, like many
+processes (Hagerty \& Birnbaum, 1978; Veit, 1978). Our work, like many
 others in the InfoViz community, follow a procedure similar to Cleveland
-\& McGill (1984).
+\& McGill (1984a).
 
-Cleveland \& McGill (1984) asked participants two questions when making
+Cleveland \& McGill (1984a) asked participants two questions when making
 comparisons between two values on a chart: which of the two values was
 the smaller, and what percentage the smaller was of the larger. The
 first question clarified if the participants were looking at the values
@@ -1141,7 +1173,7 @@ estimation of \(A/B\), where \(A<B\). Accuracy was measured by
 trimmed averages when bootstrapping confidence intervals. This measure
 of error was used to assess which type of chart was better and provided
 recommendations for how to display information. A replication performed
-by Heer \& Bostock (2010) used Amazon's Mechanical Turk, which also
+by Heer \& Bostock (2010a) used Amazon's Mechanical Turk, which also
 found similar recommended chart features using a crowdsourcing platform.
 Many other studies tend to use similar types of questions when tasking
 participants to make numerical estimations.
@@ -1153,7 +1185,7 @@ Zacks et al. (1998) used the same ratios as Melody Carswell et al.
 (1991)). Examples of ratios used in several studies are provided in
 Figure~\ref{fig-ratios}. However, the magnitude of stimuli and ratios
 are suggested to be a contributing factor to the amount of error in
-estimations (Cleveland \& McGill, 1984; Zacks et al., 1998).
+estimations (Cleveland \& McGill, 1984a; Zacks et al., 1998).
 Additionally, participants may display an anchoring effect if the values
 are close to certain increments (e.g., estimating 55\% as 50\%). This
 suggests that the selection of ratios for estimation should cover a wide
@@ -1165,7 +1197,7 @@ accuracy. The magnitude of error is calculated as
 participant's estimate is from the target value. Removing the absolute
 value gives directional error, which allows for estimates to indicate
 bias of overestimation or underestimation. Since ratio estimations tend
-to be exponential (Veit, n.d.), it is also common to use the logarithmic
+to be exponential (Veit, 1978), it is also common to use the logarithmic
 transformation, \(\log|\text{Error}|\), to address non-normality for the
 magnitude of error. When reporting which chart type is more accurate in
 the extraction of information, the calculation of error needs to be
@@ -1175,10 +1207,10 @@ The type of estimation task can influence how participants respond with
 their estimates. Psychophysics has demonstrated that asking participants
 to estimate ratios elicits a different mental process than when asking
 participants to estimate differences (Birnbaum \& Mellers, 1978; Veit,
-n.d.). Estimations of ratios tend to fall on an exponential scale, where
+1978). Estimations of ratios tend to fall on an exponential scale, where
 larger differences in stimuli result in smaller differences of estimated
 ratios. This makes \(\log|\text{Error}|\) a natural choice for measuring
-ratio estimation tasks, similar to how Cleveland \& McGill (1984)
+ratio estimation tasks, similar to how Cleveland \& McGill (1984a)
 measured error. Measurements of differences tend to be estimated
 linearly, where estimated differences are the same regardless of
 differences in stimuli. Modern statistical methodology is able to
@@ -1196,7 +1228,7 @@ estimation task is consistent for each trial.
 }
 
 \subcaption[Ratios in prior graphical perception
-studies]{\label{fig-ratios-1}Cleveland \& McGill (1984)}
+studies]{\label{fig-ratios-1}Cleveland \& McGill (1984a)}
 
 \end{minipage}%
 %
@@ -1209,7 +1241,7 @@ studies]{\label{fig-ratios-1}Cleveland \& McGill (1984)}
 }
 
 \subcaption[Ratios in prior graphical perception
-studies]{\label{fig-ratios-2}Croxton \& Stein (1932)}
+studies]{\label{fig-ratios-2}Croxton \& Stein (1932a)}
 
 \end{minipage}%
 \newline
@@ -1269,7 +1301,7 @@ of physical charts.
 In this research, we explore the the physical dimensionality of 2D and
 3D statistical graphics. In Chapter 1, we explore the dimensionality of
 bar charts using a pilot study that partially replicates the work of
-Cleveland \& McGill (1984). We then expand the study in Chapter 2 as an
+Cleveland \& McGill (1984a). We then expand the study in Chapter 2 as an
 experiential learning project for an undergraduate introductory
 statistics course and collect information on how students reflected on
 various parts of the scientific process. Chapter 3 takes the ideas of
@@ -1277,6 +1309,2766 @@ Chapter 1 and Chapter 2 and replaces bar charts with heatmaps.
 Collectively, this research provides the initial large-scale studies
 into physical statistical graphics, resulting in recommendations for the
 creation and use of tangible data visualizations.
+
+\bookmarksetup{startatroot}
+
+\chapter{Evaluating Perceptual Judgements on 3D Printed Bar
+Charts}\label{evaluating-perceptual-judgements-on-3d-printed-bar-charts}
+
+\section{Introduction}\label{introduction}
+
+Good communication requires both that the information be transmitted
+correctly and that the intended recipient be able to decode and
+understand the transmitted information accurately. In order to
+communicate effectively, we must use graphical forms that accurately
+convey information relevant to the task in question. In many cases, this
+means we must understand how accurately people can read quantitative
+information off of charts. While accuracy is not the only quantity of
+interest in graphical investigations (Hullman et al., 2019), it is an
+important factor in assessing the utility of many different data
+graphics.
+
+The accuracy of graphical forms has been studied for almost a century
+(Croxton \& Stein, 1932b; Croxton \& Stryker, 1927b; Eells, 1926a; von
+Huhn, 1927); as new ways of representing information evolve, we must
+revisit old studies to determine whether these representations have the
+same limitations as previous versions. This is particularly true in
+areas like graphics which are affected by the immense technological
+innovation in hardware and software which has taken place since the
+early 1990s.
+
+\subsection{Elementary Graphical
+Tasks}\label{elementary-graphical-tasks}
+
+Cleveland \& McGill (1984b) established the comparative accuracy of
+different ``elementary perceptual tasks'' (EPTs). Elementary Perceptual
+Tasks, according to these experiments, include assessing graphical
+elements such as position along a common scale, length, angle, and
+volume, and estimating the corresponding numerical value of these
+representations. The study relied entirely on estimation accuracy, which
+may not always be relevant when extracting information from graphs. For
+example, estimation is less relevant when ordering values by size. As a
+result of the Cleveland and McGill (1984b) study, it is possible to
+assemble an ordering of perceptual accuracy for the elements of length,
+position, and angle. Heer \& Bostock (2010b) replicated some parts of
+Cleveland \& McGill (1984b) in an online setting using Mechanical Turk,
+a platform for crowdsourcing human tasks that has been used for (among
+other things) assembling machine learning datasets. This replication
+study largely validated the results of the original study while
+demonstrating the utility of the Mechanical Turk platform for graphical
+testing.
+
+The first experiment in Cleveland \& McGill (1984b) (the position-length
+experiment), used five types of bar charts: two types of grouped bar
+charts and three types of stacked bar charts. Each chart had two bars
+marked for comparison; participants were asked to determine which bar
+was smaller and give the perceived ratio of the smaller bar to the
+larger bar. Figure~\ref{fig-bar-types} shows the two types of grouped
+bar charts. We are primarily interested in the grouped bar charts (in
+part because 3D printing is not yet inexpensive enough to make
+moderate-scale stacked bar chart experiments viable), which consisted of
+two comparison bars which were either adjacent or in separate groups.
+These grouped bar charts will be referenced as adjacent and separated
+graph types in this paper, respectively.
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-1.pdf}
+
+}
+
+\subcaption[Adjacent versus separated grouped bar
+comparisons]{\label{fig-bar-types-1}Type 1}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-bar-types-2.pdf}
+
+}
+
+\subcaption[Adjacent versus separated grouped bar
+comparisons]{\label{fig-bar-types-2}Type 3}
+
+\end{minipage}%
+
+\caption{\label{fig-bar-types}Cleveland \& McGill (1984b) used two
+different types of grouped bar charts: comparisons between adjacent
+bars, and comparisons between separated bars. It is widely acknowledged
+that comparisons between separated bars (Type 3 comparisons, in
+Cleveland \& McGill's terminology) are more difficult and error-prone.}
+
+\end{figure}%
+
+\subsection{3D Graphical Perception}\label{d-graphical-perception}
+
+Chart perception is affected by the human visual system's implicit
+assumption that visual stimuli are three-dimensional; after all, most of
+the visual input we process does come from a three-dimensional world,
+but charts are artificial. In addition, these artificial stimuli are
+typically created and presented in two dimensions. The artificial scenes
+we create for data visualization have been documented to cause problems:
+for instance, the line-width illusion (Day \& Stecher, 1991; Hofmann \&
+Vendettuoli, 2013; VanderPlas \& Hofmann, 2015) has been attributed to
+implicit 3D perception of 2D stimuli and can affect perception of error
+bands, candlestick plots, hammock plots, and Sankey diagrams. The line
+width illusion causes lines or error bands which are actually the same
+length to appear shorter at points with large amounts of curvature; a
+simple example of the classic sine illusion (one version of the line
+width illusion) is shown in Figure~\ref{fig-sine-illusion}. While this
+illusion is problematic in two dimensions, when the depth cues are
+actually present in a three-dimensional situation, the same implicit
+visual heuristics contribute to accurate size perception (as in the
+middle panel of Figure~\ref{fig-sine-illusion}). Thus, there is reason
+to think that perceptual accuracy may be dependent on the realism of the
+visual display relative to the training of the visual system and the
+heuristics which are activated in order to make sense of the display.
+
+\begin{figure}
+
+\centering{
+
+\centering{
+
+\includegraphics[width=0.33\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-1.pdf}
+
+}
+
+\subcaption[Sine illusion and 3D depth heuristic
+effects]{\label{fig-sine-illusion-1}Sine Illusion}
+
+\centering{
+
+\includegraphics[width=0.33\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-2.pdf}
+
+}
+
+\subcaption[Sine illusion and 3D depth heuristic
+effects]{\label{fig-sine-illusion-2}3D surface with similar features}
+
+\centering{
+
+\includegraphics[width=0.33\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-sine-illusion-3.pdf}
+
+}
+
+\subcaption[Sine illusion and 3D depth heuristic
+effects]{\label{fig-sine-illusion-3}Perceived vs.~actual length}
+
+}
+
+\caption{\label{fig-sine-illusion}An illustration of the sine illusion
+(VanderPlas \& Hofmann, 2015), also known as the line-width illusion.
+All vertical lines are the same length, but the lines in the middle of
+the curve appear to be much shorter. The illusion results when implicit
+perceptual corrections useful for perceiving the size of objects with
+depth are applied to 2D stimuli with no actual depth. As 3D heuristics
+occasionally cause inaccurate communication when applied to 2D objects,
+it is reasonable to think that there might be some situations where
+charts making use of a realistic third dimension might be perceived more
+accurately than their 2D equivalents.}
+
+\end{figure}%
+
+The use of 3D graphics have been explored in multiple studies, with
+mixed results. Fisher et al. (1997b) explored user preference for 2D or
+3D charts and found that subjects tended to prefer simpler 2D graphs
+when tasked with extracting information. Barfield \& Robless (1989b)
+compared 2D and 3D graphs presented on paper and on computers, showing
+that the accuracy of subject answers depended on their skill level:
+novice subjects were more accurate with 2D paper graphs, while
+experienced managers were more accurate with 3D computer graphs. For
+both experience levels, participants were more confident in their
+answers when using 2D graphs. There are instances where 2D graphs
+perform better than 3D graphs, but there are times where 3D graphs may
+provide a more natural way to encode information, at least in theory.
+For instance, when X and Y are used to represent spatial dimensions, it
+may be preferable to use a 3D chart to convey numerical information
+instead of using color, which is perceived much less accurately. Brath
+(2014) highlights the intrinsic attributes of 3D graphs and the benefits
+when used appropriately with other 3D elements such as lighting and
+correct portrayal of data attributes. Nevertheless, it is extremely
+common in visualization literature to recommend that 3D plots be avoided
+at all costs (Morgan-Wall, 2019; Vanderplas et al., 2020b; Wilke, 2020).
+
+There is thus good reason to be wary of the use of three dimensions
+where only two are necessary to convey data (Huff, 1954). However, the
+situation is different now than it was in 1984 when Cleveland \& McGill
+published their seminal work; it has even changed since Heer's
+replication study (2010b) in 2010.\\
+Computer graphics and rendering technology have developed quickly, along
+with the hardware necessary to support these software developments. As a
+result, we have much more natural virtual rendering of 3D objects, and
+we can also print graphics in three dimensions using mass-market,
+relatively inexpensive 3D printers, moving artificial charts into a more
+natural, physical setting. As a result, it is reasonable to reconsider
+the use of 3D charts, not only because of new technological
+developments, but also because 3D printed charts could eventually
+provide the opportunity to make data graphics accessible to those with
+limited or absent vision (Fleet, 2023).
+
+In this paper, we discuss a study designed to examine Cleveland \&
+McGill's experiments on grouped bar charts using modern graphics in two
+and three dimensions. This study lays the groundwork for additional
+empirical studies on the use of 3D graphics, rendered and 3D printed,
+for visualizing complex data. In order to explore perception of fully 3D
+graphics, it is prudent to start with the simplest possible 3D graphic:
+one in which the third dimension is not necessary, so that we can easily
+compare to two-dimensional representations without loss of information.
+In the next section we provide details about design and execution of our
+experiment, including the process of replicating stimuli from Cleveland
+\& McGill (1984b) in order to create 2D, 3D projected, 3D rendered, and
+3D printed bar graphs. The next section presents the results, and we
+conclude the paper by discussing this experiment in the context of
+existing work on the perception of 2D and 3D graphical elements.
+
+\section{Methods}\label{methods}
+
+Our study is designed to replicate and expand upon the position-length
+experiment from Cleveland \& McGill as closely as possible, with the
+hope of being able to integrate this study with previously reported
+results in a consistent manner. In this section, we discuss the
+replication process and the design of our version of this experiment.
+
+\subsection{Replicating Cleveland and
+McGill}\label{replicating-cleveland-and-mcgill}
+
+The first step of replicating the position-length experiment was to
+determine the heights of the bars that participants use for comparisons.
+These values for the bar heights are linear on a log scale and are given
+by
+
+\[
+s_i=10\cdot 10^{(i-1)/12}, \qquad i=1,...,10
+\]
+
+Each graph presents two bars from the values given above where the
+participants are asked to judge the ratio of the smaller bar to the
+larger bar. The ratio of bars used by Cleveland and McGill were 17.8,
+26.1, 38.3, 46.4 (twice), 56.2, 68.1 (twice), and 82.5 (twice). The
+exact numeric comparisons were not disclosed, but the comparison values
+used in our study were subjected to the constraints of having the same
+ratio values and that no value was used more than twice.
+
+\begin{table}
+
+\caption{Values used in the experiment to make ratio comparisons, sorted by ratio. The ID label corresponds to the file reference number.}
+\centering
+\begin{tabular}[t]{lrrrrrrr}
+\toprule
+Bar & ID: 01 & ID: 06 & ID: 05 & ID: 04 & ID: 02 & ID: 03 & ID: 09\\
+\midrule
+Smaller & 10.0 & 14.7 & 14.7 & 12.1 & 10.0 & 12.1 & 26.1\\
+Larger & 56.2 & 56.2 & 38.3 & 26.1 & 17.8 & 17.8 & 31.6\\
+Ratio (\%) & 17.8 & 26.2 & 38.4 & 46.4 & 56.2 & 68.0 & 82.6\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+In each graph, there are two sets of five bars each, and two of the bars
+are marked for identification with a circle and triangle, as in
+Figure~\ref{fig-bar-types}. Cleveland and McGill did not specify the
+random process for the heights of the eight other bars, so we used a
+scaled Beta distribution to provide random structure around our fixed
+values. Code to reproduce the data generation process, data underlying
+the plots used in this study, the rendered plots and STL files,
+anonymized user data, and analysis code can found be at
+\url{https://github.com/TWiedRW/2023-JDS-3dcharts}.
+
+\subsection{Stimuli Construction}\label{stimuli-construction}
+
+The graphs share a common layout across all formats, where two groupings
+of five bars are identified by ``A'' and ``B'', respectively, and
+circles and triangles are used to identify the bars participants should
+compare. Example graphs are shown in Figure~\ref{fig-plotTypes}. There
+are some graphical elements that cannot be easily portrayed via 3D
+printing. For this reason, all graph types do not have axes, grid lines,
+or floating titles.
+
+\begin{figure}
+
+\begin{minipage}{0.33\linewidth}
+
+\centering{
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{ch1-bar3d/writeups/_images/Type1-Rep01.png}
+
+}
+
+\subcaption[2D, 3D digital, and 3D-printed chart
+types]{\label{fig-plotTypes-1}2D bar chart}
+
+\end{minipage}%
+%
+\begin{minipage}{0.33\linewidth}
+
+\centering{
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{ch1-bar3d/writeups/_images/RenderedChart.png}
+
+}
+
+\subcaption[2D, 3D digital, and 3D-printed chart
+types]{\label{fig-plotTypes-2}3D digital bar chart}
+
+\end{minipage}%
+%
+\begin{minipage}{0.33\linewidth}
+
+\centering{
+
+\includegraphics[width=0.7\textwidth,height=\textheight]{ch1-bar3d/writeups/_images/Kit_of_charts.png}
+
+}
+
+\subcaption[2D, 3D digital, and 3D-printed chart
+types]{\label{fig-plotTypes-3}3D-printed bar chart}
+
+\end{minipage}%
+
+\caption{\label{fig-plotTypes}Two dimensional, 3D digital rendering, and
+3D-printed charts used in this study.}
+
+\end{figure}%
+
+The ggplot2 (Wickham, 2016) package was utilized to create the 2D bar
+charts. The scale axis was removed, leaving only the bars and a bar
+grouping identifier. The bars used for comparisons had the identifying
+mark at a height of 5 out of 100 for the 2D plots, and the 3D plots had
+the identifying marks on top of the bars.
+
+The 3D renderings and 3D printed charts were both created using OpenSCAD
+(Kintel, 2023), which creates STL files from markup describing the
+object's geometric composition. Charts were composed of a platform, with
+raised text labels centered in front of the A and B groups of bars. Bars
+were created by inserting bar heights into the OpenSCAD template using
+R, and then raised circle and triangle markers were positioned on top of
+the bars to be compared to provide a tactile and visual indicator. In
+addition, an ID code was engraved into the bottom of the platform to
+uniquely identify each object; this allowed the researchers to ensure
+that each kit contained the correct charts throughout the experiment
+while minimizing the risk of stickers or other identifiers becoming
+detached from the charts. As printed, the base of each chart was 13cm x
+3cm x 1cm, with the highest bar rising 9.5cm above the chart base.
+Raised letters and shapes were 2mm above the base or bar, respectively.
+The color of the filament used to print each chart corresponded to the
+estimation ratio (though this was not obvious to participants), allowing
+the researchers to quickly determine that a kit of 3D charts contained
+no ratio duplication. Colors were randomly assigned to ratios so that
+participants could not gain information about the ratio from any
+perceived ordering of the colors.
+
+Digital renderings of the generated STL files were created using RGL
+(Murdoch \& Adler, 2023), which integrates into Shiny (Chang et al.,
+2023) using the WebGL (Mozilla Foundation, 2023) extension. The RGL
+rendering of the STL file was initially angled to correspond to the
+perspective of default 3D bar charts present in Microsoft Excel, but in
+the WebGL interactive environment, participants could rotate the charts
+as they pleased to create a useful estimate of the bar ratio. Rendered
+charts were colored to correspond with the filament color used to print
+the physical chart for consistency. The default \texttt{rgl} lighting
+was replaced with three lights located in fixed positions around the
+rendered figure. The lights were positioned so that one was behind the
+rendered figure, another in front of the figure, and one light below the
+figure. This arrangement provided a consistent visual experience and
+minimized shadows that prevented visual estimation of the bars.
+
+\subsection{Experiment Design}\label{experiment-design}
+
+A diagram of the experimental design is provided in
+Figure~\ref{fig-studyDesign}. The study is set up as a modified
+randomized incomplete block design, comprised of 3 blocks (presentation
+mode) and 7 bar ratios (5 are selected for each participant). At each
+combination of ratio and presentation type, the comparison type,
+adjacent (Type 1) or separated (Type 3), is randomly selected. This
+process was used to create 21 kits of 5 3D printed charts and 10 virtual
+charts. There is thus a slight deviation from a completely randomized
+incomplete block design, in that all possible combinations of ratios,
+presentation modes, and comparison types are not present in our design.
+However, this approach provided the best experimental design given the
+constraints of managing physical stimuli; it took nearly a month of
+continuous 3D printing to create all of the charts for the kits that we
+assembled. A dataset containing the kit composition breakdown is
+available in the github repository for this project.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch1-bar3d/writeups/_images/design.pdf}
+
+}
+
+\caption[Study design for bar chart perception
+experiment]{\label{fig-studyDesign}A graphical representation of the
+study design. Only five of the seven ratios were used in each kit; at
+least one of the smallest or largest ratios were included along with 4
+other charts; each selected ratio was displayed in all 3 mediums. For
+each medium \(\times\) ratio combination, the comparison type (separated
+or adjacent) was randomly determined. A total of 21 kits of 3D printed
+charts were created to include all combinations of the five ratios.}
+
+\end{figure}%
+
+\subsection{Participant Recruitment}\label{participant-recruitment}
+
+One interesting facet of Cleveland \& McGill (1984b) is the participant
+recruitment methodology: ``For each experiment the subjects fell into
+two categories: (1) a group of females, mostly housewives, without
+substantial technical experience; (2) a mixture of males and females
+with substantial technical training and working in technical jobs. Most
+of the subjects in the position-length experiment participated in the
+position-angle experiment; in all cases repeat subjects judged the
+position-angle graphs first.'' It seems likely that the authors
+recruited individuals within their respective departments as well as
+their wives. In order to replicate this atypical participant recruitment
+method in the modern era, members of the UNL Statistics department and
+their spouses, partners, and roommates were asked to participate in our
+study. This replicates the spirit of the recruitment method without the
+implicit assumptions that graduate students and professors are male,
+heterosexual, and have unemployed spouses. A total of 38 participants
+completed our study; demographics are shown in
+Figure~\ref{fig-demographics}.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-demographics-1.pdf}
+
+}
+
+\caption[Participant demographics]{\label{fig-demographics}Demographic
+characteristics of participants in the study.}
+
+\end{figure}%
+
+While the results of any sample with recruitment methodology like this
+are not generalizable to the public, running our initial study on a
+comparable population to that of the initial study serves a purpose:
+other replications, such as Heer \& Bostock (2010b), used online samples
+of paid participants, who likely have less experience using charts and
+graphics and making numerical estimations than those in a statistics
+department (and individuals who cohabitate with them). We have every
+intention of running this experiment in other populations, but the
+convenience of online sampling is not compatible with physical objects
+such as our 3D printed charts, so we will have to recruit in-person
+participants. Thus, an initial study in a population comparable to
+Cleveland \& McGill (1984b) is a reasonable first step into testing 3D
+charts.
+
+\subsection{Data Collection}\label{data-collection}
+
+A Shiny applet was used for data collection, along with the provided kit
+of 3D printed charts. Participants provided informed consent through the
+applet, and then were asked for demographic information (age, gender,
+education level). Then, participants were shown a ``practice'' page
+which allowed them to experiment with the data collection interface and
+practice estimating the ratio between the bars, as shown in
+Figure~\ref{fig-practice}. This practice interface did not provide any
+numeric feedback as to participant correctness, but was merely intended
+to familiarize the participants with the questions which would be asked
+as well as the process of estimating the ratio between the two bars.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{ch1-bar3d/writeups/_images/03-Practice-2.png}
+
+}
+
+\caption[Shiny application practice
+screen]{\label{fig-practice}Screenshot of Shiny application practice
+screen. Three 2D bar charts with different ratios were provided, along
+with sliders indicating the correct proportion. Participants could
+practice with the sliders and preview the questions that would be asked
+as part of the task.}
+
+\end{figure}%
+
+After the practice screen, participants were asked to provide the kit
+ID. Participants were also instructed that when indicated, they should
+choose a 3D chart from the kit and select the ID code of the chart
+(inscribed on the bottom) from the drop-down menu before completing the
+estimation task. Participants were also instructed to make quick
+judgements for each graph and not to measure or estimate ratios using
+physical objects.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=0.8\textwidth,height=\textheight]{ch1-bar3d/writeups/_images/05-Experiment-05-filled-in.png}
+
+}
+
+\caption[3D rendered chart task
+interface]{\label{fig-experiment3dRender}Screenshot of the applet
+collecting data for a 3D rendered chart task. Participants were asked to
+select which bar (circle or triangle) was smaller, and then to estimate
+the ratio of the smaller bar to the larger bar.}
+
+\end{figure}%
+
+Each graph (or prompt, in the case of 3D printed charts) in the applet
+had two corresponding questions for participants to answer: first,
+participants were to identify the smaller bar by shape, and then,
+participants were to estimate the ratio of the size of the smaller bar
+to the size of the larger bar, as shown in
+Figure~\ref{fig-experiment3dRender}. It should be noted that we chose to
+use a slider without numeric identifiers or tick marks for entering
+ratio estimates - in part, this was intended to alleviate rounding
+effects which occur when participants enter numbers on their own or get
+numeric feedback from slider entries (Maineri et al., 2021; Ruud et al.,
+2014). Another benefit of this modification is that it should reduce
+participants' cognitive load, allowing them to focus on the ratio
+between bars rather than the numerical translation process. This differs
+from Cleveland \& McGill (1984b), but maintains the spirit of the study
+while using methods which were not available for data entry at the time.
+
+\section{Results}\label{results}
+
+The participants provided a total of 495 responses. While each
+participant was provided with 15 trials, 6 participants partially
+completed the experiment; one participant did not advance beyond the
+demographic page. All responses that incorrectly identified the smaller
+bar (\(n = 18\)) were removed from the study before analysis; this
+serves as a basic attention check and leaves 477 valid responses. In
+addition, one response was removed because the participant did not enter
+a valid ID for a 3D printed chart.
+
+\subsection{Midmeans of Log Absolute
+Errors}\label{midmeans-of-log-absolute-errors}
+
+Cleveland \& McGill (1984b) used
+\[\log_2(|\text{Judged Percent} - \text{True Percent}|+1/8)\] to measure
+accuracy of their participant's responses. In their study, log base 2
+seemed appropriate due to ``average relative errors changing by factors
+less than 10.'' They also added 1/8 to prevent distortions when the
+errors were close to zero. Heer \& Bostock (2010b) followed the same
+analysis method, replicating many (but not all) of the results presented
+in the original paper.
+
+Figure~\ref{fig-midmeans-log-errors} shows the midmeans of the log
+absolute errors compared to the true ratio of the bars for each graph
+type and comparison type. The results suggest that the log absolute
+errors increase for greater differences between the smaller and larger
+bars, but are consistent across the graph types.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch1-bar3d/writeups/index_files/figure-pdf/fig-midmeans-log-errors-1.pdf}
+
+}
+
+\caption[Midmeans of log absolute error by chart
+type]{\label{fig-midmeans-log-errors}Midmeans and observed values of log
+absolute errors for the true ratio of bars. Summary lines are computed
+from raw data using a loess smooth.}
+
+\end{figure}%
+
+This is somewhat different than the results in Cleveland \& McGill
+(1984b) and Heer \& Bostock (2010b); in both cases the midmean log
+absolute errors increased until about 55\% of the true proportional
+difference and then decreased. It is possible that this difference is
+due to the fact that we did not require an explicit numerical estimate
+of the ratio but instead asked participants to indicate the ratio on a
+slider (which is essentially a number line). It is possible that this
+change explains the lack of a difference between chart modalities we
+see, but there are other potential explanations as well. One interesting
+facet of this data is that there is a consistent reduction in log error
+when the true proportional difference is near 50\%. This may be because
+of implicit anchoring - we can typically bisect a span relatively
+accurately, which means that it might be expected that when the true
+proportion is near 50\%, we would both notice that and be able to
+accurately transfer that information to the slider. This pattern is more
+noticable in separated (Type 3) comparisons, which also makes sense - as
+these comparisons are known to be less accurate, a locally minimal error
+near 50\% with increased error relative to adjacent (Type 1) comparisons
+could easily explain the exaggerated trends we see in
+Figure~\ref{fig-midmeans-log-errors}.
+
+\subsection{Generalized Additive
+Model}\label{generalized-additive-model}
+
+In addition to replicating the (primarily graphical) analysis of
+participant errors, we also took a more statistical approach and fitted
+a generalized additive model (Hastie, 2017) that accounts for
+participant variation as well as the effect of comparison type, graph
+type, and ratio.
+
+We define the following effects:
+
+\begin{itemize}
+\item
+  \(R\), the numerical ratio of A/B where A is the length of the smaller
+  bar and B is the length of the larger bar. There are \(i=1, ..., 7\)
+  levels of \(R\) in this study, but we will treat \(R\) as a numeric
+  variable throughout this model.
+\item
+  \(D_j\), the display mode, where \(j = 1, 2, 3\) correspond to 2D, 3D
+  rendered, and 3D printed charts respectively.
+\item
+  \(T_k\), the type of comparison, where \(k = 1, 2\) correspond to
+  adjacent (Type 1) and separated (Type 3) comparisons, respectively
+\item
+  \(P_l\), a random effect for participant which describes the overall
+  skill of the participant at visual estimation of ratios.
+\end{itemize}
+
+Generalized additive models depend on a smooth function
+\(s(): \mathbb{R}\rightarrow\mathbb{R}\) which is applied to the
+independent variables; by default, the smooth function is created using
+thin-plate regression splines. In place of an interaction term when a
+categorical variable is involved, separate smooths are fit for each
+level of the categorical variable; we will indicate this by subscripting
+the smooth function with the categorical variable index, so that
+\(s^T_1(R)\) indicates the smooth over numerical variable \(R\) for the
+1st level of the categorical variable T, that is, the smooth function
+over \(R\) for adjacent comparisons.
+
+Then the formal statistical model is as follows:
+
+\[y= s^D_j(R) + s^T_k(R) + D_j + T_k + P_l + \epsilon\]
+
+\noindent where
+
+\begin{itemize}
+\item
+  \(y=\log_2(|\text{Judged Percent}_{ijkl} - \text{True Percent}_{ij}|+1/8)\)
+\item
+  \(s^D_j(R)\) is a thin-plate spline function for R accounting for the
+  display type
+\item
+  \(s^T_k(R)\) is a thin-plate spline function for R accounting for the
+  comparison type
+\item
+  \(D_j\) is the fixed effect of the display type (e.g.~an intercept
+  term)
+\item
+  \(T_k\) is the fixed effect of the \(k^{th}\) comparison type
+\item
+  \(P_l\) is the random effect of the \(l^{th}\) participant
+\item
+  \(\epsilon\) is the random error
+\end{itemize}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Parametric coefficients in gam model.}\tabularnewline
+\toprule\noalign{}
+& Estimate & Std. Error & t value &
+Pr(\textgreater\textbar t\textbar) \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+& Estimate & Std. Error & t value &
+Pr(\textgreater\textbar t\textbar) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+(Intercept) & 2.6862 & 0.1780 & 15.0931 & 0.0000 \\
+plot3dDigital & 0.1357 & 0.1409 & 0.9626 & 0.3363 \\
+plot3dPrint & -0.0563 & 0.1415 & -0.3980 & 0.6908 \\
+typeAdjacent & 0.0968 & 0.1197 & 0.8088 & 0.4191 \\
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Approximate significance of smooth terms in gam
+model.}\tabularnewline
+\toprule\noalign{}
+Smooth & edf & Ref.df & F & p-value \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Smooth & edf & Ref.df & F & p-value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+s(Ratio):plot2dDigital & 1.0005 & 1.0009 & 2.4500 & 0.1183 \\
+s(Ratio):plot3dDigital & 1.7934 & 2.2056 & 0.7146 & 0.4521 \\
+s(Ratio):plot3dPrint & 0.0003 & 0.0005 & 0.0004 & 0.9996 \\
+s(Ratio):typeSeparated & 4.2371 & 4.7338 & 4.2693 & 0.0018 \\
+s(Ratio):typeAdjacent & 1.0007 & 1.0014 & 0.0059 & 0.9429 \\
+s(participant) & 27.0449 & 34.0000 & 4.7272 & 0.0000 \\
+\end{longtable}
+
+A generalized additive model with random effects for subject was fit
+using the \texttt{mgcv} package (Wood, 2003, 2004; Wood, 2017a). Spline
+terms by comparison type and display type were included for the ratio
+variable, to account for indications of nonlinearity from
+Figure~\ref{fig-midmeans-log-errors}; cumulative predictions for fixed
+effects are shown in Figure~\ref{fig-gam-pred-chart}. It is clear that
+there are differences between the errors for separated comparisons and
+adjacent comparisons; adjacent comparisons seem to have roughly similar
+errors for all ratio values, while separated comparisons seem to have
+lower errors for points near 0, .5, and 1, with higher errors as the
+distance increases from one of these anchor points; this effect has been
+explored in Hollands \& Dyre (2000). Residuals from the model indicate
+that there is some left skew in the tails, but this is not extreme; code
+for this analysis can be found in the supplemental materials on GitHub.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-gam-pred-chart-1.pdf}
+
+}
+
+\caption[GAM predictions by ratio and comparison
+type]{\label{fig-gam-pred-chart}Predictions with standard errors for
+fixed effects in a generalized additive model with splines for ratio by
+comparison and ratio by display method. It is clear that the separated
+comparisons are easier to estimate when small, right around 50\%, or
+large, and harder to estimate between these points. What is interesting
+is that no such trend is present for adjacent comparisons.}
+
+\end{figure}%
+
+While we were initially concerned that this effect was due to the slider
+initial setting of 0.5, we did examine this hypothesis; only 42
+responses (8.81\%) had slider values at exactly 0.5, and all but 6 were
+for ratios on either side of 0.5 (.464, .562). This suggests that while
+a few participants did take the strategy of using the default value for
+the slider, they did so strategically, not moving the slider only when
+the ratio was perceived to be sufficiently close to 0.5. In addition,
+trials where participants utilized this strategy were evenly split
+between separated and adjacent comparisons, suggesting that this
+anchoring process is not the reason for the difference in spline fits
+for the different comparison types. It seems more likely that this
+effect is at least partially due instead to lower errors around the
+extremes of the ratio spectrum. A follow-up experiment with more ratios
+and in particular ratio values closer to suspected anchor points could
+explore this relationship in more depth - with only 7 different ratios,
+it is difficult to do more than note the appearance of an effect and
+speculate about the anchor points, particularly given that we have used
+spline models with 5 knots to fit the smooth.
+
+Heer \& Bostock (2010b) provided a zip file containing data and code for
+their paper, but this link has not been updated and is no longer active,
+so it is not possible to fit a similar model to their data for
+comparison purposes; if we could get access to their data, this would
+allow for investigating whether the differences identified in our model
+were an artifact of the measurement method (e.g.~slider vs.~numerical
+entry) or if this effect was present in previous studies and can now be
+identified because of more advanced statistical modeling techniques.
+
+\subsection{Interactivity with 3D Rendered
+Charts}\label{interactivity-with-3d-rendered-charts}
+
+When 3D rendered plots were shown, we recorded the number of user
+interactions (clicks, rotations) with the WebGL plot.
+Figure~\ref{fig-clicks} shows the distribution of number of clicks over
+all 3D rendered trials in the experiment, as well as the number of
+clicks relative to the accuracy measure
+\(\log_2(|\text{Judged Percent} - \text{True Percent}|+1/8)\). It does
+not appear that participants who interacted with the WebGL rendering
+were more accurate than their peers who did not.
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-1.pdf}
+
+}
+
+\subcaption[WebGL interaction counts versus estimation
+error]{\label{fig-clicks-1}Histogram of clicks}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch1-bar3d/writeups/index_files/figure-pdf/fig-clicks-2.pdf}
+
+}
+
+\subcaption[WebGL interaction counts versus estimation
+error]{\label{fig-clicks-2}Clicks vs.~log error}
+
+\end{minipage}%
+
+\caption{\label{fig-clicks}Participant clicks on the WebGL interface
+(left) in order to interact with the plot. Most participants did not
+interact with the WebGL interface, perhaps because they did not realize
+that interacting was an option, but some participants utilized the
+interactivity heavily. (Right) Participant interactivity was not
+associated with increased accuracy.}
+
+\end{figure}%
+
+\section{Discussion and Future Work}\label{discussion-and-future-work}
+
+Previous work in 3D graphics would suggest that the errors for the 3D
+graphs would be larger than the errors for the 2D graphs. While we did
+not find any significant results indicating that 3D graphs are read less
+accurately, there are two possibilities that might account for this
+discrepancy.
+
+The first potential explanation is that this study is underpowered - the
+effect size is small, and our 38 participants were insufficient; the
+original study included 51 participants, which is slightly larger.
+However, we should note that the analysis methods used in Heer \&
+Bostock (2010b) and Cleveland \& McGill (1984b) do not provide numerical
+tests of statistical significance, instead defaulting to graphical
+displays which include confidence intervals.
+
+The second possibility is more interesting: we examined 3D charts using
+rendered 3D graphs and 3D printed charts; both of these options allow
+for participants to interact with the chart, rotating it, and generally
+perceiving it as one might perceive any other 3D, real, object. This is
+a far cry from the 3D perspective charts in the original study, which
+have a fixed angle and perspective and are thus not equivalent to our 3D
+charts. Future studies should include an additional fixed 3D perspective
+bar chart, which will at least enable us to examine whether modern 3D
+rendering environments allow for more accurate conclusions than fixed 3D
+perspectives. Future iterations of this study will include
+``traditional'' 3D graphs created by Microsoft Excel (that is, graphs
+with a fixed 3D perspective rendered in 2D). This option will allow us
+to examine fixed perspective 3D plots compared to 3D renderings and 2D
+plots; it will also enable online data collection in addition to the
+in-person data collection used in this experiment.
+
+Another interesting aspect of our study is that the method used to
+record participant estimates is different from the method used in the
+original study as well as Heer \& Bostock's replication study. A method
+similar to our slider input, marking position on a line, was used in
+Spence (1990), but Spence asked participants to estimate \(A/(A+B)\),
+where we asked participants to estimate \(A/B\); thus, our results are
+still not directly comparable to previous studies. We expect that the
+specific ratio estimated would also have an effect on observed
+participant errors.
+
+The slider method for input of ratio estimates should be easier for
+participants, as it does not require explicit transformation to the
+numerical domain. What is clear is that it would be beneficial to assess
+the impact of the measurement method on participant errors directly, so
+that the results of these different studies might be explained and
+interpreted with regard both to the stimuli used and the measurement
+method employed in the experiment. Future iterations of this experiment
+will likely address this estimation difference; such modifications in
+experimental design are relatively straightforward in Shiny and will
+provide useful insight into the design of future experiments evaluating
+the perception of statistical graphics.
+
+\subsection{Supplemental Material}\label{supplemental-material}
+
+Stimuli, code, and data for this experiment are provided at
+\url{https://github.com/TWiedRW/2023-JDS-3dcharts}.
+
+\bookmarksetup{startatroot}
+
+\chapter{Experiential Learning
+(PLACEHOLDER)}\label{experiential-learning-placeholder}
+
+\section{Introduction}\label{introduction-1}
+
+The education of statistics emphasizes the use of real data and its
+application in answering research questions. Students in introductory
+statistics courses are mainly exposed to elementary methods and textbook
+examples that demonstrate the application of these methods, which is
+used, in part, because of the emphasis on teaching students to think
+statistically using real data (Carver et al., 2016). Many textbooks,
+such as Tintle et al. (2021), use scenarios and ask students to perform
+the corresponding inferential test. This process is then repeated over
+the course material without much deviation in the instructional method.
+In some cases, however, students can participate and benefit from
+well-designed classroom experiments (McGowan, 2011). This process can
+expose students to concepts such as randomization and let students see
+the specifics of experimental design through their participation. Loy
+(2021) has demonstrated that student participants often recalled their
+experiment in later concepts, showing some evidence that students can
+benefit from the hands-on experience.
+
+In addition to using experiential learning broadly, a key aspect in the
+statistics classroom is teaching students to interpret data through
+graphs. Nearly 40 years ago, Cleveland \& McGill (1984a) began the
+process of establishing good practices for making graphs, although
+characteristics of creating graphs have been studied for nearly a
+century (Vanderplas et al., 2020a). While their findings have been
+replicated (Heer \& Bostock, 2010a), many areas in data visualization
+remain underdeveloped that can benefit from the framework used by
+Cleveland \& McGill (1984a). One such area is the projections of 3D data
+visualizations. The current mantra is to avoid 3D graphs when possible
+and studies around the 1990s seem to provide some valid skepticism of
+their use (Barfield \& Robless, 1989a; Fisher et al., 1997a). Barfield
+\& Robless (1989a) showed that participants were sometimes more accurate
+using 3D graphs than 2D graphs, depending on the participant's
+experience level. However, participants were generally more confident
+with their answers for 2D graphs. Fisher et al. (1997a) observed a
+similar preference for 2D graphs over 3D graphs when extracting
+information, but found no preference for visual appeal for the type of
+graph. While these results provided valid skepticism toward the use of
+3D graphs, the results are generalized to the projections of the 3D
+graphs. The area of ``true'' 3D graphs is largely unexplored, but
+advances in technology allow for easier access to explore the 3D
+projections of these graphs. Kraus et al. (2020) explored the 3D
+projections with the use of virtual reality and found that participants
+were more accurate at extracting values from 3D heatmaps at the expense
+of needing more time than 2D alternatives.
+
+Because the use of ``true'' 3D graphs remains largely unexplored, it
+provides a unique opportunity to be used as an experiential learning
+opportunity for statistics students. Not only can students benefit from
+the exposure to different graph types, including ``true'' 3D graphs, but
+they can also experience a more authentic method of teaching, which is
+more likely to be beneficial to reinforce statistical ways of thinking.
+
+In this paper, we used an experiential learning project that employed
+different graph types, including ``true'' 3D graphs, in an introductory
+statistics classroom environment and described its potential application
+as an educational tool. We presented students with a series of modules
+where they first participated in our experiment on different graph
+projections, followed by acquiring knowledge on the purpose of the
+experiment by reading an extended abstract and watching a presentation
+of a pilot study of the same experiment.
+
+\section{Methods}\label{methods-1}
+
+\subsection{Overview and Motivation}\label{overview-and-motivation}
+
+We introduced students enrolled in Introduction to Statistics (STAT 218)
+at the University of Nebraska-Lincoln to a graphics project that
+contained an experiment and progressively revealed components that
+illustrate the experiment's research objectives. The project started by
+providing students with minimal information about the research
+objectives before revealing the scope of the experiment through an
+extended abstract and presentation. The goal of the graphics project was
+to observe how students think statistically about experiments as both
+participants and research consumers. Students were provided with mostly
+open-ended prompts throughout the graphics project, which allowed us to
+freely explore common themes in student responses without the limitation
+of preset choices.
+
+\subsection{Experiential Learning}\label{experiential-learning}
+
+The graphics project was split into two main components regarding the
+interaction of students with the material. In this section, we will
+discuss student interactions with the experiment. Students were first
+presented with a series of four modules presented from the role of
+research participation. These modules contained the informed consent
+form, pre-experiment reflection, experiment participation, and
+post-experiment reflection. Within the informed consent module, students
+were informed that their data would be anonymized and that the
+experiment was exempt from the institutional review board (Project ID:
+22579). While all students were given the option to participate in the
+graphics project, we were only able to collect responses when informed
+consent was obtained and if the student was 19 years of age or older. In
+the pre-experiment reflection, students were asked to write a paragraph
+about how they think the process of scientific investigation looks from
+the perspective of researchers and the general public. The experiment
+participation module asked students to paste the code generated upon
+completion of the graphics experiment, which is detailed in the next
+section. The generated code serves as a basic check to indicate whether
+or not students fully participated in the experiment. For the
+post-experiment reflection, students were asked five questions about the
+purpose of the experiment. These include questions on the hypotheses
+being tested, sources of error, variables of interest, and elements of
+experimental design.
+
+After completing the experiment reflections, students moved to the
+reflection of the overall research objectives. Students were first
+directed to read an unpublished two-page extended abstract that we
+submitted as a contributed paper for the Symposium on Data Science \&
+Statistics (SDSS). The extended abstract outlined the experiment's
+purpose and procedures, but not the results from our initial pilot
+study. After reading the extended abstract, students were asked to write
+a paragraph about what they found clearer about the experiment's purpose
+than when they were a participant. Finally, students were directed to
+watch a 12-minute pre-recorded presentation based on an abbreviated
+version given at SDSS (Wiederich, 2023). The video contained the same
+material as the extended abstract and included the results from our
+pilot study. The presentation reflection asked students four questions
+about the experiment and how information was presented differently than
+in the extended abstract.
+
+Except for the informed consent and experiment participation modules,
+all student responses were open-ended. Each question and its
+corresponding module can be found in Table 1.
+
+Instructors for STAT 218 were recruited for Summer 2023 and Fall 2023 to
+administer the graphics project into their classroom. The instructors
+were given the option of administering the project as coursework
+material or extra credit, along with the liberty of grading at their
+discretion. Instructors for the June-July Summer 2023 courses did not
+have the abstract or presentation modules.
+
+\subsection{Data Analysis}\label{data-analysis}
+
+Since nearly all of the student responses to the project modules are
+open-ended, the analysis of the project modules is qualitative. We will
+selectively extract student responses that demonstrate variability and
+repetitive themes in their understanding of the graphics experiment. For
+all modules, except the Post-Experiment reflection, students are asked
+to comment on the experiment without an objectively correct response.
+
+For paragraph responses in the Pre-Experiment and Abstract reflections,
+bigram plots are used as a graphical analysis to display word pairs
+after removing stop words (e.g., ``the'' and ``and''). These word pairs
+help illustrate common themes that students wrote about in their longer
+prompts. In the Post-Experiment reflection, the prompts have objectively
+correct answers but would require a subjective aggregation to indicate
+the level of correctness. Instead, we opt to select at least one student
+response that we consider to be ``most correct'' and a couple of other
+responses that are either partially correct or entirely incorrect to
+illustrate the variability of the responses. The results of the graphics
+experiment are presented by Wiederich \& VanderPlas (n.d.) as an
+extension of a larger study comparing the dimensionality and projections
+of 2D and 3D bar charts.
+
+\subsection{Graphics Experiment}\label{graphics-experiment}
+
+\subsubsection{Constructing Stimuli}\label{constructing-stimuli}
+
+Based on Cleveland and McGill's seminal work (1984a) on graphical
+perception, participants were presented with a series of bar graphs
+where two bars are marked with either a circle or a triangle. The
+heights of the bars were chosen from the following equation:
+
+\begin{equation}\phantomsection\label{eq-vals}{s_i=10\cdot 10^{(i-1)/12}, \qquad i=1,2,3,...,10}\end{equation}
+
+where \(s_i\) represents a value given an integer \(i\) as defined
+above. The values \(s_i\) from Equation~\ref{eq-vals} were then paired
+such that the ratio of the smaller value to the larger value yield the
+ratios of 0.178, 0.261, 0.383, 0.464, 0.562, 0.681, and 0.825. Each bar
+graph has two groupings of five bars. Following the Type 1 and Type 3
+graphs from the position-length experiment by Cleveland \& McGill
+(1984a), the value pairs for each ratio were either placed in the first
+grouping on the second and third bars (adjacent) or placed on the second
+bars in each grouping (separated).
+
+To explore the effect of dimensionality and projection of the bar
+graphs, we introduced the following plot types: 2D digital, 3D digital
+(static), 3D digital (interactive), and 3D printed. There was no single
+software package that could create all four plot types, so we carefully
+constructed graphs from different software packages to be as similar as
+possible. The 2D digital plots were rendered with the \texttt{ggplot2}
+package (Wickham, 2016). Microsoft Excel® was used to render the 3D
+digital (static) plots. The 3D digital (interactive) and 3D printed
+plots were created with OpenSCAD® (Kintel, 2023), where the generated
+stereolithography (STL) files for the 3D digital (interactive) plots
+were rendered with the \texttt{rgl} package (Murdoch \& Adler, 2023).
+
+\subsubsection{Experimental Design}\label{experimental-design}
+
+With 56 treatment combinations, we opted to use an incomplete block
+design to provide participants with 15-20 graphs. Kits of graphs were
+constructed so that five of the seven ratios are equally represented,
+resulting in 21 different kits. Within each kit, all graph types
+appeared for each ratio and the comparison type was randomly assigned. A
+visual layout of the experiment is shown in Figure 1. All kits received
+a unique identifier and a set of instructions for accessing the
+experiment.
+
+A Shiny application (Chang et al., 2023) was designed to administer the
+experiment. Students were directed to randomly select a kit of graphs
+and visit the Shiny application's website linked on the instructions.
+For students enrolled in the online sections of STAT 218, the website
+was provided by the instructor and they were prompted in the application
+to select that they were an online participant; selecting online
+participation resulted in the 3D-printed plots being removed from the
+set of graphs presented to the participant. After students provided a
+kit identifier (if applicable), students were presented with graphs in a
+randomized order. If the student marked that they were an online
+participant, the 3D-printed graphs were removed from their experiment
+lineup. Each graph asked the students to first identify the larger
+marked bar and then to guess the height of the smaller marked bar if the
+larger marked bar was 100 units tall using a slider widget. After
+completing the experiment, a completion code was generated for students
+to paste into the experiment participation module.
+
+\section{Results}\label{results-1}
+
+\subsection{Recruitment of Students and
+Instructors}\label{recruitment-of-students-and-instructors}
+
+We recruited 3 instructors for the summer and fall semesters in 2023.
+Each instructor offered the project as extra credit in their course and
+student participation was entirely voluntary. A total of 82 students
+participated in the project, and 9 students did not complete the entire
+project (Table 2).
+
+\subsection{Selected Responses from Experiment
+Participation}\label{selected-responses-from-experiment-participation}
+
+\subsubsection{Pre-Experiment
+Reflection}\label{pre-experiment-reflection}
+
+In the first stage of the project, before participating in the
+experiment, students had limited information about the research
+objectives and we recorded how students thought about scientific
+research. Students were initially prompted with one question, ``What do
+you think {[}the{]} process {[}of scientific investigation{]} looks
+like, from the perspective of a researcher, compared to what it looks
+like from the perspective of someone in the general public who is a
+consumer of scientific results?'' The responses to this question allowed
+us to gather a broad understanding of what students initially thought
+about the research process. Students generally understood the purpose of
+scientific research by connecting the ideas of hypothesis testing and
+publishing results. Students wrote about scientific research starting
+from the place of a question, followed by conducting an experiment and
+relaying the results to the public. For example, the most common phrase
+groupings include variations of ``scientific research'', ``data
+collection'', and ``peer review''. A bigram plot of student responses to
+the Pre-Experiment reflection prompt is shown in Figure 2.
+
+\subsubsection{Post-Experiment
+Reflection}\label{post-experiment-reflection}
+
+After participating in the experiment, students were provided prompts
+asking about the goals of the research objectives, which were to
+evaluate the errors of ratio judgments between 2D and 3D graph types
+under different comparison conditions in a randomized block design. Some
+students correctly identified parts of the questions asked in the
+post-experiment reflection, but most students typically missed some or
+most of what would be considered a correct answer.
+
+We first asked students ``What do you think the purpose of the
+experiment was?'' For this question, a complete response would have
+included the comparisons of ratio judgments of the projections for 2D
+and 3D graphs. A student example of the correct response was ``I think
+this experiment aimed to test if it was easier to compare two graphs in
+2D or 3D.'' Another student missed the comparison of 2D to 3D graphs,
+but was mostly correct with their response ``I think the purpose of this
+experiment was for the researcher to gather data on how people perceive,
+interpret, and understand 3D graphs.'' One student incorrectly thought
+that we were testing differences in demographics by responding ``They
+could be trying to determine how different genders, ages, etc. perceive
+the sizes of the bars in the graph. Demographics could make a pretty
+significant difference.''
+
+We then asked students ``What hypotheses might the experimenters have
+been testing?'' A correct response would include testing the differences
+in errors of ratio judgments between graph types. One example of a
+student providing a correct response was given by stating ``They might
+have been testing if a 2D model is easier to estimate its relative size
+to another when compared to a 3D model of it.'' Other students replied
+with statements that would not be able to be measured from the
+experiment, with one student responding ``How taking Statistics 218
+effects how you can compare two groups'' and another student saying
+``That 2d is preferred over 3d. It cleans up the data presentation.''
+
+An important topic covered in STAT 218 is randomization, which we asked
+students with the prompt ``What elements of experimental design, such as
+randomization or the use of a control group, do you think were present
+in the experiment? Why?'' In the experiment, randomization was performed
+with the ordering and assignment of graphs into kits. One student
+perfectly described randomization by responding with ``Randomization:
+The survey used an experimental design where in the survey there were
+different sets of 3D charts and maybe by a randomization process each
+participant was shown a different set of charts to see the differences
+in interpretations of the charts based on which set was assigned.
+Control Group: Since this survey aimed to only understand how
+participants interpret 3D charts without comparison to other chart
+types, then no control group was needed.'' Another student was partially
+correct with a response of ``Randomization was used because the ever
+person got a different graph.'' Other students missed the use of
+randomization, with one student responding ``random students in the
+stats class'' and another saying ``Randomization was not used because it
+was offered as an extra credit assignment in class.''
+
+\subsection{Selected Responses from Research
+Reflections}\label{selected-responses-from-research-reflections}
+
+In this set of reflections, students first read the extended abstract,
+followed by watching the 12-minute presentation video. The abstract
+unveiled the scope of the study to students, many of whom did not
+realize the underlying complexities. Nearly all students responded with
+statements about gaining clarity about the purpose of the experiment and
+its role in testing the differences between 2D and 3D graphs. Students
+commented on how they now understood the purpose of comparing 2D and 3D
+graphs, and also the potential benefits that may stem from research,
+such as graphical accessibility to the visually impaired. A bigram plot
+of the student responses to the abstract reflection prompt is shown in
+Figure 3.
+
+Lastly, more than half of the students (78.5\%) responded that they
+preferred the presentation over the extended abstract when asked ``If
+you had to hear about this study using only the extended abstract or
+only the presentation, which one would you prefer? Which one would be
+better for determining whether the experiment was well designed?'' One
+student responded ``I am a visual learner so I would have rather heard
+about in through the presentation. It also broke down the steps which is
+easier for me to understand. I think the presentation as a whole would
+be better for determining how the experiment is designed.'' Another
+student said ``Personally I like the abstract better. If I get confused
+on something it is so much easier to go back and reread to understand
+what is going on. If I ask myself questions about it, it is much easier
+to go back and find answers to the questions as well.''
+
+\section{Discussion}\label{discussion}
+
+Taken together, our results support the idea that we achieved our goal
+of providing students of an introductory statistics course with the
+opportunity to reflect on active research. Students generally
+appreciated the progressively revealing nature of the graphics project,
+which is evident from the abstract and presentation reflections. When
+provided with the post-experiment reflections, students often either
+missed the research objectives of the experiment or had partially
+correct responses. However, this was expected since the design of the
+experiment exceeds the scope of experimental design taught in typical
+introductory statistics courses.
+
+The abstract reflection received many responses indicating that students
+had moments of realization about the true nature of our research goals,
+which was further expanded with the presentation reflection prompts.
+Across all reflections, students were thoughtful, and sometimes amusing,
+with their responses and they were on the path of statistical thinking.
+
+Having students participate in experiments is not uncommon, possibly
+attributed to the readily available convenient samples within academia
+and potential applications to introduce new course material (Margaret,
+1994). However, these studies typically end for students after
+completing the experiment (Fisher et al., 1997a; McGowan, 2011; Zacks et
+al., 1998). In our study, we integrated the graphics experiment as a
+course project with the addition of reviewing research material.
+
+What we found was that the graphics project found success within the
+recommendations of the GAISE College Report by using real data to
+illustrate the contextual purpose of scientific research (Carver et al.,
+2016). Students were able to demonstrate their ability to think
+statistically through the series of reflections. The graphics project
+made use of real data, along with data collection, within the scope of
+an approachable and field-related topic, which allowed students to see
+how scientific research is conducted in the field of statistics.
+
+A limitation of our study is the use of open-ended responses that do not
+objectively assess student learning. While the student responses were
+useful in gathering insight, the responses are widely varied and do not
+have direct comparisons of statistical thinking throughout the modules.
+Another limiting factor is the tiered layering of convenience sampling,
+with instructors being recruited before recruiting students, which
+impacts the generalization of our findings. Nonetheless, the 82 students
+who participated provided meaningful answers that displayed some level
+of statistical thinking throughout the graphics project.
+
+Future studies could use a similar framework to conduct experiments on
+more typical 3-dimensional data, such as heatmaps. The use of graphical
+experiments in the classroom not only provides a readily available
+convenience sample but also adheres to the recommendations of the GAISE
+College Report (Carver et al., 2016). With the framework we provided in
+this paper, we aim to make adjustments to further improve the graphics
+experiment and corresponding project as an experiential learning
+opportunity.
+
+\newpage
+
+\section{Figure legends}\label{figure-legends}
+
+Figure 1: Visual display of the experimental design for students who
+participated in the 3D bar charts experiment. Kits of graphs were
+created by first choosing five ratios from nine available options (1).
+Each ratio then uses all graph types, with the exception of the
+3D-printed graphs for online students (2). Finally, all graphs were
+randomly assigned to have the marked bars as adjacent or separated (3).
+
+Figure 2: Bigram of student responses (n=82) to the pre-experiment
+prompt. Each line represents pairs of words that appeared together where
+each pair occurred at least twice. Students generally understood that
+science is about investigating research questions and collecting data.
+
+Figure 3: Bigram of student responses (n=63) to the abstract reflection
+prompt. Each line represents pairs of words that appeared together where
+each pair occurred at least twice. Students generally focused on the
+research objective of comparing 2D and 3D graphs.
+
+\newpage
+
+\section{Tables}\label{tables}
+
+\begingroup\fontsize{10}{12}\selectfont
+
+\begin{longtabu} to \linewidth {>{\raggedright\arraybackslash}p{9em}>{\raggedright\arraybackslash}p{6em}>{\raggedright\arraybackslash}p{25em}}
+\caption{\label{tab:unnamed-chunk-1}Questions provided to students in each project module.}\\
+\toprule
+Reflection & Question & Prompt\\
+\midrule
+Pre-Experiment & Q3 & In this class, you'll be learning about the process of scientific investigation. What do you think that process looks like, from the perspective of a researcher, compared to what it looks like from the perspective of someone in the general public who is a consumer of scientific results? Write a paragraph (at least 3-5 sentences) about how you think science happens.\\
+\cmidrule{1-3}
+ & Q5 & What do you think the purpose of the experiment was?\\
+\cmidrule{2-3}
+ & Q6 & What hypotheses might the experimenter have been testing?\\
+\cmidrule{2-3}
+ & Q7 & What sources of error are involved in this experiment?\\
+\cmidrule{2-3}
+ & Q8 & What variables were examined? For each variable, identify whether it was quantitative or categorical.\\
+\cmidrule{2-3}
+\multirow{-5}{*}[2\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Post-Experiment} & Q9 & What elements of experimental design, such as randomization or the use of a control group, do you think were present in the experiment? Why?\\
+\cmidrule{1-3}
+Abstract & Q10 & What components of the experiment are clearer now than they were as a participant? What questions do you still have for the experimenter? Write 3-5 sentences reflecting on the abstract.\\
+\cmidrule{1-3}
+ & Q11 & How did the information you gained from the components of this project (participation, post-study reflection, extended abstract, presentation) differ?\\
+\cmidrule{2-3}
+ & Q12 & What components were emphasized in the presentation that weren't emphasized in the abstract? Why do you think that is?\\
+\cmidrule{2-3}
+ & Q13 & What critiques do you have of this study and its design? What would have made the study better?\\
+\cmidrule{2-3}
+\multirow{-4}{*}[1.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Presentation} & Q14 & If you had to hear about this study using only the extended abstract or only the presentation, which one would you prefer? Which one would be better for determining whether the experiment was well designed?\\
+\bottomrule
+\end{longtabu}
+\endgroup{}
+
+\newpage
+
+\begin{table}[H]
+\centering
+\begin{threeparttable}
+\caption{Number of valid student participants by semester.}
+\centering
+\begin{tabular}[t]{lrr}
+\toprule
+Semester & Number of Sections & Number of Students\\
+\midrule
+Summer 2023 (May-June) & 1 & 17\\
+Summer 2023 (July-Aug) & 1 & 23\\
+Fall 2023 (May-June) & 1 & 42\\
+\bottomrule
+\end{tabular}
+\begin{tablenotes}
+\small
+\item [] Students under 19 years of age or did not consent were exluded from data collection. To comply with IRB, no demographic information was collected to keep students anonymous with their reflections.
+\end{tablenotes}
+\end{threeparttable}
+\end{table}
+
+\bookmarksetup{startatroot}
+
+\chapter{Graphical Perception of Heatmaps: Dimensionality, Medium, and
+Accuracy of Ratio
+Estimations}\label{graphical-perception-of-heatmaps-dimensionality-medium-and-accuracy-of-ratio-estimations}
+
+\section{Introduction}\label{introduction-2}
+
+In the 20th century, advancements in technology made data visualizations
+increasingly more affordable and accessible to a broader population. The
+primary change in formal data visualizations was from hand-drawn charts
+to computer-rendered charts (Tukey, 1965), and with subsequent advances
+in color printing and available software have allowed for data
+visualizations to enter other mediums. These include the ability create
+virtual and physical charts that effectively use the 3-dimensional (3D)
+world around us with the novel use of 3D-printed charts. This newer type
+of visualization has gained a small amount of traction in recent years
+as a method of producing tangible charts (Hu, 2015; Huron et al., 2023;
+Stusak et al., 2016).
+
+In many disciplines, 3D-printed visualizations have shown mixed or
+promising results compared to alternative rendering formats. Although a
+comprehensive review of 3D-printing in scientific fields is beyond the
+scope of this paper, we highlight several examples of its use for
+visualization. Katsioloudis \& Jones (2018) conducted a study with
+engineering students and found no statistically significant difference
+between computer-rendered and 3D-printed models when students were asked
+to draw a cross-section of a dodecahedron, suggesting similar levels of
+spatial understanding between digital and physical representations. In
+contrast, other applications have highlighted advantages of 3D-printed
+models. For example, Holloway et al. (2019) reported positive feedback
+from visually impaired individuals when 3D-printed maps were used to
+support navigation. Similarly, in clinical education, Muff et al. (2022)
+found that 3D-printed anatomical structures were well accepted alongside
+VR glasses and 3D computer renderings. As 3D-printed visualizations
+become increasingly common across scientific fields, we explore their
+potential use in communicating statistical graphics.
+
+At this time, there are few studies that evaluate 3D-printed charts for
+the purpose of displaying statistical information (Hu, 2015; Jansen et
+al., 2013b; Stusak et al., 2015b; Stusak et al., 2016). This may in part
+be due to the cost of materials and rendering times as compared to
+charts produced on a computer. A single chart can take up to a day to
+print, limiting the ability to quickly produce visualizations.
+Additionally, there are few options for producing such charts from
+statistical software. In R, the \texttt{rgl} package (Murdoch \& Adler,
+2023) can export STL files that can be used by 3D-printing software, and
+similarly for the \texttt{rayshader} package (Morgan-Wall, 2024).
+However, these options are not optimized for essential considerations
+required of 3D-printed charts, such as embossed labels. Given the nature
+of 3-dimensional data, viewing a 3D realization of statistical
+information in a 3D environment is a realistic scenario that could
+increase the ability for information extraction.
+
+\subsection{Literature Review}\label{literature-review-1}
+
+Using an identical dataset across multiple chart types does not ensure
+that the data is perceived in the same way (Cleveland \& McGill, 1984a;
+Hofmann et al., 2012; Vanderplas et al., 2020a). One of the main factors
+in this phenomenon is how data is encoded into the chart. These
+encodings include, but are not limited to, placement along axes,
+lengths, areas, volumes, and color scales. For example, bar charts and
+pie charts are two common visualizations that have long been the topic
+of debate (Cleveland \& McGill, 1984a; Croxton \& Stryker, 1927a; Eells,
+1926b; Lewandowsky \& Spence, 1989). Bar charts are constructed with the
+encodings of length, position, and area. In contrast, pie charts make
+use of arc lengths, angles, and area. Inherently, the comparison of
+different chart types is a comparison of encodings due to the changes in
+how data is being displayed.
+
+Cleveland \& McGill (1984a) noted that estimates involving numerical
+accuracy may decrease when increasing dimensionality of the encoding,
+although this was not formally tested in their experiments. Their
+reasoning was due to Stevens' power law, a mathematical formulation of
+how magnitudes are perceived given different stimuli sources (Stevens \&
+Stevens, 1986). The general form of the law is \(\psi(I)=kI^\alpha\),
+where \(I\) is the magnitude of a stimulus, \(\psi(I)\) is the perceived
+magnitude, \(k\) is a proportionality constant from the unit of the
+stimulus, and \(\alpha\) is the exponent from the type of stimuli used.
+Studies have estimated that lengths are perceived without bias (i.e.,
+\(\alpha=1\)), but areas and volumes tend to have skewed perceptions
+(Cleveland \& McGill, 1984a). This indicates that lower-dimensional
+charts may perform better when readers are tasked with extracting
+numerical estimates from the chart, although this has been a topic of
+debate in the last several decades.
+
+There are mixed results in regard to the use of 3D charts, mostly
+attributable to the use of the third dimension. When the extra dimension
+does not convey meaningful information, estimates of accuracy decrease
+and solution times increase as compared to equivalent 2D charts
+(Fischer, 2000; Fisher et al., 1997a; Zacks et al., 1998). The same
+increase in solution time is seen when the third dimension is utilized
+for displaying data, but can sometimes produce better error rates than
+2D charts (Barfield \& Robless, 1989a; Kraus et al., 2020).
+Additionally, when given the option of 2D or 3D charts for extracting
+numerical information, the 2D charts showed increased preference and
+confidence than their 3D counterparts (Barfield \& Robless, 1989a;
+Fisher et al., 1997a). It is worth noting that all of these studies use
+2D or virtual reality renderings of 3D charts and not physical 3D
+charts.
+
+Many studies that assess 3D charts use computer-rendered displays that
+leverage high levels of precision in their output. Digital renderings
+allow for exact control over visual properties, whereas physical charts
+are subject to factors such as chart materials, lighting conditions,
+interactivity, and viewing distance. Some of these factors have already
+been suggested to have a measureable effect within computer renderings
+(Tarr \& Kriegman, 2001; Wang et al., 2022). While virtual reality can
+offer similar interactions with 3D objects compared to the real world,
+perceptual judgements can be distorted in virtual environments (Park et
+al., 2021; \textbf{kelly2018?}). The result is that many findings for
+the perception of 3D statistical graphics are limited to the method in
+which they were rendered.
+
+To date, few empirical studies have investigated 3D-printed charts, and
+it is unclear if they follow the framework of existing theories on data
+visualizations. One of the first studies to examine digital and physical
+renderings primarily focused on information retrieval times, where
+physical 3D heatmaps had lower completion times than digitized 2D and 3D
+alternatives (Jansen et al., 2013b). In their study, error rates were
+also collected, but had small effect sizes due to the 2D, digital 3D,
+and physical 3D charts. Other studies on physical statistical graphics
+tend to focus on bar charts, where the third dimension is not used for
+information. Physical 3D bar charts are suggested to have conditionally
+improved memorability, subject to specific datasets (Stusak et al.,
+2015b; Stusak et al., 2016). Hu (2015) discussed the construction of
+3D-printed bar charts with accessibility features, though these designs
+do not appear to have been empirically evaluated.
+
+We hypothesize that 3D charts in 3D environments will produce better
+information extraction than their computer-rendered counterparts.
+Specifically, we compare 3D-printed charts to digital renderings of 2D
+static charts and 3D interactive charts. We suspect that this difference
+will hold across multiple data sets and different magnitudes of stimuli.
+In this paper, we evaluate the accuracy of numerical estimations on true
+3D charts by conducting a factorial experiment that assessed chart types
+and ratios of pairs of stimuli. We discuss the construction of the
+stimuli and how we closely matched the charts to compare 2D, 3D-digital,
+and 3D-printed renderings of heatmap data.
+
+\section{Methods}\label{methods-2}
+
+Our study was designed to evaluate and expand the literature on
+numerical estimation of dimensionality for 3D charts. In our study, we
+focused on 2D and 3D heatmaps, which we carefully constructed to ensure
+that differences can be attributed to the dimensionality of the chart
+and the mapping of data when comparing 2D to 3D. All of our data and
+methods are publicly available for open science and reproducibility at
+\url{https://github.com/TWiedRW/ch3-heat3d}. In this section, we discuss
+the process of designing our experiment and participant recruitment.
+
+\subsection{Stimuli}\label{stimuli}
+
+We define stimuli as the magnitude of our selected values. In a 3D
+Cartesian space, the X- and Y- axes represent the coordinates of the
+stimuli, and the Z-axis represents the value for the stimuli. Each X and
+Y coordinate is represented by a square tile with a 1:1 aspect ratio. In
+a 2D space, the Z variable is mapped to fill with a monochromatic
+gradient. All stimuli and remaining randomly generated values range
+between 0 and 100 units. In this experiment, \(X=1, 2, \dots,10\) and
+\(Y=1, 2,\dots,10\).
+
+Our experiment is designed using the method of constant stimuli, where
+comparisons between stimuli are with respect to a stimulus that remains
+the same magnitude (Kingdom \& Prins, 2016, 3). We set the constant
+stimuli at 50 units. For stimuli between 50 and 100, we set the maximum
+stimuli value at 90 and equally partitioned the ratios of stimuli with
+the constant stimuli, \(\frac{50}{90}=0.556\) to \(\frac{50}{50}=1.0\),
+resulting in 4 varying stimuli values where 50 is the smallest value.
+The same ratios obtained with stimuli between 50 and 90 were used to
+create 4 stimuli varying between 0 and 50, where 50 is the largest
+value. Additionally, we also included a stimulus pair where both values
+are 50, resulting in nine total pairs of stimuli. All stimuli values can
+be found in Figure~\ref{fig-stimuli-values}.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-stimuli-values-1.pdf}
+
+}
+
+\caption[Stimuli values paired with a fixed
+reference]{\label{fig-stimuli-values}Values for stimuli in the heatmap
+experiment. All values are paired with the constant stimuli of 50 units,
+creating nine pairs of stimuli.}
+
+\end{figure}%
+
+Two datasets were created for the experiment. To generate non-stimuli
+random values, we used a mixture distribution of random uniform noise
+and a mathematical function to populate our coordinate grid. The
+mathematical functions are scaled between 0 and 100,
+\(g(Z)=100\cdot\frac{Z-\min(Z)}{\max(Z)-min(Z)}\). The first dataset,
+set 1, used the formula for the top half of a sphere that is centered
+within our X and Y coordinate grid,
+\(f_1(X,Y)=\sqrt{7^2-(X-\bar{X})^2-(Y-\bar{Y})^2}\), where \(\bar{X}\)
+and \(\bar{Y}\) are the averages of the \(X\) and \(Y\) coordinate
+ranges. The second dataset is calculated similarly using the formula for
+the bottom half of a sphere,
+\(f_2(X,Y)=\sqrt{7^2-(X-\bar{X})^2+(Y-\bar{Y})^2}\). Denoting \(Z\) as
+the random values, \(U(0,100)\) as a random variable drawn from a
+continuous uniform distribution between 0 and 100, and \(X,Y\) as
+heatmap coordinates, our random heatmap data is calculated in
+Equation~\ref{eq-random-z} with \(c=0.3\). An example of varying \(c\)
+values is presented in Figure~\ref{fig-random-z}.
+
+\begin{equation}\phantomsection\label{eq-random-z}{
+Z=c\cdot U(0,100)+(1-c)\cdot g(f_i(X,Y))
+}\end{equation}
+
+\begin{figure}
+
+\begin{minipage}{0.20\linewidth}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/plots/z100.png}
+
+}
+
+\subcaption[Randomization parameter c equals 0]{\label{fig-z100}\(c=0\)}
+
+\end{minipage}%
+%
+\begin{minipage}{0.20\linewidth}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/plots/z75.png}
+
+}
+
+\subcaption[Randomization parameter c equals
+0.25]{\label{fig-z75}\(c=0.25\)}
+
+\end{minipage}%
+%
+\begin{minipage}{0.20\linewidth}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/plots/z50.png}
+
+}
+
+\subcaption[Randomization parameter c equals
+0.5]{\label{fig-z50}\(c=0.5\)}
+
+\end{minipage}%
+%
+\begin{minipage}{0.20\linewidth}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/plots/z25.png}
+
+}
+
+\subcaption[Randomization parameter c equals
+0.75]{\label{fig-z25}\(c=0.75\)}
+
+\end{minipage}%
+%
+\begin{minipage}{0.20\linewidth}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/plots/z0.png}
+
+}
+
+\subcaption[Randomization parameter c equals 1]{\label{fig-z0}\(c=1\)}
+
+\end{minipage}%
+
+\caption{\label{fig-random-z}Mixture distribution of
+Equation~\ref{eq-random-z} using the formula for the top half of a
+sphere. As \(c\) approaches 1, the distribution resembles uniform random
+noise.}
+
+\end{figure}%
+
+The placement of stimuli values onto the randomly generated heatmap data
+was done via simulation to try to make their placement look as natural
+as possible. Twenty random heatmaps were generated. For each heatmap,
+the non-constant stimuli was placed onto the coordinate such that the
+difference between the stimuli and randomly generated value is
+minimized. The constant stimuli was then placed onto a coordinate within
+a Manhattan distance of three or four that minimizes the difference
+between the constant stimuli and randomly generated values, where the
+Manhattan distance is given by \(|X_i - X_j| + |Y_i - Y_j|\) for stimuli
+\(i\) and \(j\). To ensure that stimuli placement is evenly positioned
+across the heatmap, the count of stimuli was computed separately across
+the X and Y axes. For example, in Data Set 1, the X-axis has four
+stimuli in \(X=1\), three stimuli in \(X=2\), and so forth. Chi-squared
+statistics were calculated for each axis and the heatmap with the
+smallest average Chi-squared statistic was selected as the final
+dataset. A visual inspection of this process showed that the stimuli
+were not clustered in any one area of the chart and that the stimuli
+look natural with respect to the random mixture distribution.
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.95\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-1.pdf}
+
+}
+
+\subcaption[Stimuli placement across two data
+sets]{\label{fig-placement-1}Placement of stimuli on Set 1}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.95\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-placement-2.pdf}
+
+}
+
+\subcaption[Stimuli placement across two data
+sets]{\label{fig-placement-2}Placement of stimuli on Set 2}
+
+\end{minipage}%
+
+\caption{\label{fig-placement}Placement of stimuli on the two data sets.
+Tiles with solid fills are the fixed stimuli values, where white tiles
+are randomly generated.}
+
+\end{figure}%
+
+\subsection{Charts}\label{charts}
+
+Three types of charts were considered for this study: digital and static
+2D (2dd), digital and interactive 3D (3dd), and 3D-printed (3dp). We
+constructed these charts so that they were as similar as possible, but
+inherent differences in dimensionality led to artistic decisions that
+attempt to focus solely on the dimensionality of the charts. The process
+of creating the charts is discussed in this section.
+
+The 3D-printed charts were rendered with OpenSCAD (Kintel, 2023). To
+include plot text, a 120mm by 120mm by 10mm base was created with a
+solid color that was either white or black. Cells of the heatmap
+measured 10mm by 10mm, resulting in a heatmap that is 100mm by 100mm and
+is centered on the base. The upper bound of the height of heatmap values
+is 100mm, where 1-unit in the heatmap data is represented by 1mm of
+height on the heatmap. Once rendered, the heatmap was saved to 3D
+Manufacturing Format (3mf) and Standard Triangle Language (stl) files. A
+variety of solid and gradient filaments were tested for the bars of the
+3D prints, and we eventually settled on a rainbow gradient. Some charts
+were printed with a white base and black text, and other charts had a
+black base with white text. An example of the 3D-printed chart is shown
+in Figure~\ref{fig-3dp}.
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set1.JPG}
+
+}
+
+\subcaption[3D-printed heatmap for data set
+1]{\label{fig-3dp-gradient}Data Set 1}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/images/3dp-gradient-set2.JPG}
+
+}
+
+\subcaption[3D-printed heatmap for data set 2]{\label{fig-3dp-solid}Data
+Set 2}
+
+\end{minipage}%
+
+\caption{\label{fig-3dp}3D printed heatmaps.}
+
+\end{figure}%
+
+To closely match the 3D-digital chart to the 3D-printed chart, multiple
+stl files were created for each colored component and combined with the
+RGL package (Murdoch \& Adler, 2023). The base was rendered with white
+smoke (\#F5F5F5) to slightly contrast with the default white background
+color (\#FFFFFF). Heatmap tiles were rendered with cyan (\#74CCFF) and
+text labels were rendered with black (\#000000). Lighting was fixed at
+45 degree angles at two opposite corners of the chart. The end result
+was a near-perfect replica of the 3D-printed charts, with the exception
+of different heatmap tile colors Figure~\ref{fig-3dd}.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/images/chart-3dd.png}
+
+}
+
+\caption[Interactive 3D digital rendering]{\label{fig-3dd}RGL rendering
+of Data Set 2 for 3dd charts.}
+
+\end{figure}%
+
+Unlike the 3D charts, the 2D charts needed a different encoding to
+convey heatmap values. The 2D heatmaps were created with
+\texttt{ggplot2} (Wickham, 2016) using \texttt{geom\_tile()}. Fill
+colors for the cells use a color gradient ranging from Blue Zodiac
+(\#0C2841) to Malibu (\#66D9FF), which were selected from a color picker
+using shadows on our initial 3D-printed charts. The color interpolation
+was performed with the \texttt{scale\_fill\_gradient()} function from
+the \texttt{ggplot2} package.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-color-pal-1.pdf}
+
+}
+
+\caption[Color palette for 2D digital
+heatmaps]{\label{fig-color-pal}Color palette for 2D-digital charts. The
+colors are interpolated from \#0C2841 to \#66D9FF, which are the colors
+of the lighting conditions for a 3D-printed chart created with cyan
+filament.}
+
+\end{figure}%
+
+\subsection{Subject Recruitment}\label{subject-recruitment}
+
+Participants were recruited from STAT 218: \emph{Introduction to
+Statistics} at the University of Nebraska-Lincoln in the summer and fall
+of 2025. The experiment was incorporated into the curriculum as a
+project that allowed students to get hands-on experience with
+statistics. For data to be collected as part of our study, students had
+to be at least 19 years old (age of majority in Nebraska) and consent to
+participation.
+
+STAT 218 is a general education statistics course at the University of
+Nebraska. As such, many students enrolled in the course are in the 18-25
+age range and are in the process of obtaining a Bachelor's degree. This
+allowed for the unique opportunity for us to obtain a sample size that
+is larger than typical studies in graphical perception, and that could
+accommodate in-person participation required for the 3D printed charts.
+Some sections of STAT 218 were held online in an asynchronous format.
+
+\subsection{Experimental Design}\label{experimental-design-1}
+
+Our experiment was designed with a 3 media type x 2 datasest x 9
+comparison treatment structure. Media type is our main interest, with
+2D-digital, 3D-digital, and 3D-printed charts. To ensure that results
+are not confounded with datasets, we used two datasets, with a total of
+9 stimuli pairs in each dataset. The order of treatments was given so
+that media and dataset combinations were grouped together randomly in
+the sequence with stimuli pairs randomized within the groupings. This
+meant participants did not have to switch charts as frequently, reducing
+the risk of using the wrong chart. For students enrolled in online
+sections of STAT 218, the 3D-printed charts were removed from their
+trials as they were not required to be on campus.
+
+Due to practical constraints, stimuli pairs were incompletely blocked. A
+full factorial design would result in 54 trials per participant, which
+could lead to a decrease in quality responses (Herzog \& Bachman, 1981).
+Therefore, we selected four out of the nine possible stimuli pairs to
+create incomplete blocks for each chart. This resulted in 18 blocks for
+a balanced incomplete block design. Within each block, media type is
+fully crossed with dataset. Using the incomplete block structure,
+participants completed a total of 24 trials, which is more practical
+than the full factorial design.
+
+Following the procedure of Cleveland \& McGill (1984a), we asked
+participants two questions in each trial. The first question asked
+participants which stimuli in a specified pair is larger or if the
+stimuli are the same value. Next, participants were asked to estimate
+the magnitude of the smaller stimuli if the larger stimuli represents
+100 units, which is a subtractive process (Veit, 1978). This question is
+designed to estimate \(A/B\), where \(A\leq B\).
+
+\subsubsection{Shiny Application}\label{shiny-application}
+
+A Shiny application (Chang et al., 2023) was developed to administer the
+experiment. The application consisted of five sections: informed
+consent, demographics, practice, experiment, and wrap-up. The entire
+application was designed to be completed in approximately 30 minutes.
+
+The Shiny application started with the informed consent screen, allowing
+participants to select if they are a STAT 218 Student and if they agree
+to the data collection. Participants had to select a data collection
+option to continue. After submitting their data collection response, a
+completion code was generated and saved on the last page of the
+application. This code was required for class, but participant consent
+was only required to save the data, so underage participants could still
+get the code for course credit.
+
+If participants agreed to have their data collected, they were presented
+with the demographics section. This section asked participants about
+their age, gender identity, highest education level, and how their
+participation in the experiment is graded. The last question was a text
+box and asked participants to specify their favorite movie and/or actor.
+Demographic information was combined with the application start time and
+completion code to create a hash for an anonymized participant
+identifier using the \texttt{rlang} package (Henry \& Wickham, 2025).
+
+Once a participant completed the demographics page or selected ``No'' to
+the data collection question, they were given a practice page. A modal
+dialog window was initially shown with instructions, and users could
+display this window again at any point during the practice trials. The
+practice consisted of four questions: two trials from 2dd charts and two
+trials from 3dd charts. Once participants provided a response to both
+questions in a practice trial, they were able to display the correct
+solution to check their answers. Since the practice trials were only to
+inform participants about the mechanics for answering the questions, we
+did not include 3D-printed charts. This eliminated the possibility of
+participants using a practice chart for the experiment.
+
+The experiment page was presented to participants after completion of
+the practice trials Figure~\ref{fig-exp-page}. Each page contained two
+questions -- one question for identifying which stimuli is larger and
+another question for estimating the value of the smaller stimuli if the
+larger stimuli is 100 units. Each trial had the initial slider position
+randomized in order to prevent starting position bias. For 3dd charts,
+the number of interactive clicks was also recorded. A trial could only
+be submitted if the first question is answered and if the slider was
+moved at least once.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/images/experiment-page.png}
+
+}
+
+\caption[Experiment interface for pairwise
+responses]{\label{fig-exp-page}Graphics experiment page. Each trial
+contained two questions about a pair of stimuli, and a check box that
+displays the location of the stimuli if needed.}
+
+\end{figure}%
+
+After completing all trials, participants were given the completion code
+and informed to provide the code to their instructor since they would
+not have access to the code after closing out of the experiment.
+
+\subsubsection{Method of Analysis}\label{method-of-analysis}
+
+The design of our experiment is a balanced incomplete split-plot with
+replication, where media type and dataset are whole-plot factors for
+each participant and stimuli pair is the split plot. A similar design
+was presented by Mandal et al. (2020) for a single replicate. For our
+analysis, we used the following model as a baseline:
+
+\[
+Y_{ijklm}=\mu+S_i\times M_j\times P_k+\gamma_{lm}+\omega_{ijlm}+\epsilon_{ijklm}
+\]
+
+In our model, \(Y_{ijklm}\) is a metric of error for participant
+responses to the ratio estimation question, \(S_i\) is the effect of
+dataset \(i\), \(M_j\) is the effect of chart type \(j\), \(P_k\) is the
+effect of stimuli pair \(k\), and \(S_i\times M_j\times P_k\) includes
+all corresponding main effects and two-way and three-way interactions.
+Our random effects include \(\gamma_{lm}\sim N(0,\sigma^2_A)\) for
+participant \(m\) in block \(l\), \(\omega_{ijlm}\sim N(0,\sigma^2_B)\)
+for the ordering of dataset \(i\) and chart type \(j\) for participant
+\(m\) in block \(l\), and \(\epsilon_{ijklm}\sim N(0, \sigma^2_C)\) for
+the residual error. We assume that \(\gamma_{lm}\), \(\omega_{ijlm}\),
+and \(\epsilon_{ijklm}\) are independently and identically distributed.
+
+The first question in each trial was to indicate which value within a
+stimulus pair was larger, or if they were the same value. Following
+Cleveland \& McGill (1984a), we use this question as an attention check
+to verify that participants are following the procedure and that the
+correct comparison is being made.
+
+\section{Results}\label{results-2}
+
+In this section, we describe the demographic information of our sample,
+cleaning of participant responses, analysis of responses, and
+interactions participants had with the Shiny application.
+
+\subsection{Demographics}\label{demographics}
+
+Our experiment was conducted with eight sections of Stat 218 between
+August 25th and December 19th in 2025 at the University of Nebraska. To
+participate in the experiment, students were instructed to visit
+communal office hour locations to access the 3D printed charts. We
+recorded 482 interactions with the shiny application, of which 259
+students completed the entirety of the experiment. Of these students, 92
+were enrolled in online sections of the course and did not have access
+to the 3D printed charts. The vast majority of participants were
+actively completing their undergraduate degree and between the ages of
+19 and 25. Full demographic information can be found in
+Table~\ref{tbl-demographics}.
+
+\begin{table}
+
+\caption{\label{tbl-demographics}Demographic Information}
+
+\centering{
+
+\centering
+\begin{tabular}[t]{lrr}
+\toprule
+ & Count & Proportion\\
+\midrule
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Gender}}\\
+\hspace{1em}Female & 166 & 0.64\\
+\hspace{1em}Male & 90 & 0.35\\
+\hspace{1em}Variant/Nonconforming & 1 & 0.00\\
+\hspace{1em}Prefer not to answer & 2 & 0.01\\
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Age}}\\
+\hspace{1em}19-25 & 252 & 0.97\\
+\hspace{1em}26-30 & 2 & 0.01\\
+\hspace{1em}31-35 & 0 & 0.00\\
+\hspace{1em}36-40 & 1 & 0.00\\
+\hspace{1em}41-45 & 3 & 0.01\\
+\hspace{1em}Prefer not to answer & 1 & 0.00\\
+\addlinespace[0.3em]
+\multicolumn{3}{l}{\textbf{Education}}\\
+\hspace{1em}High School or Less & 23 & 0.09\\
+\hspace{1em}Some Undergraduate Courses & 214 & 0.83\\
+\hspace{1em}Undergraduate Degree & 12 & 0.05\\
+\hspace{1em}Some Graduate Courses & 4 & 0.02\\
+\hspace{1em}Graduate Degree & 2 & 0.01\\
+\hspace{1em}Prefer not to answer & 4 & 0.02\\
+\bottomrule
+\end{tabular}
+
+}
+
+\end{table}%
+
+Almost all participants completed the experiment in under 20 minutes.
+Summary statistics can be found in Table~\ref{tbl-exp-times}, with the
+overall distribution of times shown in Figure~\ref{fig-total-time}.
+Individual trials had a median completion time of 0.23 minutes.
+
+\begin{longtable}[]{@{}lrrr@{}}
+
+\caption{\label{tbl-exp-times}Summary of experiment completion times in
+minutes.}
+
+\tabularnewline
+
+\toprule\noalign{}
+Section & Mean & SD & Median \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+In-person & 8.08 & 3.39 & 7.45 \\
+Online & 5.70 & 3.42 & 5.09 \\
+All Participants & 7.23 & 3.58 & 6.86 \\
+
+\end{longtable}
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-total-time-1.pdf}
+
+}
+
+\caption[Distribution of participant completion
+times]{\label{fig-total-time}Histogram of experiment completion times.
+Online participants had generally shorter completion times due to a
+decreased number of trials.}
+
+\end{figure}%
+
+During our initial exploration of the results, we discovered a
+non-negligible number of students who did not follow the instructions,
+which is not surprising in an intro statistics class activity. In some
+cases, participants appeared to be using alternative estimation
+strategies, such as estimating the difference between the two values in
+a stimulus pair, rather than the specified ratio strategy. Additionally,
+we noticed that several students were randomly entering values in order
+to obtain the completion code at the end of the experiment. We provide
+some examples of individual participant responses in
+Figure~\ref{fig-user-strategies} to illustrate this issue.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-user-strategies-1.pdf}
+
+}
+
+\caption[Examples of participant estimation
+strategies]{\label{fig-user-strategies}Three potential estimation
+strategies from participants. Many participants followed instructions to
+estimate ratios. However, some participants appeared to estimate the
+difference between stimuli pairs or submitted random values.}
+
+\end{figure}%
+
+It is commonly acknowledged in psychology that careless respondents
+should be addressed to some degree, although there is no general
+consensus on how to handle this without cherry picking (Jaso et al.,
+2021; Ward \& Meade, 2023). Some proposed solutions include removing
+participants based on observed patterns or fitting mixture models to
+address latent class variables. In this section, we discuss one possible
+subset of participant responses to address careless respondents. We also
+include several alternative models in the appendix.
+
+\subsection{Addressing Random Categorical
+Responses}\label{sec-remove-random-categories}
+
+To improve the quality of our data, we started by assessing random
+guesses in identifying the larger value of a stimulus pair. In each
+trial, participants have a 1 out of 3 chance for correctly identifying
+the larger value if they are randomly guessing. Since stimuli pair 5
+contains identical values, we temporarily exclude those trials to focus
+on stimuli pairs where there was a difference between the values. For
+each participant, we test \(H_0: \pi\leq2/3\text{ vs. }H_1:\pi>2/3\)
+with \(\alpha=0.05\), where \(\pi\) is the probability of a participant
+correctly answering the initial question and \(\alpha\) is the level of
+the test. That is, participants who are following instructions should
+select the correct option at least twice as often as either incorrect
+alternative. Given the lack of standardized criteria for identifying
+careless responding, the one-sided Binomial test should extract users
+who are suspected to be following the instructions. Using the first
+question for participant screening, 98 participants are excluded for
+suspected random selecting, leaving 161 participants. The effect of this
+exclusion can be seen in Figure~\ref{fig-q1-eda}.
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-1.pdf}
+
+}
+
+\subcaption[Question 1 accuracy by stimuli pair and
+media]{\label{fig-q1-eda-1}No participant filtering}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-q1-eda-2.pdf}
+
+}
+
+\subcaption[Question 1 accuracy by stimuli pair and
+media]{\label{fig-q1-eda-2}Exclude random guessers}
+
+\end{minipage}%
+
+\caption{\label{fig-q1-eda}Proportion of correct responses to Question 1
+across stimuli pairs and media types. For all pairs, with the exception
+of Pair 5, a correct answer was `Larger value'. Stimuli Pair 5 had two
+identical values, meaning that options other than `Both values are the
+same' were incorrect.}
+
+\end{figure}%
+
+\subsection{Analysis of Error}\label{analysis-of-error}
+
+We follow the same calculation of error as Cleveland \& McGill (1984a),
+which is shown in Equation~\ref{eq-error_cm}. Error is defined as the
+base-2 logarithm of the absolute estimation error meaning that
+differences of one unit on this scale correspond to approximately
+doubling the size of the error. The addition of 1/8 prevents distortion
+for responses with near-zero error.
+
+\begin{equation}\phantomsection\label{eq-error_cm}{
+y=\log_2(|\text{User Response}-100\times(\text{True ratio})|+1/8)
+}\end{equation}
+
+In our analysis, we excluded individual responses where participants
+were incorrect in their response to the initial question and all
+responses for stimuli pair 5. The initial question served as an
+attention check to verify that the participants were making the correct
+comparison between stimuli values. For stimuli pair 5, we removed these
+trials since correct solutions should be a binary response. However, we
+discovered a discrepancy in how participants were responding to both
+questions for these trials, which we discuss in the appendix.
+
+With our specified exclusion criteria, we find that there was marginal
+evidence for the effects of chart type (p-value = 0.041) and the data
+set and stimuli pair interaction (p-value = 0.073). This finding is
+consistent with models fitted with various participant and response
+filters.
+
+Our findings suggest that the 2D heatmaps had evidence of higher log
+absolute error than either type of the 3D heatmaps. On the base-2 log
+scale, the error for 2D heatmaps was larger than the error for digital
+3D heatmap by 0.414 (95\% CI: 0.253, 0.574). This finding is similar for
+the 3D printed heatmaps, where the log absolute error for 2D heatmaps
+was larger by 0.413 (95\% CI: 0.234, 0.591). There were no detectable
+differences in error between the digital and physical 3D heatmaps
+(p-value = 1).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-media-1.pdf}
+
+}
+
+\caption[Marginal means of log error by media
+type]{\label{fig-em-media}Distributions of log error overlayed with
+estimated marginal means and their 95\% confidence intervals.
+Differences were only detected between 2D heatmap and both types of 3D
+heatmaps, where the 2D heatmap had evidence of larger errors.}
+
+\end{figure}%
+
+When examining the interaction between stimuli pairs and underlying
+datasets, 11 differences in log absolute error were detected at the
+\(\alpha=0.05\) level. Seven of these differences occurred with stimuli
+pair 6 (ratio = 0.889) and dataset 1, which had the smallest estimated
+marginal mean of log absolute error. All differences can be found in
+Figure~\ref{fig-em-set-pair}, where significant differences are assessed
+via a compact letter display from the \texttt{multcomp} package (Hothorn
+et al., 2008).
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-em-set-pair-1.pdf}
+
+}
+
+\caption[Marginal means by stimuli pair and data
+set]{\label{fig-em-set-pair}Estimated marginal means of stimuli pair and
+dataset. Bars sharing the same letter are not significantly different
+from one another.}
+
+\end{figure}%
+
+\subsection{Participant Interactions with Shiny
+Application}\label{participant-interactions-with-shiny-application}
+
+In this section, we describe participant interactions with the Shiny
+application using the same participant exclusion criteria as our model.
+As participants completed the experiment, we recorded the amount of time
+to complete each trial, the number of cursor clicks on the digital 3D
+heatmaps, and the number of times that the slider was moved. We also
+recorded the initial starting position of the slider, which was randomly
+placed for each trial.
+
+Many participants completed each trial in under 20 seconds. The median
+completion time was 14.8372396 seconds, with a standard deviation of
+22.9971286 seconds. There were 91 participants who had at least one
+trial exceed 60 seconds. Due to the design and administration of the
+experiment, we are unable to account for the cause of longer trial
+completion times, but it is possible the students may have been
+interrupted or distracted before returning to the task.
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-1.pdf}
+
+}
+
+\subcaption[Trial-level time distribution and error
+relationship]{\label{fig-time-summary-1}Frequency plot}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-time-summary-2.pdf}
+
+}
+
+\subcaption[Trial-level time distribution and error
+relationship]{\label{fig-time-summary-2}Time vs.~Error}
+
+\end{minipage}%
+
+\caption{\label{fig-time-summary}Visual summary of time spent on each
+trial. 137 trials are omitted due to lasting longer than 60 seconds.}
+
+\end{figure}%
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-1.pdf}
+
+}
+
+\subcaption[Interactions with digital 3D
+heatmaps]{\label{fig-clicks3dd-1}Histogram}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-clicks3dd-2.pdf}
+
+}
+
+\subcaption[Interactions with digital 3D
+heatmaps]{\label{fig-clicks3dd-2}WebGL clicks vs.~Error}
+
+\end{minipage}%
+
+\caption{\label{fig-clicks3dd}Participant interactions with the digital
+3D heatmaps.}
+
+\end{figure}%
+
+\begin{figure}
+
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-1.pdf}
+
+}
+
+\subcaption[Slider interaction behavior and
+error]{\label{fig-slider-clicks-1}Histogram}
+
+\end{minipage}%
+%
+\begin{minipage}{0.50\linewidth}
+
+\centering{
+
+\includegraphics[width=0.9\textwidth,height=\textheight]{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-clicks-2.pdf}
+
+}
+
+\subcaption[Slider interaction behavior and
+error]{\label{fig-slider-clicks-2}Slider clicks vs.~Error}
+
+\end{minipage}%
+
+\caption{\label{fig-slider-clicks}Participant interactions with the
+slider.}
+
+\end{figure}%
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-slider-start-1.pdf}
+
+}
+
+\caption[Initial slider position versus submitted
+value]{\label{fig-slider-start}Effect of initial slider position on the
+submitted slider value.}
+
+\end{figure}%
+
+\section{Discussion and Conclusion}\label{discussion-and-conclusion}
+
+Our study was designed to test the numerical estimation of ratios in 2D
+and 3D heatmaps rendered in digital and physical environments. The
+current state of tangible statistical graphics is limited mainly to
+tactile displays, whereas 3D printed statistical graphics are largely
+unexplored. We found that when the third dimension is conveying
+meaningful information, the heights of 3D heatmaps had smaller errors
+than the color gradient of 2D heatmaps. No differences were detected
+between the digital and physical 3D heatmaps, which is perhaps
+attributed to the exact one-to-one design relationship between the
+digital display and the 3D printed chart. These findings were consistent
+across multiple levels of fitted models and participant filtering, which
+reaffirms our belief that 3D charts have value when meaningfully using
+all three dimensions.
+
+An interesting observation from the stimuli pairs and dataset
+interaction was from the non-detectable differences. We note that no
+differences were detected across datasets for a given stimuli pair.
+While not explicitly tested in our experiment, there have been previous
+studies that have investigated and found the behavior of neighboring
+values to have an effect (VanderPlas \& Hofmann, 2015; Zacks et al.,
+1998). This effect would be worth exploring in future studies with 3D
+heatmaps. Another concern we had when designing our experiment was the
+lack of direct translation from color scales to heights. The differences
+between stimuli pairs of identical ratios were non-detectable, which
+alleviates this concern for future studies. However, this effect would
+likely be important to consider if assessing just noticeable differences
+(Lu et al., 2022; Zhang et al., 2023b).
+
+While our hypothesis that 3D-printed heatmaps would outperform digital
+2D and 3D heatmaps in numerical estimations of ratios was not supported,
+we were able to show that 3D charts may have a place in the analysis of
+data. When the third dimension is used to display information, the
+mapping of that dimension to height provides better ratio estimations
+than a color gradient scale. This result has been observed previously in
+digital 3D heatmaps (Barfield \& Robless, 1989a; Kraus et al., 2020),
+and our findings suggests that this may hold for physical 3D heatmaps.
+
+\bookmarksetup{startatroot}
+
+\chapter{}\label{section}
+
+In this section, we include multiple models for the transparency of
+model selection. Visual inspections of participant responses indicate
+that several participants clearly did not follow instructions by either
+using alternate estimation strategies or by carelessly responding
+Figure~\ref{fig-q1-eda}. While we should take these cases into
+consideration, there is no singular solution to suggest a ``best'' model
+(Jaso et al., 2021; Ward \& Meade, 2023). Our purpose for including
+these alternate models is to examine model sensitivity to results
+through various levels of participant and response filtering.
+
+For each model, we exclude stimuli pair 5. In theory, participants who
+answer this question correctly will select that both values are the same
+and move the slider to 100. From the included participants, as described
+in Section~\ref{sec-remove-random-categories}, virtually all
+participants who put the slider at 100 answered the first question
+correctly. However, nearly 60 percent of responses indicated that the
+values were the same in the first question but did not move the slider
+to 100. Several factors could have attributed to this, such as slider
+sensitivity or participants using alternate estimation strategies.
+Rather than correcting what we think participants should have answered,
+we removed this stimuli pair and motivate future research into ``just
+noticeable differences'' for 3D heatmaps.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-pair5-issues-1.pdf}
+
+}
+
+\caption[Response behavior for identical-value stimuli
+pair]{\label{fig-pair5-issues}Counts of response behavior for Stimuli
+Pair 5. This pair had identical values, which means that true solutions
+indicates marking that they were the same value and positioning the
+slider at 100.}
+
+\end{figure}%
+
+There are multiple levels of participant and response filtering that we
+considered. For participant-level filtering, we consider the following
+levels: (1) no participant filtering and (2) remove suspected random
+guessers. The process of (2) was described in
+Section~\ref{sec-remove-random-categories}. Filtering individual
+responses is a straightforward process, where we considered (i) include
+all responses, and (ii) remove responses with incorrect Q1 solutions.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1200}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2133}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1933}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2467}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2267}}@{}}
+\caption{ANOVA Table p-values for model terms}\tabularnewline
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Term
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+All participants, all responses
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+All participants, Q1 correct
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Filtered participants, all responses
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Filtered participants, Q1 correct
+\end{minipage} \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Term
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+All participants, all responses
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+All participants, Q1 correct
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Filtered participants, all responses
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Filtered participants, Q1 correct
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+set & 0.340 & 0.705 & 0.939 & 0.735 \\
+media & 0.010 & 0.018 & 0.035 & 0.041 \\
+pair\_id & 0.244 & 0.333 & 0.089 & 0.063 \\
+set:media & 0.297 & 0.711 & 0.543 & 0.669 \\
+set:pair\_id & 0.003 & 0.145 & 0.001 & 0.073 \\
+media:pair\_id & 0.815 & 0.740 & 0.982 & 0.968 \\
+set:media:pair\_id & 0.489 & 0.764 & 0.255 & 0.833 \\
+\end{longtable}
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int1-1.pdf}
+
+}
+
+\caption[Media by filtering interaction
+effects]{\label{fig-model-int1}Interaction plots for media type and
+response filtering, facetted by stimuli pair and dataset.}
+
+\end{figure}%
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int2-1.pdf}
+
+}
+
+\caption[Data set by filtering interaction
+effects]{\label{fig-model-int2}Interaction plots for dataset and
+response filtering, facetted by stimuli pair and media type.}
+
+\end{figure}%
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int3-1.pdf}
+
+}
+
+\caption[Stimuli pair by filtering interaction
+effects]{\label{fig-model-int3}Interaction plots for stimuli pairs and
+response filtering, facetted by dataset and media type.}
+
+\end{figure}%
+
+\newpage
+
+\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, titlerule=0mm, breakable, opacityback=0, leftrule=.75mm, colbacktitle=quarto-callout-note-color!10!white, toprule=.15mm, colframe=quarto-callout-note-color-frame, toptitle=1mm, arc=.35mm, bottomtitle=1mm, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, coltitle=black, rightrule=.15mm, bottomrule=.15mm, colback=white, left=2mm]
+
+This paragraph is pushed to a new page since the ANOVA table p-values is
+causing formatting issues
+
+\end{tcolorbox}
+
+Visualizations of the simple effects for media types, datasets, and
+stimuli pairs (Figure~\ref{fig-model-int1}, Figure~\ref{fig-model-int2},
+Figure~\ref{fig-model-int3}) shows that the difference between
+participant filtering is mostly a linear shift in log error. Removing
+participants deemed to be random guessers tended to have smaller errors
+than including all participants. The shift is less prevalent across
+participant filters when filtering out incorrect responses to the first
+question in each trial. This, in addition to the p-values from
+\textbf{?@tbl-all-models-anova}, suggests that our sample size was large
+enough to counteract effects from careless respondents.
+
+We also attempted to fit Gaussian mixture models to the submitted
+responses using the \texttt{flexmix} package (Grün \& Leisch, 2007) to
+account for careless respondents (Jaso et al., 2021). However, these
+models only reliably detected a small subset of participants who were
+would be considered high performers. That is, participants who had a
+near 1:1 relationship with the ratio estimations strategy and small
+variation. Visual inspections of the mixture model components did not
+provide reliable classifications of estimation strategies, so we opted
+to exclude mixture models from consideration.
+
+\subsection{Generalized Additive
+Model}\label{generalized-additive-model-1}
+
+In addition to our parametric methods, we also present the results of a
+generalized additive model (Hastie, 2017). Here, we define the model
+similarly to the parametric models, but replace stimuli pair identifiers
+with their respective numerical ratio value. Thin-plate regression
+splines in the generalized additive model account for nonlinearity which
+could alleviate issues due to different estimation strategies. The
+formal statistical model is as follows:
+
+\begin{equation}\phantomsection\label{eq-gam}{
+y=\mu+S_i\times M_j + s_i^S(R)+s_j^M(R)+P_m+\epsilon
+}\end{equation}
+
+where
+
+\begin{itemize}
+\item
+  \(y=\log_2(|\text{Error}|+1/8)\)
+\item
+  \(S_i\times M_j\) is the fixed effects for main effect and two-way
+  interactions of dataset \(S_i\) and media type \(M_j\)
+\item
+  \(S_i^S(R)\) is a thin-plate spline function for ratio accounting for
+  dataset
+\item
+  \(S_j^M(R)\) is a thin-plate spline function for ratio accounting for
+  media type
+\item
+  \(P_m\) is the random effect of the \(m^{th}\) participant
+\item
+  \(\epsilon\) is random error
+\end{itemize}
+
+A generalized additive model was fit using the \texttt{mgcv} package
+(Wood, 2017b) on the entire dataset and the filtered dataset. The data
+for these models remove stimuli pair 5 and incorrect responses to the
+initial question. In both cases, results of the generalized additive
+models suggest that the 2D heatmaps have larger errors than the 3D
+heatmaps, with no differences detected between the digital and physical
+heatmaps \textbf{?@tbl-gam-emmeans}\textbf{?@tbl-gam-diffs}.
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Parametric coefficients in gam model with all
+participants.}\tabularnewline
+\toprule\noalign{}
+& Estimate & Std. Error & t value &
+Pr(\textgreater\textbar t\textbar) \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+& Estimate & Std. Error & t value &
+Pr(\textgreater\textbar t\textbar) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+(Intercept) & 3.773 & 0.083 & 45.613 & 0.000 \\
+setset2 & 0.014 & 0.080 & 0.172 & 0.863 \\
+media3dd & -0.317 & 0.077 & -4.094 & 0.000 \\
+media3dp & -0.389 & 0.089 & -4.359 & 0.000 \\
+setset2:media3dd & 0.018 & 0.110 & 0.163 & 0.871 \\
+setset2:media3dp & 0.078 & 0.124 & 0.630 & 0.529 \\
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Approximate significance of smooth terms in gam mode with all
+participants.}\tabularnewline
+\toprule\noalign{}
+Smooth & edf & Ref.df & F & p-value \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Smooth & edf & Ref.df & F & p-value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+s(target\_ratio):media2dd & 1.002 & 1.003 & 0.058 & 0.813 \\
+s(target\_ratio):media3dd & 1.972 & 2.350 & 1.476 & 0.200 \\
+s(target\_ratio):media3dp & 1.047 & 1.428 & 1.612 & 0.268 \\
+s(target\_ratio):setset1 & 1.005 & 1.009 & 0.650 & 0.422 \\
+s(target\_ratio):setset2 & 1.022 & 1.042 & 0.165 & 0.719 \\
+s(user\_id) & 217.826 & 258.000 & 6.423 & 0.000 \\
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Parametric coefficients in gam model without random
+guessers.}\tabularnewline
+\toprule\noalign{}
+& Estimate & Std. Error & t value &
+Pr(\textgreater\textbar t\textbar) \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+& Estimate & Std. Error & t value &
+Pr(\textgreater\textbar t\textbar) \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+(Intercept) & 3.773 & 0.083 & 45.613 & 0.000 \\
+setset2 & 0.014 & 0.080 & 0.172 & 0.863 \\
+media3dd & -0.317 & 0.077 & -4.094 & 0.000 \\
+media3dp & -0.389 & 0.089 & -4.359 & 0.000 \\
+setset2:media3dd & 0.018 & 0.110 & 0.163 & 0.871 \\
+setset2:media3dp & 0.078 & 0.124 & 0.630 & 0.529 \\
+\end{longtable}
+
+\begin{longtable}[]{@{}lrrrr@{}}
+\caption{Approximate significance of smooth terms in gam model without
+random guessers.}\tabularnewline
+\toprule\noalign{}
+Smooth & edf & Ref.df & F & p-value \\
+\midrule\noalign{}
+\endfirsthead
+\toprule\noalign{}
+Smooth & edf & Ref.df & F & p-value \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+s(target\_ratio):media2dd & 1.002 & 1.003 & 0.058 & 0.813 \\
+s(target\_ratio):media3dd & 1.972 & 2.350 & 1.476 & 0.200 \\
+s(target\_ratio):media3dp & 1.047 & 1.428 & 1.612 & 0.268 \\
+s(target\_ratio):setset1 & 1.005 & 1.009 & 0.650 & 0.422 \\
+s(target\_ratio):setset2 & 1.022 & 1.042 & 0.165 & 0.719 \\
+s(user\_id) & 217.826 & 258.000 & 6.423 & 0.000 \\
+\end{longtable}
+
+\begin{table}
+
+\caption{Estimated marginal means for generalized additive model}
+\centering
+\begin{tabular}[t]{llrrrrr}
+\toprule
+Data filtering & set & emmean & SE & df & lower.CL & upper.CL\\
+\midrule
+ &  & 3.773 & 0.083 &  & 3.611 & 3.936\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+ &  & 3.532 & 0.090 &  & 3.356 & 3.709\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+ & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3.493 & 0.105 &  & 3.286 & 3.700\\
+\cmidrule{2-4}
+\cmidrule{6-7}
+ &  & 3.788 & 0.083 &  & 3.625 & 3.951\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+ &  & 3.565 & 0.091 &  & 3.387 & 3.742\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash All participants} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3.586 & 0.106 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 3729.128} &  & 3.794\\
+\cmidrule{1-5}
+\cmidrule{7-7}
+ &  & 3.593 & 0.109 &  & \multirow{-2}{*}[0.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 3.378} & 3.807\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+ &  & 3.150 & 0.107 &  & 2.939 & 3.360\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+ & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3.199 & 0.115 &  & 2.973 & 3.425\\
+\cmidrule{2-4}
+\cmidrule{6-7}
+ &  & 3.693 & 0.109 &  & 3.479 & 3.906\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+ &  & 3.361 & 0.108 &  & 3.149 & 3.574\\
+\cmidrule{3-4}
+\cmidrule{6-7}
+\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Random guessers removed} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3.310 & 0.116 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 2814.776} & 3.081 & 3.538\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}
+
+\caption{Pairwise differences for generalized additive model}
+\centering
+\begin{tabular}[t]{lllrrrrr}
+\toprule
+Data filtering & set & contrast & estimate & SE & df & t.ratio & p.value\\
+\midrule
+ &  & 2dd - 3dd & 0.241 & 0.088 &  & 2.736 & 0.017\\
+\cmidrule{3-5}
+\cmidrule{7-8}
+ &  & 2dd - 3dp & 0.280 & 0.103 &  & 2.711 & 0.018\\
+\cmidrule{3-5}
+\cmidrule{7-8}
+ & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3dd - 3dp & 0.039 & 0.109 &  & 0.361 & 0.931\\
+\cmidrule{2-5}
+\cmidrule{7-8}
+ &  & 2dd - 3dd & 0.223 & 0.089 &  & 2.516 & 0.032\\
+\cmidrule{3-5}
+\cmidrule{7-8}
+ &  & 2dd - 3dp & 0.202 & 0.104 &  & 1.940 & 0.128\\
+\cmidrule{3-5}
+\cmidrule{7-8}
+\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash All participants} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3dd - 3dp & -0.021 & 0.110 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 3729.128} & -0.192 & 0.980\\
+\cmidrule{1-8}
+ &  & 2dd - 3dd & 0.443 & 0.091 &  & 4.868 & \\
+\cmidrule{3-5}
+\cmidrule{7-7}
+ &  & 2dd - 3dp & 0.394 & 0.100 &  & 3.925 & \multirow{-2}{*}{\raggedleft\arraybackslash 0.000}\\
+\cmidrule{3-5}
+\cmidrule{7-8}
+ & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3dd - 3dp & -0.049 & 0.099 &  & -0.499 & 0.872\\
+\cmidrule{2-5}
+\cmidrule{7-8}
+ &  & 2dd - 3dd & 0.331 & 0.092 &  & 3.585 & \\
+\cmidrule{3-5}
+\cmidrule{7-7}
+ &  & 2dd - 3dp & 0.383 & 0.102 &  & 3.757 & \multirow{-2}{*}{\raggedleft\arraybackslash 0.001}\\
+\cmidrule{3-5}
+\cmidrule{7-8}
+\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Random guessers removed} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3dd - 3dp & 0.052 & 0.100 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 2814.776} & 0.521 & 0.861\\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\bookmarksetup{startatroot}
+
+\chapter{References}\label{references}
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
@@ -1286,8 +4078,15 @@ Department of agriculture{]}}. (1978). United States. Department of
 Agriculture; U.S. Dept. of Agriculture ; Distributed by Science;
 Education Administration.
 
+\bibitem[\citeproctext]{ref-barfield_effects_1989}
+Barfield, W., \& Robless, R. (1989b). The effects of two- or
+three-dimensional graphics on the problem-solving performance of
+experienced and novice decision makers. \emph{Behaviour \& Information
+Technology}, \emph{8}(5), 369--385.
+\url{https://doi.org/10.1080/01449298908914567}
+
 \bibitem[\citeproctext]{ref-barfield1989}
-Barfield, W., \& Robless, R. (1989). The effects of two- or
+Barfield, W., \& Robless, R. (1989a). The effects of two- or
 three-dimensional graphics on the problem-solving performance of
 experienced and novice decision makers. \emph{Behaviour \& Information
 Technology}, \emph{8}(5), 369--385.
@@ -1311,6 +4110,11 @@ Embellishments in Visualization. \emph{IEEE Transactions on
 Visualization and Computer Graphics}, \emph{18}(12), 2759--2768.
 \url{https://doi.org/10.1109/TVCG.2012.197}
 
+\bibitem[\citeproctext]{ref-brath_3d_2014}
+Brath, R. (2014). {3D} {InfoVis} is here to stay: {Deal} with it.
+\emph{2014 {IEEE} {VIS} {International} {Workshop} on {3DVis}
+({3DVis})}, 25--31. \url{https://doi.org/10.1109/3DVis.2014.7160096}
+
 \bibitem[\citeproctext]{ref-breslow2009}
 Breslow, L. A., Ratwani, R. M., \& Trafton, J. G. (2009). Cognitive
 Models of the Influence of Color Scale on Data Visualization Tasks.
@@ -1318,28 +4122,73 @@ Models of the Influence of Color Scale on Data Visualization Tasks.
 Society}, \emph{51}(3), 321--338.
 \url{https://doi.org/10.1177/0018720809338286}
 
+\bibitem[\citeproctext]{ref-carver}
+Carver, R., College, S., \& Everson, M. (2016). \emph{Guidelines for
+Assessment and Instruction in Statistics Education (GAISE) College
+Report}.
+
+\bibitem[\citeproctext]{ref-shiny}
+Chang, W., Cheng, J., Allaire, J., Sievert, C., Schloerke, B., Xie, Y.,
+Allen, J., McPherson, J., Dipert, A., \& Borges, B. (2023). \emph{Shiny:
+Web application framework for r}.
+
+\bibitem[\citeproctext]{ref-clevelandGraphical1984}
+Cleveland, W. S., \& McGill, R. (1984b). Graphical {Perception}:
+{Theory}, {Experimentation}, and {Application} to the {Development} of
+{Graphical} {Methods}. \emph{Journal of the American Statistical
+Association}, \emph{79}(387), 531--554.
+\url{https://doi.org/10.1080/01621459.1984.10478080}
+
 \bibitem[\citeproctext]{ref-cleveland1984}
-Cleveland, W. S., \& McGill, R. (1984). Graphical Perception: Theory,
+Cleveland, W. S., \& McGill, R. (1984a). Graphical Perception: Theory,
 Experimentation, and Application to the Development of Graphical
 Methods. \emph{Journal of the American Statistical Association},
 \emph{79}(387), 531--554.
 \url{https://doi.org/10.1080/01621459.1984.10478080}
 
+\bibitem[\citeproctext]{ref-croxtonGraphicComparisonsBars1932}
+Croxton, F. E., \& Stein, H. (1932b). Graphic {Comparisons} by {Bars},
+{Squares}, {Circles}, and {Cubes}. \emph{Journal of the American
+Statistical Association}, \emph{27}(177), 54--60.
+\url{https://doi.org/10.1080/01621459.1932.10503227}
+
 \bibitem[\citeproctext]{ref-croxton1932}
-Croxton, F. E., \& Stein, H. (1932). Graphic Comparisons by Bars,
+Croxton, F. E., \& Stein, H. (1932a). Graphic Comparisons by Bars,
 Squares, Circles, and Cubes. \emph{Journal of the American Statistical
 Association}, \emph{27}(177), 54--60.
 \url{https://doi.org/10.1080/01621459.1932.10503227}
 
+\bibitem[\citeproctext]{ref-croxtonBarChartsCircle1927}
+Croxton, F. E., \& Stryker, R. E. (1927b). Bar {Charts Versus Circle
+Diagrams}. \emph{Journal of the American Statistical Association},
+\emph{22}(160), 473--482. \url{https://doi.org/10.2307/2276829}
+
 \bibitem[\citeproctext]{ref-croxton1927}
-Croxton, F. E., \& Stryker, R. E. (1927). Bar charts versus circle
+Croxton, F. E., \& Stryker, R. E. (1927a). Bar charts versus circle
 diagrams. \emph{Journal of the American Statistical Association},
 \emph{22}(160), 473--482. \url{https://doi.org/10.2307/2276829}
+
+\bibitem[\citeproctext]{ref-daySineIllusion1991}
+Day, R. H., \& Stecher, E. J. (1991). Sine of an illusion.
+\emph{Perception}, \emph{20}(1), 49--55.
+\url{https://doi.org/10.1068/p200049}
 
 \bibitem[\citeproctext]{ref-dodziuk2016}
 Dodziuk, H. (2016). Applications of 3D printing in healthcare.
 \emph{Polish Journal of Cardio-Thoracic Surgery}, \emph{3}, 283--293.
 \url{https://doi.org/10.5114/kitp.2016.62625}
+
+\bibitem[\citeproctext]{ref-eellsRelativeMeritsCircles1926}
+Eells, W. C. (1926a). The {Relative Merits} of {Circles} and {Bars} for
+{Representing Component Parts}. \emph{Journal of the American
+Statistical Association}, \emph{21}(154), 119--132.
+\url{https://doi.org/10.1080/01621459.1926.10502165}
+
+\bibitem[\citeproctext]{ref-eells1926}
+Eells, W. C. (1926b). The relative merits of circles and bars for
+representing component parts. \emph{Journal of the American Statistical
+Association}, \emph{21}(154), 119--132.
+\url{https://doi.org/10.1080/01621459.1926.10502165}
 
 \bibitem[\citeproctext]{ref-fischer2000}
 Fischer, M. H. (2000). Do irrelevant depth cues affect the comprehension
@@ -1352,11 +4201,22 @@ Fischer, M. H., Dewulf, N., \& Hill, R. L. (2005). Designing bar graphs:
 orientation matters. \emph{Applied Cognitive Psychology}, \emph{19}(7),
 953--962. \url{https://doi.org/10.1002/acp.1105}
 
+\bibitem[\citeproctext]{ref-fisher_data_1997}
+Fisher, S. H., Dempsey, J. V., \& Marousky, R. T. (1997b). Data
+{Visualization}: {Preference} and {Use} of {Two}-{Dimensional} and
+{Three}-{Dimensional} {Graphs}. \emph{Social Science Computer Review},
+\emph{15}(3), 256--263. \url{https://doi.org/10.1177/089443939701500303}
+
 \bibitem[\citeproctext]{ref-fisher1997}
-Fisher, S. H., Dempsey, J. V., \& Marousky, R. T. (1997). Data
+Fisher, S. H., Dempsey, J. V., \& Marousky, R. T. (1997a). Data
 Visualization: Preference and Use of Two-Dimensional and
 Three-Dimensional Graphs. \emph{Social Science Computer Review},
 \emph{15}(3), 256--263. \url{https://doi.org/10.1177/089443939701500303}
+
+\bibitem[\citeproctext]{ref-fleetHowTactileGraphics2023}
+Fleet, C. (2023). How tactile graphics can help end image poverty.
+\emph{MIT Technology Review}.
+\url{https://www.technologyreview.com/2023/06/15/1074036/ending-image-poverty/}
 
 \bibitem[\citeproctext]{ref-national1977condition}
 for Educational Statistics, N. C., for Education Statistics, N. C., of
@@ -1375,22 +4235,64 @@ Grinstein, G., \& Trutschl, M. (2001). High-dimensional visualizations.
 \emph{In: 7th Data Mining Conference-KDD 2001: San Francisco,
 California}.
 
+\bibitem[\citeproctext]{ref-flexmix}
+Grün, B., \& Leisch, F. (2007). Fitting finite mixtures of generalized
+linear regressions in {R}. \emph{Computational Statistics \& Data
+Analysis}, \emph{51}(11), 5247--5252.
+\url{https://doi.org/10.1016/j.csda.2006.08.014}
+
 \bibitem[\citeproctext]{ref-hagerty1978}
 Hagerty, M., \& Birnbaum, M. H. (1978). Nonmetric tests of ratio vs.
 subtractive theories of stimulus comparison. \emph{Perception \&
 Psychophysics}, \emph{24}(2), 121--129.
 \url{https://doi.org/10.3758/BF03199538}
 
+\bibitem[\citeproctext]{ref-hastie2017generalized}
+Hastie, T. J. (2017). Generalized additive models. In \emph{Statistical
+models in s} (pp. 249--307). Routledge.
+
 \bibitem[\citeproctext]{ref-heer2010}
-Heer, J., \& Bostock, M. (2010). \emph{CHI '10: CHI Conference on Human
+Heer, J., \& Bostock, M. (2010a). \emph{CHI '10: CHI Conference on Human
 Factors in Computing Systems}. 203--212.
 \url{https://doi.org/10.1145/1753326.1753357}
+
+\bibitem[\citeproctext]{ref-heerCrowdsourcingGraphicalPerception2010b}
+Heer, J., \& Bostock, M. (2010b). Crowdsourcing graphical perception:
+Using mechanical turk to assess visualization design. \emph{Proceedings
+of the {SIGCHI} Conference on Human Factors in Computing Systems},
+203--212. \url{https://doi.org/10.1145/1753326.1753357}
+
+\bibitem[\citeproctext]{ref-rlang}
+Henry, L., \& Wickham, H. (2025). \emph{Rlang: Functions for base types
+and core r and 'tidyverse' features}. \url{https://rlang.r-lib.org}
+
+\bibitem[\citeproctext]{ref-herzog1981}
+Herzog, A. R., \& Bachman, J. G. (1981). Effects of questionnaire length
+on response quality. \emph{The Public Opinion Quarterly}, \emph{45}(4),
+549--559. \url{https://www.jstor.org/stable/2748903}
 
 \bibitem[\citeproctext]{ref-hofmann2012}
 Hofmann, H., Follett, L., Majumder, M., \& Cook, D. (2012). Graphical
 tests for power comparison of competing designs. \emph{IEEE Transactions
 on Visualization and Computer Graphics}, \emph{18}(12), 2441--2448.
 \url{https://doi.org/10.1109/TVCG.2012.230}
+
+\bibitem[\citeproctext]{ref-hofmannCommonAnglePlots2013}
+Hofmann, H., \& Vendettuoli, M. (2013). Common angle plots as
+perception-true visualizations of categorical associations. \emph{{IEEE}
+Transactions on Visualization \& Computer Graphics}, (12), 2297--2305.
+\url{https://doi.org/10.1109/TVCG.2013.140}
+
+\bibitem[\citeproctext]{ref-hollandsBiasProportionJudgments2000}
+Hollands, J. G., \& Dyre, B. P. (2000). Bias in proportion judgments:
+{The} cyclical power model. \emph{Psychological Review}, \emph{107}(3),
+500--524. \url{https://doi.org/10.1037/0033-295X.107.3.500}
+
+\bibitem[\citeproctext]{ref-holloway2019}
+Holloway, L., Marriott, K., Butler, M., \& Reinders, S. (2019).
+\emph{ASSETS '19: The 21st International ACM SIGACCESS Conference on
+Computers and Accessibility}. 183--195.
+\url{https://doi.org/10.1145/3308561.3353790}
 
 \bibitem[\citeproctext]{ref-alma991030431699606387}
 Homestead, S. (2021). \emph{Importance of text in titles, labels, and
@@ -1401,9 +4303,31 @@ Horst, A. M., Hill, A. P., \& Gorman, K. B. (2020).
 \emph{Palmerpenguins: Palmer archipelago (antarctica) penguin data}.
 \url{https://doi.org/10.5281/zenodo.3960218}
 
+\bibitem[\citeproctext]{ref-multcomp}
+Hothorn, T., Bretz, F., \& Westfall, P. (2008). Simultaneous inference
+in general parametric models. \emph{Biometrical Journal}, \emph{50}(3),
+346--363.
+
+\bibitem[\citeproctext]{ref-huExploringNewParadigms2015b}
+Hu, M. (2015). Exploring {New Paradigms} for {Accessible 3D Printed
+Graphs}. \emph{Proceedings of the 17th {International ACM SIGACCESS
+Conference} on {Computers} \& {Accessibility} - {ASSETS} '15}, 365--366.
+\url{https://doi.org/10.1145/2700648.2811330}
+
+\bibitem[\citeproctext]{ref-huffHowLieStatistics1954}
+Huff, D. (1954). \emph{How to {Lie} with {Statistics}}. {W. W. Norton
+and Company}.
+
 \bibitem[\citeproctext]{ref-hughes}
 Hughes, B. M. (n.d.). \emph{Just Noticeable Differences in 2D and 3D Bar
 Charts: A Psychophysical Analysis of Chart Readability}.
+
+\bibitem[\citeproctext]{ref-hullmanPursuitErrorSurvey2019}
+Hullman, J., Qiao, X., Correll, M., Kale, A., \& Kay, M. (2019). In
+{Pursuit} of {Error}: {A Survey} of {Uncertainty Visualization
+Evaluation}. \emph{IEEE Transactions on Visualization and Computer
+Graphics}, \emph{25}(1), 903--913.
+\url{https://doi.org/10.1109/TVCG.2018.2864889}
 
 \bibitem[\citeproctext]{ref-huronMakingDataPhysical2023}
 Huron, S., Nagel, T., Oehlberg, L., \& Willett, W. (Eds.). (2023).
@@ -1411,10 +4335,22 @@ Huron, S., Nagel, T., Oehlberg, L., \& Willett, W. (Eds.). (2023).
 world} (First edition). AK Peters : CRC Press.
 
 \bibitem[\citeproctext]{ref-jansen2013b}
-Jansen, Y., Dragicevic, P., \& Fekete, J.-D. (2013). Evaluating the
+Jansen, Y., Dragicevic, P., \& Fekete, J.-D. (2013a). Evaluating the
 efficiency of physical visualizations. \emph{Proceedings of the {SIGCHI
 Conference} on {Human Factors} in {Computing Systems}}, 2593--2602.
 \url{https://doi.org/10.1145/2470654.2481359}
+
+\bibitem[\citeproctext]{ref-jansen2013}
+Jansen, Y., Dragicevic, P., \& Fekete, J.-D. (2013b). Evaluating the
+efficiency of physical visualizations. \emph{Proceedings of the {SIGCHI
+Conference} on {Human Factors} in {Computing Systems}}, 2593--2602.
+\url{https://doi.org/10.1145/2470654.2481359}
+
+\bibitem[\citeproctext]{ref-jasoIdentificationCarelessResponding2021}
+Jaso, B. A., Kraus, N. I., \& Heller, A. S. (2021). Identification of
+careless responding in ecological momentary assessment research: {From}
+posthoc analyses to real-time data monitoring. \emph{Psychological
+Methods}. \url{https://doi.org/10.1037/met0000312}
 
 \bibitem[\citeproctext]{ref-jeong2025}
 Jeong, J., Choi, A., Kang, D., \& Lee, Y. K. (2025). A comparative study
@@ -1422,9 +4358,19 @@ of 2D vs. 3D chart visualizations in virtual reality. \emph{Journal of
 Visualization}, \emph{28}(1), 239--253.
 \url{https://doi.org/10.1007/s12650-024-01033-6}
 
+\bibitem[\citeproctext]{ref-katsioloudis2018}
+Katsioloudis, P., \& Jones, M. (2018). A Comparative Analysis of
+Holographic, 3D-Printed, and Computer-Generated Models: Implications for
+Engineering Technology Students{'} Spatial Visualization Ability.
+\emph{Journal of Technology Education}, \emph{29}(2), 36--53.
+\url{https://doi.org/10.21061/jte.v29i2.a.3}
+
+\bibitem[\citeproctext]{ref-kingdom2016}
+Kingdom, F. A. A., \& Prins, N. (2016). \emph{Psychophysics: a practical
+introduction} (Second edition). Elsevier/Academic Press.
+
 \bibitem[\citeproctext]{ref-kintelOpenSCADDocumentation2023}
 Kintel, M. (2023, July 17). \emph{{OpenSCAD}. {OpenSCAD}.org}.
-\url{http://openscad.org/documentation.html}
 
 \bibitem[\citeproctext]{ref-kraus2020}
 Kraus, M., Angerbauer, K., Buchmüller, J., Schweitzer, D., Keim, D. A.,
@@ -1435,6 +4381,11 @@ Human Factors in Computing Systems}. 1--14.
 \bibitem[\citeproctext]{ref-levy1996}
 Levy, E., Zacks, J., Tversky, B., \& Schiano, D. (1996). \emph{the
 SIGCHI conference}. 42--49. \url{https://doi.org/10.1145/238386.238400}
+
+\bibitem[\citeproctext]{ref-spence1989}
+Lewandowsky, S., \& Spence, I. (1989). The perception of statistical
+graphs. \emph{Sociological Methods \& Research - SOCIOL METHOD RES},
+\emph{18}, 200--242. \url{https://doi.org/10.1177/0049124189018002002}
 
 \bibitem[\citeproctext]{ref-liu2018}
 Liu, Y., \& Heer, J. (2018a). \emph{CHI '18: CHI Conference on Human
@@ -1447,6 +4398,39 @@ Empirical Assessment} of {Quantitative Colormaps}. \emph{Proceedings of
 the 2018 {CHI Conference} on {Human Factors} in {Computing Systems}},
 1--12. \url{https://doi.org/10.1145/3173574.3174172}
 
+\bibitem[\citeproctext]{ref-loy2021a}
+Loy, A. (2021). Bringing Visual Inference to the Classroom.
+\emph{Journal of Statistics and Data Science Education}, \emph{29}(2),
+171--182. \url{https://doi.org/10.1080/26939169.2021.1920866}
+
+\bibitem[\citeproctext]{ref-luModelingJustNoticeable2022}
+Lu, M., Lanir, J., Wang, C., Yao, Y., Zhang, W., Deussen, O., \& Huang,
+H. (2022). Modeling {Just Noticeable Differences} in {Charts}.
+\emph{IEEE Transactions on Visualization and Computer Graphics},
+\emph{28}(1), 718--726. {IEEE Transactions} on {Visualization} and
+{Computer Graphics}. \url{https://doi.org/10.1109/TVCG.2021.3114874}
+
+\bibitem[\citeproctext]{ref-maineriSliderBarsMultiDevice2021}
+Maineri, A. M., Bison, I., \& Luijkx, R. (2021). Slider bars in
+multi-device web surveys. \emph{Social Science Computer Review},
+\emph{39}(4), 573--591. \url{https://doi.org/10.1177/0894439319879132}
+
+\bibitem[\citeproctext]{ref-mandal2020}
+Mandal, B. N., Parsad, R., \& Dash, S. (2020). Incomplete split-plot
+designs: Construction and analysis. \emph{Statistics \& Probability
+Letters}, \emph{166}, 108869.
+\url{https://doi.org/10.1016/j.spl.2020.108869}
+
+\bibitem[\citeproctext]{ref-margaret1994}
+Margaret, M. (1994). What Is the Use of Experiments Conducted By
+Statistics Students? \emph{Journal of Statistics Education},
+\emph{2}(1), 2. \url{https://doi.org/10.1080/10691898.1994.11910461}
+
+\bibitem[\citeproctext]{ref-mcgowan2011}
+McGowan, H. M. (2011). Planning a Comparative Experiment in Educational
+Settings. \emph{Journal of Statistics Education}, \emph{19}(2), 4.
+\url{https://doi.org/10.1080/10691898.2011.11889612}
+
 \bibitem[\citeproctext]{ref-melodycarswell1991}
 Melody Carswell, C., Frankenberger, S., \& Bernhard, D. (1991). Graphing
 in depth: perspectives on the use of three-dimensional graphs to
@@ -1455,25 +4439,48 @@ Technology}, \emph{10}(6), 459--474.
 \url{https://doi.org/10.1080/01449299108924304}
 
 \bibitem[\citeproctext]{ref-msexcel}
-Microsoft Corporation. (2025). \emph{Microsoft excel} {[}Computer
-software{]}. \url{https://office.microsoft.com/excel}
+Microsoft Corporation. (2018). \emph{Microsoft excel} (Version 2019
+(16.0)) {[}Computer software{]}.
 
 \bibitem[\citeproctext]{ref-molinalopezEffectColorPalettes2023}
 Molina Lopez, E., Middel Soria, C., \& Vázquez, P.-P. (2023).
 \emph{Effect of {Color Palettes} in {Heatmaps Perception}: A {Study}}. 5
 pages. \url{https://doi.org/10.2312/EVS.20231039}
 
+\bibitem[\citeproctext]{ref-morganwallIntroducing3DGgplots20191006}
+Morgan-Wall, T. (2019). Introducing {3D} ggplots with rayshader
+{[}Blog{]}. In \emph{Tyler Morgan-Wall}.
+\url{https://www.tylermw.com/posts/data_visualization/3d-ggplots-with-rayshader.html}
+
 \bibitem[\citeproctext]{ref-rayshader}
 Morgan-Wall, T. (2024). \emph{Rayshader: Create maps and visualize data
-in 2D and 3D}. \url{https://CRAN.R-project.org/package=rayshader}
+in 2D and 3D}. \url{https://doi.org/10.32614/CRAN.package.rayshader}
+
+\bibitem[\citeproctext]{ref-mozillafoundationWebGL2D3D2023}
+Mozilla Foundation. (2023, July 12). \emph{{WebGL}: 2D and 3D graphics
+for the web}.
+\url{https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API}
+
+\bibitem[\citeproctext]{ref-muff2022}
+Muff, J. L., Heye, T., Thieringer, F. M., \& Brantner, P. (2022).
+Clinical acceptance of advanced visualization methods: A comparison
+study of 3D-print, virtual reality glasses, and 3D-display. \emph{3D
+Printing in Medicine}, \emph{8}, 5.
+\url{https://doi.org/10.1186/s41205-022-00133-z}
 
 \bibitem[\citeproctext]{ref-munzner}
 Munzner, T. (n.d.). \emph{Visualization Design and Analysis:
 Abstractions, Principles, and Methods}.
 
 \bibitem[\citeproctext]{ref-rgl}
-Murdoch, D., \& Adler, D. (2024). \emph{Rgl: 3D visualization using
-OpenGL}. \url{https://CRAN.R-project.org/package=rgl}
+Murdoch, D., \& Adler, D. (2023). \emph{Rgl: 3D visualization using
+OpenGL}.
+
+\bibitem[\citeproctext]{ref-park2021}
+Park, Y., Viegut, A. A., \& Matthews, P. G. (2021). More than the sum of
+its parts: Exploring the development of ratio magnitude vs. Simple
+magnitude perception. \emph{Developmental Science}, \emph{24}(3),
+e13043. \url{https://doi.org/10.1111/desc.13043}
 
 \bibitem[\citeproctext]{ref-peuxf1a2020}
 Peña, A., Ragan, E., \& Harrison, L. (2020). Memorability of enhanced
@@ -1501,6 +4508,11 @@ Rice, K., Hofmann, H., Du Toit, N., \& Mulrow, E. (2024). Testing
 Perceptual Accuracy in a U.S. General Population Survey Using Stacked
 Bar Charts. \emph{Journal of Data Science}, 280--297.
 \url{https://doi.org/10.6339/24-JDS1121}
+
+\bibitem[\citeproctext]{ref-ruudUncertaintyCausesRounding2014a}
+Ruud, P. A., Schunk, D., \& Winter, J. K. (2014). Uncertainty causes
+rounding: An experimental study. \emph{Experimental Economics},
+\emph{17}(3), 391--413. \url{https://doi.org/10.1007/s10683-013-9374-8}
 
 \bibitem[\citeproctext]{ref-sas9.4}
 \emph{SAS 9.4 ODS Graphics: Procedures Guide, Sixth Edition}. (n.d.).
@@ -1532,10 +4544,20 @@ Technology}, \emph{15}(2), 96--100.
 Sievert, C. (2020). \emph{Interactive web-based data visualization with
 r, plotly, and shiny}. \url{https://plotly-r.com}
 
+\bibitem[\citeproctext]{ref-spenceVisualPsychophysicsSimple1990}
+Spence, I. (1990). Visual psychophysics of simple graphical elements.
+\emph{Journal of Experimental Psychology: Human Perception and
+Performance}, \emph{16}, 683--692.
+\url{https://doi.org/10.1037/0096-1523.16.4.683}
+
 \bibitem[\citeproctext]{ref-stevens}
 Stevens, S. S. (1957). On the psychophysical law. \emph{Psychological
 Review}, \emph{64}(3), 153--181.
 \url{https://research.ebsco.com/linkprocessor/plink?id=8938323d-a6d2-3f8c-979e-4bd9841e345e}
+
+\bibitem[\citeproctext]{ref-stevens1986}
+Stevens, S. S., \& Stevens, G. (1986). \emph{Psychophysics: introduction
+to its perceptual, neural, and social prospects}. Transaction Books.
 
 \bibitem[\citeproctext]{ref-stewart2009}
 Stewart, B. M., Cipolla, J. M., \& Best, L. A. (2009). Extraneous
@@ -1550,15 +4572,31 @@ International Conference} on {Tangible}, {Embedded}, and {Embodied
 Interaction}}, 92--99. \url{https://doi.org/10.1145/2839462.2839476}
 
 \bibitem[\citeproctext]{ref-stusakEvaluatingMemorabilityPhysical2015}
-Stusak, S., Schwarz, J., \& Butz, A. (2015). Evaluating the
+Stusak, S., Schwarz, J., \& Butz, A. (2015a). Evaluating the
 {Memorability} of {Physical Visualizations}. \emph{Proceedings of the
 33rd {Annual ACM Conference} on {Human Factors} in {Computing Systems}},
 3247--3250. \url{https://doi.org/10.1145/2702123.2702248}
+
+\bibitem[\citeproctext]{ref-stusak2015}
+Stusak, S., Schwarz, J., \& Butz, A. (2015b). Evaluating the
+{Memorability} of {Physical Visualizations}. \emph{Proceedings of the
+33rd {Annual ACM Conference} on {Human Factors} in {Computing Systems}},
+3247--3250. \url{https://doi.org/10.1145/2702123.2702248}
+
+\bibitem[\citeproctext]{ref-tarr2001}
+Tarr, M. J., \& Kriegman, D. J. (2001). What defines a view?
+\emph{Vision Research}, \emph{41}(15), 1981--2004.
+\url{https://doi.org/10.1016/S0042-6989(01)00024-4}
 
 \bibitem[\citeproctext]{ref-thingiversecomChartSales3D}
 Thingiverse.com. (n.d.). Chart: {Sales} of 3-{D Printers} under \$5,000
 by {WSJ}. In \emph{Thingiverse}.
 https://www.thingiverse.com/thing:365994.
+
+\bibitem[\citeproctext]{ref-Tintle2021}
+Tintle, N., Chance, B. L., Cobb, G. W., Rossman, A. J., Roy, S.,
+Swanson, T., \& VanderStoep, J. (2021). \emph{Introduction to
+statistical investigations}.
 
 \bibitem[\citeproctext]{ref-tractinsky1999}
 Tractinsky, N., \& Meyer, J. (1999). Chartjunk or goldgraph? Effects of
@@ -1582,8 +4620,14 @@ Civil Engineering - A Review. \emph{International Journal of Civil
 Engineering}, \emph{10}(12), 58--68.
 \url{https://doi.org/10.14445/23488352/IJCE-V10I12P107}
 
+\bibitem[\citeproctext]{ref-vanderplasTestingStatisticalCharts2020}
+Vanderplas, S., Cook, D., \& Hofmann, H. (2020b). Testing {Statistical
+Charts}: {What Makes} a {Good Graph}? \emph{Annual Review of Statistics
+and Its Application}, \emph{7}(1), annurev-statistics-031219-041252.
+\url{https://doi.org/ggnv7t}
+
 \bibitem[\citeproctext]{ref-vanderplas2020}
-Vanderplas, S., Cook, D., \& Hofmann, H. (2020). Testing Statistical
+Vanderplas, S., Cook, D., \& Hofmann, H. (2020a). Testing Statistical
 Charts: What Makes a Good Graph? \emph{Annual Review of Statistics and
 Its Application}, \emph{7}(1), 61--88.
 \url{https://doi.org/10.1146/annurev-statistics-031219-041252}
@@ -1601,8 +4645,27 @@ Graphical Statistics}, \emph{28}(3), 620--634.
 \url{https://doi.org/10.1080/10618600.2018.1562937}
 
 \bibitem[\citeproctext]{ref-veit}
-Veit, C. T. (n.d.). \emph{Ratio and Subtractive Processes in
+Veit, C. T. (1978). \emph{Ratio and Subtractive Processes in
 Psychophysical Judgment}.
+
+\bibitem[\citeproctext]{ref-vonhuhnFurtherStudiesGraphic1927}
+von Huhn, R. (1927). Further {Studies} in the {Graphic Use} of {Circles}
+and {Bars}. \emph{Journal of the American Statistical Association},
+\emph{22}(157), 31--36.
+\url{https://doi.org/10.1080/01621459.1927.10502938}
+
+\bibitem[\citeproctext]{ref-wang2022}
+Wang, X., Besançon, L., Ammi, M., \& Isenberg, T. (2022). Understanding
+differences between combinations of 2D and 3D input and output devices
+for 3D data visualization. \emph{International Journal of Human-Computer
+Studies}, \emph{163}, 102820.
+\url{https://doi.org/10.1016/j.ijhcs.2022.102820}
+
+\bibitem[\citeproctext]{ref-ward2023}
+Ward, M. K., \& Meade, A. W. (2023). Dealing with {Careless Responding}
+in {Survey Data}: {Prevention}, {Identification}, and {Recommended Best
+Practices}. \emph{Annual Review of Psychology}, \emph{74}(1), 577--596.
+\url{https://doi.org/10.1146/annurev-psych-040422-045007}
 
 \bibitem[\citeproctext]{ref-wickham2010}
 Wickham, H. (2010). A layered grammar of graphics. \emph{Journal of
@@ -1611,11 +4674,42 @@ Computational and Graphical Statistics}, \emph{19}(1), 3--28.
 
 \bibitem[\citeproctext]{ref-ggplot2}
 Wickham, H. (2016). \emph{ggplot2: Elegant graphics for data analysis}.
-Springer-Verlag New York. \url{https://ggplot2.tidyverse.org}
+
+\bibitem[\citeproctext]{ref-wiederich2023}
+Wiederich, T. (2023). \emph{Evaluating Perceptual Judgements on 3D
+Printed Bar Charts}.
+\url{https://twiedrw.github.io/3d_graphical_perception/SDSS_presentation/index.html}
+
+\bibitem[\citeproctext]{ref-wiederich}
+Wiederich, T., \& VanderPlas, S. (n.d.). \emph{Placeholder: A
+comparative experiment on projections of 2D and 3D bar charts}
+{[}Unpublished manuscript{]}.
+
+\bibitem[\citeproctext]{ref-wilkeDonGo3D2020}
+Wilke, C. O. (2020). Don't go {3D}. In \emph{Fundamentals of {Data
+Visualization}}. {O'Reilly Media}.
+\url{https://clauswilke.com/dataviz/no-3d.html}
 
 \bibitem[\citeproctext]{ref-wilkinson2005}
 Wilkinson, L., \& Wills, G. (2005). \emph{The grammar of graphics} (2nd
 ed). Springer.
+
+\bibitem[\citeproctext]{ref-mgcv3}
+Wood, S. N. (2003). Thin-plate regression splines. \emph{Journal of the
+Royal Statistical Society (B)}, \emph{65}(1), 95--114.
+
+\bibitem[\citeproctext]{ref-mgcv1}
+Wood, S. N. (2004). Stable and efficient multiple smoothing parameter
+estimation for generalized additive models. \emph{Journal of the
+American Statistical Association}, \emph{99}(467), 673--686.
+
+\bibitem[\citeproctext]{ref-mgcv2}
+Wood, S. N. (2017a). \emph{Generalized additive models: An introduction
+with r} (2nd ed.). Chapman; Hall/CRC.
+
+\bibitem[\citeproctext]{ref-mgcv}
+Wood, S. N. (2017b). \emph{Generalized {A}dditive {M}odels: An
+introduction with {R}} (2nd ed.). Chapman; Hall/CRC.
 
 \bibitem[\citeproctext]{ref-zacks1998}
 Zacks, J., Levy, E., Tversky, B., \& Schiano, D. J. (1998). Reading bar
@@ -1624,9 +4718,15 @@ graphs: Effects of extraneous depth cues and graphical context.
 119--138. \url{https://doi.org/10.1037/1076-898X.4.2.119}
 
 \bibitem[\citeproctext]{ref-zhangJustNoticeableDifference2023a}
-Zhang, Z., Shang, X., Li, G., \& Wang, G. (2023). Just {Noticeable
+Zhang, Z., Shang, X., Li, G., \& Wang, G. (2023a). Just {Noticeable
 Difference Model} for {Images} with {Color Sensitivity}. \emph{Sensors},
 \emph{23}(5), 2634. \url{https://doi.org/10.3390/s23052634}
+
+\bibitem[\citeproctext]{ref-zhangJustNoticeableDifference2023}
+Zhang, Z., Shang, X., Li, G., \& Wang, G. (2023b). Just {Noticeable
+Difference Model} for {Images} with {Color Sensitivity}. \emph{Sensors
+(Basel, Switzerland)}, \emph{23}(5), 2634.
+\url{https://doi.org/10.3390/s23052634}
 
 \end{CSLReferences}
 
