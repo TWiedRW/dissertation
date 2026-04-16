@@ -11,24 +11,39 @@ book:
     - ch1-bar3d/writeups/index.qmd
     - ch2-experiential-learning/writeups/1-dissertation/index.qmd
     - ch3-heat3d/writeups/7-dissertation/index.qmd
+    - ch98-conclusion.qmd
     - ch99-references.qmd
 
 major: "Statistics"
 adviser: "Professor Susan VanderPlas"
 adviser-abstract: "Susan VanderPlas"
-degree-month: "August"
+degree-month: "May"
 degree-year: 2026
 nuthesis-frontmatter: true
 nuthesis-raggedright: true
 nuthesis-geometry: "letterpaper,top=1in,bottom=1in,right=1in,left=1.5in,includehead,nofoot"
 abstract: |
-  Data visualizations are a powerful tool for the communication of complex data structures.
-
-  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-
-  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  Data visualizations are powerful tools for communicating complex data structures. They are typically presented in 2-dimensional formats, such as on paper or computer screens. In recent years, technological advancements have enabled traditional data visualizations to be fully rendered in physical environments through 3D printing, offering more natural interactions. However, this style of graphical rendering remains largely unexplored in empirical evaluations with traditional charts. In this research, we conducted two experiments to assess ratio estimations across 2D and 3D charts in digital and physical environments. The first study partially replicated Cleveland and McGill’s (1984) work in perceptual tasks and expanded to incorporate 2D, digitally interactive 3D, and 3D-printed bar charts. For each chart, participants were asked to identify which of the two marked bars was smaller and to estimate the ratio of the smaller bar to the larger. Our results did not suggest that accuracy in ratio estimation differed across chart types. The second study evaluated 2D and 3D heat maps using a similar design, where the third dimension meaningfully communicated a variable within a dataset. In this study, we used 2D, digitally interactive 3D, and 3D-printed heat maps. Participants completed the same comparison and estimation tasks. Our results suggested that 3D heat maps provide more accurate ratio estimations than 2D heat maps, although no differences were detected in accuracy between the digital 3D heat maps and physical 3D heat maps. Lastly, we incorporated both studies as experiential learning projects for multiple sections of an introductory statistics course, where students completed a series of reflections from the viewpoints of participants and consumers of scientific knowledge. Collectively, the studies conducted in this research provide some of the first empirical evidence on 3D-printed statistical graphics and their potential role in data communication.
+dedication: |
+  To my parents, Cindy and Joe, for always believing in me and supporting my journey.
 acknowledgments: |
-  A section to thank those who have supported my research and academic journey!
+  The process of completing my Ph.D. has been such a rewarding and difficult journey, and I could not have done it without all of the amazing people in my life.
+
+  I want to thank my family for all of their love and support.
+
+  Mentors
+  The
+
+  STAT 218 instructors
+  My research would not have been possible without
+
+  Lastly, I wanted to thank the friends I made along the way.
+
+
+
+
+
+
 
 format:
   pdf:
