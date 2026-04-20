@@ -33,23 +33,22 @@ ggplot(penguins, mapping = aes(x = bill_length_mm,
   geom_point()
 ```
 
-
 While there have been many attempts to establish good data visualization practices [@tufte2001; @vanderplas2020], we do not know how well these recommendations translate from 2D projections into our 3D world. The advent of 3D printing allows us to precisely construct the 3D charts that have been widely studied through their 2D representations [@croxton1932; @barfield1989; @zacks1998]. With limited research on 3D-printed data manifestations, we explore some of the first empirical findings of physical 3D statistical graphics.
 
 ## Overview of Physical 3D Visualizations
 
 Data can be expressed in the physical world through a wide variety of means. In many cases, this can take on artistic expressions, such as encoding information into crocheted blankets or wooden sculptures [@huronMakingDataPhysical2023]. While certainly providing information about the data, these informational art pieces are largely left as display items to promote conversation into the underlying dataset.
 
-![3D-printed treemap created displaying Gross National Income for 130 countries [@huronMakingDataPhysical2023, pg. 217]. The two 3D prints on the bottom have additional information overlaid on top of the treemap as 2D displays.](images/treemap-3d.png){#fig-3d-treemap fig-scap='3D-printed treemap' width=80%}
+![3D-printed treemap created displaying Gross National Income for 130 countries [@huronMakingDataPhysical2023, pg. 217]. The two 3D prints on the bottom have additional information overlaid on top of the treemap as 2D displays.](images/treemap-3d.png){#fig-3d-treemap fig-scap="3D-printed treemap" width="80%"}
 
 Perhaps one of the most affordable types of data physicalization is through the use of 3D printing. Aside from the startup cost of a 3D-printer, material and labor costs are relatively low. Rolls of PLA filament can be acquired for around \$20 and can be used to create multiple charts. Print times vary depending on the size and complexity of the graphic, but smaller charts can be produced in approximately 2 hours. While needing much more time to produce than computer-generated visualizations, the amount of hands-on labor during the 3D-printing process is mainly limited to the time it takes to create the print file.
 
-Using 3D printers to create statistical graphics has typically been reserved for niche purposes to promote engagement of the displayed data. One of the earliest 3D-printed charts was shared in 2014 by the Wall Street Journal, where the print was used to discuss the rising popularity of 3D printers [@graphicsHowDoes3D; @thingiversecomChartSales3D]. It is rare to find these types of charts in practice, where images of the charts are often posted to social media or blog posts. This results in limited access to the physical charts, even though source print files can be shared through sites such as [thingiverse.com](thingiverse.com) and [printables.com](printables.com), as well as through GitHub. 
+Using 3D printers to create statistical graphics has typically been reserved for niche purposes to promote engagement of the displayed data. One of the earliest 3D-printed charts was shared in 2014 by the Wall Street Journal, where the print was used to discuss the rising popularity of 3D printers [@graphicsHowDoes3D; @thingiversecomChartSales3D]. A few additional examples were published by @huronMakingDataPhysical2023 (e.g., @fig-3d-treemap). It is rare to find these types of charts in practice, where images of the charts are often posted to social media or blog posts. This results in limited access to the physical charts, even though source print files can be shared through sites such as [thingiverse.com](thingiverse.com) and [printables.com](printables.com), as well as through GitHub repositories.
 
-::: {#fig-wsj layout-nrow="2" fig-cap="3D-printed volume charts showing the sales of 3D printers under \$5,000 [@thingiversecomChartSales3D]." fig-scap="First 3D-printed statistical graphic"}
-![Original 3D printed chart from WSJ](images/wsj-print.jpg){#fig-wsj-orig height="2in" fig-scap='Original WSJ 3D print'}
+::: {#fig-wsj layout-nrow="2" fig-cap="3D-printed volume charts showing the sales of 3D printers under $5,000 [@thingiversecomChartSales3D]." fig-scap="First 3D-printed statistical graphic"}
+![Original 3D printed chart from WSJ](images/wsj-print.jpg){#fig-wsj-orig height="2in" fig-scap="Original WSJ 3D print"}
 
-![Replicated print created in 2025](images/wsj-myprint.jpg){#fig-wsj-myprint height="2in" fig-scap='Replicated WSJ 3D print'}
+![Replicated print created in 2025](images/wsj-myprint.jpg){#fig-wsj-myprint height="2in" fig-scap="Replicated WSJ 3D print"}
 
 @fig-wsj-orig shows the original WSJ print from 2014. @fig-wsj-myprint shows two prints created with a Flash Forge Finder 3D Printer, where the smaller chart took 2 hours to print and the larger chart took 6 hours to print.
 :::
@@ -63,7 +62,6 @@ Numerous software programs can create digital renderings of 3D charts. Excel [@m
 While a number of tools exist for creating 3D data visualizations, the pipeline of getting these charts into files compatible with 3D printing is not widely automated. For example, R has some options using the `rgl` [@rgl] and `rayshader` [@rayshader] packages, but both packages have limited tuning parameters for their output files. Another option is to use 3D software, such as OpenSCAD [@kintelOpenSCADDocumentation2023], to manually create the charts, but these software programs lack the ability to directly integrate statistical information in the formulation of the charts. Without easy tools for creating 3D print files from the original data source, the process of created 3D-printed charts requires extensive manual effort to create the print file.
 
 Another consideration for 3D-printed charts is the inclusion of text labels. These labels, and text annotations, are essential in communicating the context of the data [@alma991030431699606387]. With single-filament 3D printers, text can be incorporated in three primary ways: (1) embossing, in which the text is raised above the surface of the print; (2) engraving, in which the text is recessed into the surface; or (3) applying external labels, such as stickers or ink. Multi-filament 3D printers have the additional option to use a different color for text labels, which can be applied to be either flush with the surface of the chart or embossed for tangibility. However, @munzner cautioned that the text of 3D charts may suffer from legibility issues due to the distortion of the text when viewed at an angle. Few recommendations exist for the incorporation of labels on data physicalizations, but the use of labels should complement the construction of the chart [@sauvePutLabelIt2022].
-
 
 ```{=html}
 <!-- This subsection was basically redid at the beginning of the section
@@ -96,13 +94,13 @@ NOVEL GRAPHICS CASES
 One of the most common types of charts is the bar chart, characterized by the use of rectangular geometries in a 2D space. Two variables are mapped to the geometries of the bar chart, where one axis is dedicated to a categorical variable of nominal or ordinal nature, and the other axis is for a continuous variable to denote magnitude or a response. These charts have been used over 200 years and remain a popular choice for many modern data visualizations [@friendly2021]. The use of 3-dimensional elements in bar charts typically involve converting the rectangular bars into rectangular prisms. @fig-make-bar-3d shows an illustration of this transformation.
 
 ::: {#fig-make-bar-3d layout-ncol="2" fig-scap="2D bar to 3D bar construction"}
-![2D bar](images/make-bar-3d-1.png){#fig-bar3d-1 fig-scap='2D bar face'}
+![2D bar](images/make-bar-3d-1.png){#fig-bar3d-1 fig-scap="2D bar face"}
 
-![Opposite face](images/make-bar-3d-2.png){#fig-bar3d-2 fig-scap='Opposite bar face'}
+![Opposite face](images/make-bar-3d-2.png){#fig-bar3d-2 fig-scap="Opposite bar face"}
 
-![Connecting faces](images/make-bar-3d-3.png){#fig-bar3d-3 fig-scap='Connecting bar faces'}
+![Connecting faces](images/make-bar-3d-3.png){#fig-bar3d-3 fig-scap="Connecting bar faces"}
 
-![Solid object](images/make-bar-3d-4.png){#fig-bar3d-4 fig-scap='Solid 3D bar'}
+![Solid object](images/make-bar-3d-4.png){#fig-bar3d-4 fig-scap="Solid 3D bar"}
 
 Construction of depth cues for a 2D bar chart. In some cases, bar are constructed such that the y-axis corresponds with the front face of the prism (as shown). Other 3D bar charts may have the y-axis aligned with the back face.
 :::
@@ -117,7 +115,7 @@ The seminal work of @cleveland1984 theorized that encoding information in volume
 
 From an artistic point of view, depth cues can obscure some elements of the chart, resulting in a decrease in readability. For 3D bar charts, this often occurs from the volumetric elements partially covering the response axis. Consider @fig-skewed where the y-axis corresponds to the back face of the rectangular prism. In this case, the front and right faces do not directly correspond with the axis, thus making it more difficult to extract values from the chart.
 
-![Figure from @schmid1983 when discussing 3D visualizations. The viewing angle for this chart would likely have viewers overestimate the values of the bars by lining up the front face with the y-axis.](images/skewed-angle.jpg){#fig-skewed width="3.35in" fig-scap='Skewed view overestimates bar heights'}
+![Figure from @schmid1983 when discussing 3D visualizations. The viewing angle for this chart would likely have viewers overestimate the values of the bars by lining up the front face with the y-axis.](images/skewed-angle.jpg){#fig-skewed width="3.35in" fig-scap="Skewed view overestimates bar heights"}
 
 ### For 3D Bar Charts
 
@@ -150,15 +148,15 @@ When only measuring accuracy, 3D bar charts tend to be less accurate than their 
 Of course, there are other less-studied factors that could affect perceptual judgments of accuracy in 3D bar charts. In addition to viewing parameters found in 2D bar chart studies [@fischer2005; @rice2024], adding depth cues are also subject to viewing angles, amount of depth, and field of view parameters. Viewing angle, with respect to the axis, can mislead the reader into overestimating or underestimating numerical quantities [@fig-skewed]. @zacks1998 did not find a significant effect for the amount of perception depth, but noted a trend such that increased exaggeration of depth lowered their accuracy metric. Lastly, field of view is fixed for the viewer, but can widely distort 3D renderings [@fig-fov]. These factors add additional complexity, but are not widely studied for the use of statistical graphics.
 
 ::: {#fig-fov layout-ncol="3" fig-scap="Field-of-view effects in 3D rendering"}
-![FOV: 30 degrees](images/fov-30.png){#fig-fov30 fig-scap='FOV 30 degrees'}
+![FOV: 30 degrees](images/fov-30.png){#fig-fov30 fig-scap="FOV 30 degrees"}
 
-![FOV: 60 degrees](images/fov-60.png){#fig-fov60 fig-scap='FOV 60 degrees'}
+![FOV: 60 degrees](images/fov-60.png){#fig-fov60 fig-scap="FOV 60 degrees"}
 
-![FOV: 90 degrees](images/fov-90.png){#fig-fov90 fig-scap='FOV 90 degrees'}
+![FOV: 90 degrees](images/fov-90.png){#fig-fov90 fig-scap="FOV 90 degrees"}
 
-![FOV: 120 degrees](images/fov-120.png){#fig-fov120 fig-scap='FOV 120 degrees'}
+![FOV: 120 degrees](images/fov-120.png){#fig-fov120 fig-scap="FOV 120 degrees"}
 
-![FOV: 150 degrees](images/fov-150.png){#fig-fov150 fig-scap='FOV 150 degrees'}
+![FOV: 150 degrees](images/fov-150.png){#fig-fov150 fig-scap="FOV 150 degrees"}
 
 Multiple charts of the volcano dataset [@volcano] rendered using the `rgl` package [@rgl] in R. Each chart has a different field-of-view parameter, with the amount of distortion increasing as the field-of-view (FOV) increases.
 :::
@@ -169,14 +167,14 @@ The speed in making perceptual judgments is another common metric in studies com
 
 Depth cues from 3D bar charts tend to increase the amount of time required to answer questions [@siegrist1996; @fischer2000; @stewart2009]. Intuitively, additional complexity should require additional time to process. For 3D bar charts, viewers need to align the response axis with the rectangular prisms in order to determine the approximate magnitude of the bar. Consider @fig-skewed, where the y-axis denotes magnitude with respect to a hidden face of the bar. In order to extract a numerical quantity, the viewer first has to align the axis with the correct face of the prism before processing the magnitude. The additional interaction of mentally aligning with the chosen viewing parameters results in 3D charts needing additional time to process.
 
-#### Preference
+#### User Preference
 
-The debate between whether to use 2D or 3D graphics stems from a wider adoption of 3D charts in practice. Computer graphics have made it easy to produce charts of either dimensionality, resulting in creative liberties for the creation of the chart for publication. @fig-ag-bar showcases two examples of 3D bar charts from the 1978 Handbook of Agricultural Charts [@cdi_hathitrust_hathifiles_uva_x030492864] where other options exist for displaying the data. @schmid1983 (Chapter 8) also showcases many other 3D charts published in official reports. Evidently, the persistence of 3D bar charts has shown preferential use by maintaining a presence in many software programs, including the widely used Microsoft Excel.
+The debate between whether to use 2D or 3D graphics stems from a wider adoption of 3D charts in practice. Computer graphics have made it easy to produce charts of either dimensionality, resulting in creative liberties for the creation of the chart for publication. For example, @fig-ag-bar showcases two examples of 3D bar charts from the 1978 Handbook of Agricultural Charts [@cdi_hathitrust_hathifiles_uva_x030492864] where other options exist for displaying the data. @schmid1983 (Chapter 8) also showcases many other 3D charts published in official reports. Evidently, the persistence of 3D bar charts has shown preferential use by maintaining a presence in many software programs, including the widely used Microsoft Excel.
 
 ::: {#fig-ag-bar layout-ncol="2" fig-scap="Published examples of 3D bar charts"}
-![Bar chart with strictly positive values](images/preferance-example1.png){#fig-ag-bar-pos height="2in" fig-scap='Positive-value 3D bar chart'}
+![Bar chart with strictly positive values](images/preferance-example1.png){#fig-ag-bar-pos height="2in" fig-scap="Positive-value 3D bar chart"}
 
-![Bar chart with negative values](images/preferance-example2.png){#fig-ag-bar-neg height="2in" fig-scap='Negative-value 3D bar chart'}
+![Bar chart with negative values](images/preferance-example2.png){#fig-ag-bar-neg height="2in" fig-scap="Negative-value 3D bar chart"}
 
 Two examples of 3D bar charts found in publication [@cdi_hathitrust_hathifiles_uva_x030492864]. This left image is a stacked bar chart, using shadings to indicate sugarbeats and sugarcane. The image on the right is a bar chart with positive and negative values of changes in canned vegetable consumption.
 :::
@@ -353,11 +351,10 @@ knitr::include_graphics('images/heatmap3d.png')
 
 Unlike 2D and 3D bar charts, the dimensional comparison for heatmaps has not been widely studied. This may be attributed to the complex designs of heatmaps, where there are many possible variables to consider. For example, the complex nature of color scales having an influential role in the perception of 2D heatmaps [@breslow2009; @liu2018; @reda2019]. It has also been observed that neighboring values may influence the ability to extract values, either by distraction or visual illusions [zacks1998; @vanderplasSignsSineIllusion2015]. The dimensionality of heatmaps requires the additional consideration of mapping color scales into heights, which is a process that has no literal translation. Depending on the scaling when mapping color to height, features may become overly smoothed or overly exaggerated. An example of this mapping discrepancy is shown in @fig-color-height. We expect that these numerous design choices contribute to the lack of research on 2D and 3D heatmaps.
 
-
 ::: {#fig-color-height layout-ncol="2" fig-scap="Height-scaling effects in 3D heatmaps"}
-![Flatter height scale](images/height-color-0.3.png){#fig-flat3d fig-scap='Compressed height scale'}
+![Flatter height scale](images/height-color-0.3.png){#fig-flat3d fig-scap="Compressed height scale"}
 
-![Stretched height scale](images/height-color-2.png){#fig-tall3d fig-scap='Expanded height scale'}
+![Stretched height scale](images/height-color-2.png){#fig-tall3d fig-scap="Expanded height scale"}
 
 Two figures representing the volcano dataset [@volcano] using different height scaling factors. Both figures use the same color scale, but there is no "correct" translation of color into the measurable height.
 :::
@@ -416,9 +413,9 @@ While numerous studies explored the dimensionality of statistical graphics in 2D
 
 ### What makes a good chart?
 
-There are many aspects for designing good data visualizations. @vanderplas2020 discussed various approaches to testing graphics, including numerical estimations, speed, and error rates. These metrics are fairly common  to measure when comparing 2D and 3D charts [@croxton1932; @cleveland1984; @hughes], but they do not represent the full picture of what makes one type of chart better than another. As observed by @levy1996, the objectives of the chart can determine which type of chart should be used. While many metrics exist, the practical limitation of testing generally allows for only a few metrics to be tested at a given time.
+There are many aspects for designing good data visualizations. @vanderplas2020 discussed various approaches to testing graphics, including numerical estimations, speed, and error rates. These metrics are fairly common to measure when comparing 2D and 3D charts [@croxton1932; @cleveland1984; @hughes], but they do not represent the full picture of what makes one type of chart better than another. As observed by @levy1996, the objectives of the chart can determine which type of chart should be used. While many metrics exist, the practical limitation of testing generally allows for only a few metrics to be tested at a given time.
 
-Many studies involving statistical graphics tend to rely on numerical estimations for recommending data visualization practices. This is particularly useful given the role that data visualizations play in the understanding of underlying datasets, which is to understand data structures and relationships [@tukey1965]. Successful visualizations should be able to translate tables into figures that rapidly convey values and patterns found within the data structures. In this research, we focus primarily on numerical estimations while also recording task completion times. 
+Many studies involving statistical graphics tend to rely on numerical estimations for recommending data visualization practices. This is particularly useful given the role that data visualizations play in the understanding of underlying datasets, which is to understand data structures and relationships [@tukey1965]. Successful visualizations should be able to translate tables into figures that rapidly convey values and patterns found within the data structures. In this research, we focus primarily on numerical estimations while also recording task completion times.
 
 ### Designing studies for numerical estimations
 
