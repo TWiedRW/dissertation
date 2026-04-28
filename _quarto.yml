@@ -12,7 +12,9 @@ book:
     - ch2-experiential-learning/writeups/1-dissertation/index.qmd
     - ch3-heat3d/writeups/7-dissertation/index.qmd
     - ch98-conclusion.qmd
-    - ch99-references.qmd
+    #- ch99-references.qmd
+  appendices:
+    - ch3-heat3d/writeups/7-dissertation/appendix3.qmd
 
 major: "Statistics"
 adviser: "Professor Susan VanderPlas"
@@ -26,9 +28,15 @@ abstract: |
   Data visualizations are powerful tools for communicating complex data structures. They are typically presented in 2-dimensional formats, such as on paper or computer screens. In recent years, technological advancements have enabled traditional data visualizations to be fully rendered in physical environments through 3D printing, offering more natural interactions. However, this style of graphical rendering remains largely unexplored in empirical evaluations with traditional charts. In this research, we conducted two experiments to assess ratio estimations across 2D and 3D charts in digital and physical environments. The first study partially replicated Cleveland and McGill’s (1984) work in perceptual tasks and expanded to incorporate 2D, digitally interactive 3D, and 3D-printed bar charts. For each chart, participants were asked to identify which of the two marked bars was smaller and to estimate the ratio of the smaller bar to the larger. Our results did not suggest that accuracy in ratio estimation differed across chart types. The second study evaluated 2D and 3D heat maps using a similar design, where the third dimension meaningfully communicated a variable within a dataset. In this study, we used 2D, digitally interactive 3D, and 3D-printed heat maps. Participants completed the same comparison and estimation tasks. Our results suggested that 3D heat maps provide more accurate ratio estimations than 2D heat maps, although no differences were detected in accuracy between the digital 3D heat maps and physical 3D heat maps. Lastly, we incorporated both studies as experiential learning projects for multiple sections of an introductory statistics course, where students completed a series of reflections from the viewpoints of participants and consumers of scientific knowledge. Collectively, the studies conducted in this research provide some of the first empirical evidence on 3D-printed statistical graphics and their potential role in data communication.
 dedication: |
   To my parents, Cindy and Joe, for always believing in me and supporting my journey.
-acknowledgments: |
-  A section to thank those who helped me on my academic journey!
 
+acknowledgments: |
+  I am incredibly grateful to all the people who helped me achieve this accomplishment. It would not have been possible without their support.
+
+  First and foremost, I want to express my deepest gratitude to my family. Their love and encouragement have been instrumental in helping me discover and pursue my passion. I am eternally thankful for their visits to Lincoln, even when they occasionally brought the cold weather from Minnesota. My parents, Cindy and Joe, have shown me that I can always rely on them, and I am truly grateful for their support. I also want to express my appreciation to my sister and grandparents for their presence in my life, which I deeply value.
+
+  I would also like to thank all my friends who made this journey enjoyable and memorable. First, I want to thank Alexis Alley for being an incredible partner and for keeping me motivated throughout my Ph.D. journey. I also want to thank Prince Montcho and Andrew Hultquist. My visits back home were never complete without a late-night Walmart run with Prince, and it was a lot of fun to explore Lincoln with Andrew during my first year at UNL.
+
+  Lastly, I want to express my deepest gratitude to the wonderful faculty in the Department of Statistics at UNL. To my advisor, Dr. Susan VanderPlas, thank you for providing me with incredible opportunities and guidance. Your research has helped me explore and master the skills that initially led me to pursue a graduate degree. To Dr. Réka Howard, thank you for helping me develop the skills for being a statistical consultant and navigating the complexities that come with it. I also want to express my appreciation to Dr. Erin Blankenship, Dr. Kent Eskridge, Dr. Walter Stroup, and Dr. Chris Bilder for creating a warm and welcoming community at UNL.
 
 format:
   pdf:

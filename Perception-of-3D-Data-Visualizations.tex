@@ -68,22 +68,6 @@
 \usepackage{makecell}
 \usepackage{xcolor}
 \makeatletter
-\@ifpackageloaded{tcolorbox}{}{\usepackage[skins,breakable]{tcolorbox}}
-\@ifpackageloaded{fontawesome5}{}{\usepackage{fontawesome5}}
-\definecolor{quarto-callout-color}{HTML}{909090}
-\definecolor{quarto-callout-note-color}{HTML}{0758E5}
-\definecolor{quarto-callout-important-color}{HTML}{CC1914}
-\definecolor{quarto-callout-warning-color}{HTML}{EB9113}
-\definecolor{quarto-callout-tip-color}{HTML}{00A047}
-\definecolor{quarto-callout-caution-color}{HTML}{FC5300}
-\definecolor{quarto-callout-color-frame}{HTML}{acacac}
-\definecolor{quarto-callout-note-color-frame}{HTML}{4582ec}
-\definecolor{quarto-callout-important-color-frame}{HTML}{d9534f}
-\definecolor{quarto-callout-warning-color-frame}{HTML}{f0ad4e}
-\definecolor{quarto-callout-tip-color-frame}{HTML}{02b875}
-\definecolor{quarto-callout-caution-color-frame}{HTML}{fd7e14}
-\makeatother
-\makeatletter
 \@ifpackageloaded{bookmark}{}{\usepackage{bookmark}}
 \makeatother
 \makeatletter
@@ -204,7 +188,36 @@ my journey.
 \end{dedication}
 
 \begin{acknowledgments}
-A section to thank those who helped me on my academic journey!
+I am incredibly grateful to all the people who helped me achieve this
+accomplishment. It would not have been possible without their support.
+
+First and foremost, I want to express my deepest gratitude to my family.
+Their love and encouragement have been instrumental in helping me
+discover and pursue my passion. I am eternally thankful for their visits
+to Lincoln, even when they occasionally brought the cold weather from
+Minnesota. My parents, Cindy and Joe, have shown me that I can always
+rely on them, and I am truly grateful for their support. I also want to
+express my appreciation to my sister and grandparents for their presence
+in my life, which I deeply value.
+
+I would also like to thank all my friends who made this journey
+enjoyable and memorable. First, I want to thank Alexis Alley for being
+an incredible partner and for keeping me motivated throughout my
+Ph.D.~journey. I also want to thank Prince Montcho and Andrew Hultquist.
+My visits back home were never complete without a late-night Walmart run
+with Prince, and it was a lot of fun to explore Lincoln with Andrew
+during my first year at UNL.
+
+Lastly, I want to express my deepest gratitude to the wonderful faculty
+in the Department of Statistics at UNL. To my advisor, Dr.~Susan
+VanderPlas, thank you for providing me with incredible opportunities and
+guidance. Your research has helped me explore and master the skills that
+initially led me to pursue a graduate degree. To Dr.~Réka Howard, thank
+you for helping me develop the skills for being a statistical consultant
+and navigating the complexities that come with it. I also want to
+express my appreciation to Dr.~Erin Blankenship, Dr.~Kent Eskridge,
+Dr.~Walter Stroup, and Dr.~Chris Bilder for creating a warm and
+welcoming community at UNL.
 \end{acknowledgments}
 
 \setcounter{tocdepth}{1}
@@ -344,46 +357,45 @@ Using 3D printers to create statistical graphics has typically been
 reserved for niche purposes to promote engagement of the displayed data.
 One of the earliest 3D-printed charts was shared in 2014 by the Wall
 Street Journal, where the print was used to discuss the rising
-popularity of 3D printers (Thingiverse.com, n.d.;
-\textbf{graphicsHowDoes3D?}). It is rare to find these types of charts
+popularity of 3D printers (Thingiverse.com, n.d.). A few additional
+examples were published by Huron et al. (2023) (e.g.,
+Figure~\ref{fig-3d-treemap}). It is rare to find these types of charts
 in practice, where images of the charts are often posted to social media
 or blog posts. This results in limited access to the physical charts,
 even though source print files can be shared through sites such as
 \url{thingiverse.com} and \url{printables.com}, as well as through
-GitHub.
+GitHub repositories.
 
 \begin{figure}
 
-\begin{minipage}{\linewidth}
+\begin{minipage}{0.50\linewidth}
 
 \centering{
 
-\includegraphics[width=\textwidth,height=2in]{images/wsj-print.jpg}
+\includegraphics[width=0.9\textwidth,height=\textheight]{images/wsj-print.jpg}
 
 }
 
-\subcaption[Original WSJ 3D print]{\label{fig-wsj-orig}Original 3D
-printed chart from WSJ}
+\subcaption[3D graphic from the Wall Street
+Journal]{\label{fig-wsj-1}Original WSJ 3D print (2014)}
 
 \end{minipage}%
-\newline
-\begin{minipage}{\linewidth}
+%
+\begin{minipage}{0.50\linewidth}
 
 \centering{
 
-\includegraphics[width=\textwidth,height=2in]{images/wsj-myprint.jpg}
+\includegraphics[width=0.9\textwidth,height=\textheight]{images/wsj-myprint.jpg}
 
 }
 
-\subcaption[Replicated WSJ 3D print]{\label{fig-wsj-myprint}Replicated
-print created in 2025}
+\subcaption[3D graphic from the Wall Street
+Journal]{\label{fig-wsj-2}Replicated WSJ 3D print (2025)}
 
 \end{minipage}%
 
-\caption{\label{fig-wsj}Figure~\ref{fig-wsj-orig} shows the original WSJ
-print from 2014. Figure~\ref{fig-wsj-myprint} shows two prints created
-with a Flash Forge Finder 3D Printer, where the smaller chart took 2
-hours to print and the larger chart took 6 hours to print.}
+\caption{\label{fig-wsj}3D-printed volume charts showing the sales of 3D
+printers under \$5,000 (Thingiverse.com, n.d.).}
 
 \end{figure}%
 
@@ -459,57 +471,32 @@ shows an illustration of this transformation.
 \begin{figure}
 
 \begin{minipage}{0.50\linewidth}
-
-\centering{
-
-\includegraphics{images/make-bar-3d-1.png}
-
-}
-
-\subcaption[2D bar face]{\label{fig-bar3d-1}2D bar}
-
-\end{minipage}%
+\includegraphics{images/make-bar-3d-1.png}\{width=90\%
+fig-scap\}\end{minipage}%
 %
 \begin{minipage}{0.50\linewidth}
 
-\centering{
+\includegraphics[width=0.9\textwidth,height=\textheight]{images/make-bar-3d-2.png}
 
-\includegraphics{images/make-bar-3d-2.png}
-
-}
-
-\subcaption[Opposite bar face]{\label{fig-bar3d-2}Opposite face}
-
+\subcaption{\label{}Opposite bar face}
 \end{minipage}%
 \newline
 \begin{minipage}{0.50\linewidth}
 
-\centering{
+\includegraphics[width=0.9\textwidth,height=\textheight]{images/make-bar-3d-3.png}
 
-\includegraphics{images/make-bar-3d-3.png}
-
-}
-
-\subcaption[Connecting bar faces]{\label{fig-bar3d-3}Connecting faces}
-
+\subcaption{\label{}Connecting bar faces}
 \end{minipage}%
 %
 \begin{minipage}{0.50\linewidth}
 
-\centering{
+\includegraphics[width=0.9\textwidth,height=\textheight]{images/make-bar-3d-4.png}
 
-\includegraphics{images/make-bar-3d-4.png}
-
-}
-
-\subcaption[Solid 3D bar]{\label{fig-bar3d-4}Solid object}
-
+\subcaption{\label{}Solid 3D bar}
 \end{minipage}%
 
 \caption{\label{fig-make-bar-3d}Construction of depth cues for a 2D bar
-chart. In some cases, bar are constructed such that the y-axis
-corresponds with the front face of the prism (as shown). Other 3D bar
-charts may have the y-axis aligned with the back face.}
+chart where the y-axis corresponds to the front face of the bar.}
 
 \end{figure}%
 
@@ -724,10 +711,8 @@ the use of statistical graphics.
 
 \end{minipage}%
 
-\caption{\label{fig-fov}Multiple charts of the volcano dataset (R Core
-Team, 2024) rendered using the \texttt{rgl} package (Murdoch \& Adler,
-2023) in R. Each chart has a different field-of-view parameter, with the
-amount of distortion increasing as the field-of-view (FOV) increases.}
+\caption{\label{fig-fov}Field-of-view parameters for volcano dataset (R
+Core Team, 2024).}
 
 \end{figure}%
 
@@ -753,20 +738,19 @@ with the correct face of the prism before processing the magnitude. The
 additional interaction of mentally aligning with the chosen viewing
 parameters results in 3D charts needing additional time to process.
 
-\subsubsection{Preference}\label{preference}
+\subsubsection{User Preference}\label{user-preference}
 
 The debate between whether to use 2D or 3D graphics stems from a wider
 adoption of 3D charts in practice. Computer graphics have made it easy
 to produce charts of either dimensionality, resulting in creative
-liberties for the creation of the chart for publication.
+liberties for the creation of the chart for publication. For example,
 Figure~\ref{fig-ag-bar} showcases two examples of 3D bar charts from the
-1978 Handbook of Agricultural Charts (\emph{1978 Handbook of
-Agricultural Charts. Enlargements / {[}u.s. Department of
-Agriculture{]}}, 1978) where other options exist for displaying the
-data. Schmid (1983) (Chapter 8) also showcases many other 3D charts
-published in official reports. Evidently, the persistence of 3D bar
-charts has shown preferential use by maintaining a presence in many
-software programs, including the widely used Microsoft Excel.
+1978 Handbook of Agricultural Charts (United States. Department of
+Agriculture, 1978) where other options exist for displaying the data.
+Schmid (1983) (Chapter 8) also showcases many other 3D charts published
+in official reports. Evidently, the persistence of 3D bar charts has
+shown preferential use by maintaining a presence in many software
+programs, including the widely used Microsoft Excel.
 
 \begin{figure}
 
@@ -797,11 +781,7 @@ with negative values}
 \end{minipage}%
 
 \caption{\label{fig-ag-bar}Two examples of 3D bar charts found in
-publication (\emph{1978 Handbook of Agricultural Charts. Enlargements /
-{[}u.s. Department of Agriculture{]}}, 1978). This left image is a
-stacked bar chart, using shadings to indicate sugarbeats and sugarcane.
-The image on the right is a bar chart with positive and negative values
-of changes in canned vegetable consumption.}
+publication (United States. Department of Agriculture, 1978).}
 
 \end{figure}%
 
@@ -839,8 +819,8 @@ Three examples of chart preference.\end{minipage}%
 
 \end{figure}%
 
-\section{Heatmaps in Research and
-Practice}\label{heatmaps-in-research-and-practice}
+\section{Heat maps in Research and
+Practice}\label{heat-maps-in-research-and-practice}
 
 When creating charts for three or more variables, it becomes
 increasingly complex to visualize data (Grinstein \& Trutschl, 2001).
@@ -942,17 +922,17 @@ scatterplots of the penguins dataset (Horst et al., 2020).}
 
 \end{figure}%
 
-Heatmaps are a type of chart that can be used with two nominal or
+Heat maps are a type of chart that can be used with two nominal or
 ordinal variables, and a continuous response variable. In
 two-dimensional formats, gradient fills are often used to denote the
 magnitude of the responses, utilizing a gradient scale. When represented
 in three dimensions, height is the primary mapping of the response of
-the heatmap. Due to the height aesthetic, 3D heatmaps are sometimes
+the heatmap. Due to the height aesthetic, 3D heat maps are sometimes
 referred to as ``height maps'', particularly when spatial coordinates
 are involved. Since the color and/or height of the response variable can
-only be mapped once to each combination of x and y coordinates, heatmaps
-are generally used to summarize responses, such as averages or
-single-point observations. This makes heatmaps especially useful for
+only be mapped once to each combination of x and y coordinates, heat
+maps are generally used to summarize responses, such as averages or
+single-point observations. This makes heat maps especially useful for
 visualizing patterns and trends across large datasets in a compact and
 interpretable format.
 
@@ -984,12 +964,8 @@ encoding]{\label{fig-heatmap2d-2}3D heatmap}
 
 \end{minipage}%
 
-\caption{\label{fig-heatmap2d}Heatmaps created with data from for
-Educational Statistics et al. (1977). The 2D heatmap represents the
-percentage of high school graduates participating in postsecondary
-education using a gradient color scale, whereas the 3D heatmap uses
-height. In each chart, there is an increasing association with
-postsecondary education with ability level and socioeconomical status.}
+\caption{\label{fig-heatmap2d}2D and 3D heat maps from for Educational
+Statistics et al. (1977)}
 
 \end{figure}%
 
@@ -1040,10 +1016,8 @@ scale}
 
 \end{minipage}%
 
-\caption{\label{fig-color-height}Two figures representing the volcano
-dataset (R Core Team, 2024) using different height scaling factors. Both
-figures use the same color scale, but there is no ``correct''
-translation of color into the measurable height.}
+\caption{\label{fig-color-height}Height-scaling effects in 3D heat maps
+for the volcano dataset (R Core Team, 2024).}
 
 \end{figure}%
 
@@ -1112,7 +1086,7 @@ deficiencies]{\label{fig-colorblind-4}Tritan (blue-yellow)}
 \end{minipage}%
 
 \caption{\label{fig-colorblind}Effect of color deficiencies on the
-inferno palette from (\textbf{viridis?}).}
+inferno palette from Garnier et al. (2024).}
 
 \end{figure}%
 
@@ -1385,7 +1359,7 @@ demonstrating the utility of the Mechanical Turk platform for graphical
 testing.
 
 The first experiment in Cleveland \& McGill (1984b) (the position-length
-experiment), used five types of bar charts: two types of grouped bar
+experiment) used five types of bar charts: two types of grouped bar
 charts and three types of stacked bar charts. Each chart had two bars
 marked for comparison; participants were asked to determine which bar
 was smaller and give the perceived ratio of the smaller bar to the
@@ -1408,7 +1382,7 @@ graph types in this paper, respectively.
 }
 
 \subcaption[Adjacent versus separated grouped bar
-comparisons]{\label{fig-bar-types-1}Type 1}
+comparisons]{\label{fig-bar-types-1}Type 1 (Adjacent)}
 
 \end{minipage}%
 %
@@ -1421,15 +1395,12 @@ comparisons]{\label{fig-bar-types-1}Type 1}
 }
 
 \subcaption[Adjacent versus separated grouped bar
-comparisons]{\label{fig-bar-types-2}Type 3}
+comparisons]{\label{fig-bar-types-2}Type 3 (Separated)}
 
 \end{minipage}%
 
-\caption{\label{fig-bar-types}Cleveland \& McGill (1984b) used two
-different types of grouped bar charts: comparisons between adjacent
-bars, and comparisons between separated bars. It is widely acknowledged
-that comparisons between separated bars (Type 3 comparisons, in
-Cleveland \& McGill's terminology) are more difficult and error-prone.}
+\caption{\label{fig-bar-types}Grouped bar charts used by Cleveland \&
+McGill (1984b).}
 
 \end{figure}%
 
@@ -1490,16 +1461,7 @@ effects]{\label{fig-sine-illusion-3}Perceived vs.~actual length}
 
 }
 
-\caption{\label{fig-sine-illusion}An illustration of the sine illusion
-(VanderPlas \& Hofmann, 2015), also known as the line-width illusion.
-All vertical lines are the same length, but the lines in the middle of
-the curve appear to be much shorter. The illusion results when implicit
-perceptual corrections useful for perceiving the size of objects with
-depth are applied to 2D stimuli with no actual depth. As 3D heuristics
-occasionally cause inaccurate communication when applied to 2D objects,
-it is reasonable to think that there might be some situations where
-charts making use of a realistic third dimension might be perceived more
-accurately than their 2D equivalents.}
+\caption{\label{fig-sine-illusion}Illustration of the sine illusion.}
 
 \end{figure}%
 
@@ -1585,7 +1547,7 @@ ratio values and that no value was used more than twice.
 
 \begin{table}
 
-\caption{Values used in the experiment to make ratio comparisons, sorted by ratio. The ID label corresponds to the file reference number.}
+\caption{Values used in the experiment to make ratio comparisons, sorted by ratio.}
 \centering
 \begin{tabular}[t]{lrrrrrrr}
 \toprule
@@ -1846,7 +1808,7 @@ the ratio of the smaller bar to the larger bar.}
 
 Each graph (or prompt, in the case of 3D printed charts) in the applet
 had two corresponding questions for participants to answer: first,
-participants were to identify the smaller bar by shape, and then,
+participants were to identify the smaller bar by shape, and then
 participants were to estimate the ratio of the size of the smaller bar
 to the size of the larger bar, as shown in
 Figure~\ref{fig-experiment3dRender}. It should be noted that we chose to
@@ -1961,8 +1923,8 @@ categorical variable is involved, separate smooths are fit for each
 level of the categorical variable; we will indicate this by subscripting
 the smooth function with the categorical variable index, so that
 \(s^T_1(R)\) indicates the smooth over numerical variable \(R\) for the
-1st level of the categorical variable T, that is, the smooth function
-over \(R\) for adjacent comparisons.
+1st level of the categorical variable \(T\), that is, the smooth
+function over \(R\) for adjacent comparisons.
 
 Then the formal statistical model is as follows:
 
@@ -2032,7 +1994,7 @@ s(participant) & 27.0449 & 34.0000 & 4.7272 & 0.0000 \\
 \end{longtable}
 
 A generalized additive model with random effects for subject was fit
-using the \texttt{mgcv} package (Wood, 2003, 2004; Wood, 2017a). Spline
+using the \texttt{mgcv} package (Wood, 2003, 2004; Wood, 2017). Spline
 terms by comparison type and display type were included for the ratio
 variable, to account for indications of nonlinearity from
 Figure~\ref{fig-midmeans-log-errors}; cumulative predictions for fixed
@@ -2086,7 +2048,7 @@ spline models with 5 knots to fit the smooth.
 Heer \& Bostock (2010b) provided a zip file containing data and code for
 their paper, but this link has not been updated and is no longer active,
 so it is not possible to fit a similar model to their data for
-comparison purposes; if we could get access to their data, this would
+comparison purposes. If we could get access to their data, this would
 allow for investigating whether the differences identified in our model
 were an artifact of the measurement method (e.g.~slider vs.~numerical
 entry) or if this effect was present in previous studies and can now be
@@ -2132,12 +2094,8 @@ error]{\label{fig-clicks-2}Clicks vs.~log error}
 
 \end{minipage}%
 
-\caption{\label{fig-clicks}Participant clicks on the WebGL interface
-(left) in order to interact with the plot. Most participants did not
-interact with the WebGL interface, perhaps because they did not realize
-that interacting was an option, but some participants utilized the
-interactivity heavily. (Right) Participant interactivity was not
-associated with increased accuracy.}
+\caption{\label{fig-clicks}Participant interactions with the WebGL
+rendered charts.}
 
 \end{figure}%
 
@@ -2213,8 +2171,9 @@ application in answering research questions. Students in introductory
 statistics courses are mainly exposed to elementary methods and textbook
 examples that demonstrate the application of these methods, which is
 used, in part, because of the emphasis on teaching students to think
-statistically using real data (Carver et al., 2016). Many textbooks use
-scenarios and ask students to perform the corresponding inferential
+statistically using real data (Committee, 2016). Many textbooks, such as
+\emph{Introduction to Statistical Investigations} (Tintle et al., 2021),
+use scenarios and ask students to perform the corresponding inferential
 test. This process is then repeated over the course material without
 much deviation in the instructional method. In some cases, however,
 students can participate and benefit from well-designed classroom
@@ -2253,7 +2212,7 @@ the use of 3D graphs, the results are generalized to the projections of
 the 3D graphs. The area of ``true'' 3D graphs is largely unexplored, but
 advances in technology allow for easier access to explore the 3D
 projections of these graphs. Some studies have explored the use of 3D
-graphs in virtual reality (e.g., \textbf{krause2020?}), but the
+graphs in virtual reality (e.g., Kraus et al., 2020), but the
 environment of virtual reality is different than objects produced in the
 physical world.
 
@@ -2409,10 +2368,11 @@ modeling approach that combines transformer-based embeddings with
 clustering to identify topics from text data. We selected BERTopic over
 alternatives like Latent Dirichlet allocation (LDA) and Top2Vec because
 our responses contain both short and long-form answers with an unknown
-number of topics (XXX). The method is highly modular, allowing
-independent parameter tuning at each stage. While the formulation of
-BERTopic is outside the scope of this paper, we describe the overview of
-the process and our parameter choices in the following sections.
+number of topics (Kumari et al., 2026). The method is highly modular,
+allowing independent parameter tuning at each stage. While the
+formulation of BERTopic is outside the scope of this paper, we describe
+the overview of the process and our parameter choices in the following
+sections.
 
 \paragraph{Embedding}\label{embedding}
 
@@ -2421,46 +2381,46 @@ in a high-dimensional space using sentence transformers, which capture
 the semantic meaning of documents. Many open-weight models exist for
 this purpose, although the training and pipeline is sometimes not open.
 BERTopic's default transformer is \texttt{all-MiniLM-L6-v2}, but we used
-\texttt{all-mpnet-base-v2} (XXX), which has been shown to perform better
-on semantic similarity tasks at the cost of computational speed and
-memory (XXX). Our sample size is small enough that the computational
-times between the two transformers is not largely different.
+\texttt{all-mpnet-base-v2}, which has been shown to perform better on
+semantic similarity tasks at the cost of computational speed and memory
+(Colangelo et al., 2025). Our sample size is small enough that the
+computational times between the two transformers is not largely
+different, so we opt for the better sentence
 
 \paragraph{Dimensional Reduction}\label{dimensional-reduction}
 
 High-dimensional embeddings often benefit from dimensionality reduction
 prior to clustering to mitigate the curse of dimensionality while
-preserving meaningful semantic structure (XXX). BERTopic uses UMAP by
-default, which constructs a weighted k-nearest neighbor graph to
-approximate the local topological structure of the embedding space and
-optimizes a low-dimensional representation that preserves this
+preserving meaningful semantic structure. BERTopic uses UMAP by default
+(McInnes et al., n.d.), which constructs a weighted k-nearest neighbor
+graph to approximate the local topological structure of the embedding
+space and optimizes a low-dimensional representation that preserves this
 structure.
 
 Two UMAP hyperparameters are tuned based on the number of
-responses:~\texttt{n\_neighbors}~(default: 15)
-and~\texttt{n\_components}~(default: 5).
-The~\texttt{n\_neighbors}~parameter controls the balance between local
-and global structure in the underlying graph. Smaller values emphasize
-local relationships and can yield more fine-grained but potentially
-noisier topic separation, while larger values produce smoother structure
-that may merge related topics. This parameter is tuned to balance topic
-granularity without excessive fragmentation or over-aggregation.
-The~\texttt{n\_components}~parameter defines the dimensionality of the
-reduced embedding space. For our dataset, these parameters are adjusted
-per prompt.
+responses:~\texttt{n\_neighbors}~(default: 15) and
+\texttt{n\_components} (default: 5). The~\texttt{n\_neighbors}~parameter
+controls the balance between local and global structure in the
+underlying graph. Smaller values emphasize local relationships and can
+yield more fine-grained but potentially noisier topic separation, while
+larger values produce smoother structure that may merge related topics.
+This parameter is tuned to balance topic granularity without excessive
+fragmentation or over-aggregation. The~\texttt{n\_components}~parameter
+defines the dimensionality of the reduced embedding space. For our
+dataset, these parameters are adjusted per prompt.
 
 \paragraph{Clustering}\label{clustering}
 
 BERTopic's default clustering method, HDBSCAN, identifies clusters by
-modeling regions with different densities (XXX). This approach has two
-key advantages: clusters are not constrained to specific shapes, and it
-can identify outliers without forcing them into clusters where they
-don't belong. The flexibility of HDBSCAN makes it more suitable for
-clustering semantic embeddings than other methods, such as k-means
-clustering and model-based clustering, where stronger distributional
-assumptions are required.
+modeling regions with different densities (McInnes et al., 2017). This
+approach has two key advantages: clusters are not constrained to
+specific shapes, and it can identify outliers without forcing them into
+clusters where they don't belong. The flexibility of HDBSCAN makes it
+more suitable for clustering semantic embeddings than other methods,
+such as k-means clustering and model-based clustering, where stronger
+distributional assumptions are required.
 
-The primary tuning parameter is~\texttt{min\_cluster\_size}, which
+The primary tuning parameter is \texttt{min\_cluster\_size}, which
 specifies the minimum number of observations required to form a cluster.
 Smaller values allow for more fine-grained topic detection, which is
 useful when only a few respondents mention a shared concept, but may
@@ -2475,7 +2435,7 @@ frequently occurring terms identified. We use n-grams to capture phrases
 up to two words long to obtain statistics terminology like ``sample
 size'' and ``hypothesis testing''. We also remove common stop words
 (``the'', ``and'', etc.) that add no thematic value using the English
-stop words provided by \texttt{sklearn}.
+stop words provided by \texttt{sklearn} (Pedregosa et al., 2011).
 
 There may be phrases in each assigned document that appear infrequently
 or too often that they dominate the text representation of the topic. To
@@ -2561,8 +2521,8 @@ Notes
 \endhead
 \bottomrule\noalign{}
 \endlastfoot
-KeyBERT Inspired & Uses principles of KeyBERT (XXX) for keyword
-extraction & \\
+KeyBERT Inspired & Uses principles of KeyBERT (Sharma \& Li, n.d.) for
+keyword extraction & \\
 Part Of Speech & Extracts words using part of speech & Valid patterns:
 adj noun, noun, adj \\
 Maximal Marginal Relevance & Maximizes the difference between topic
@@ -2673,7 +2633,7 @@ We recruited 32 sections of STAT 218 to participate in the experiential
 learning project. Each instructor offered the project as participation
 credit or extra credit in their course and student participation for
 data collection was entirely voluntary. A total of 654 students
-participated in the project. \textbf{?@fig-student-resopnses-count}
+participated in the project. Figure~\ref{fig-student-responses-count}
 displays the counts of responses per question.
 
 \begin{figure}
@@ -2697,9 +2657,9 @@ semester during the withdrawal window for courses at the University of
 Nebraska, so some students would likely drop out of the course before
 completing later modules. The lower completion rates for the
 presentation module is largely attributed to the first few sections of
-STAT that participated in the project since the video presentation was
-under development for the first few sections that participated in the
-project.
+STAT 218 that participated in the project since the video presentation
+was under development for the first few sections that participated in
+the project.
 
 \subsection{Responses from Experiment
 Participation}\label{responses-from-experiment-participation}
@@ -2718,6 +2678,20 @@ general public who is a consumer of scientific results?'' These
 responses gave us a broad picture of what students initially believed
 the research process looked like.
 
+\begin{figure}
+
+\centering{
+
+\includegraphics[width=1.65in,height=\textheight]{ch2-experiential-learning/writeups/1-dissertation/q1-wordcloud.png}
+
+}
+
+\caption[Pre-experiment reflection
+wordcloud]{\label{fig-q1-wordcloud}Wordcloud of pre-experiment
+reflection. Stop words and prompt words were removed.}
+
+\end{figure}%
+
 Students generally understood the purpose of scientific research by
 connecting it to hypothesis testing and publication. Many responses
 described research as starting with a question, followed by data
@@ -2734,7 +2708,8 @@ top 20 bigrams are shown in Figure~\ref{fig-q1-bigram}.
 
 }
 
-\caption{\label{fig-q1-bigram}Top 20 bigrams from pre-experiment
+\caption[Top 20 pre-experiment reflection
+bigrams]{\label{fig-q1-bigram}Top 20 bigrams from pre-experiment
 reflection}
 
 \end{figure}%
@@ -2754,8 +2729,8 @@ closely with the phrasing of the prompt itself.
 
 }
 
-\caption{Top 5 words from pre-experiment reflection topics using
-c-TF-IDF score.}
+\caption[Top pre-experiment reflection topic words]{Top 5 words from
+pre-experiment reflection topics using c-TF-IDF score.}
 
 \end{figure}%
 
@@ -2763,7 +2738,7 @@ c-TF-IDF score.}
 Reflection}\label{post-experiment-reflection}
 
 After participating in the experiment, students responded to prompts
-about the goals of the study, which were to evaluate errors in ratio
+about the research objectives, which were to evaluate errors in ratio
 judgments between 2D and 3D graph types under different comparison
 conditions in a randomized block design. Many students identified parts
 of the experiment correctly, but most missed at least one key component
@@ -2780,12 +2755,21 @@ understand 3D graphs.'' However, some responses reflected
 misunderstandings of the research question, such as student swho
 suggested the study was about demographic differences in perception.
 
-There were 79 distinct topics identified from the BERTopic model for Q2
+There were 7 distinct topics identified from the BERTopic model for Q2
 responses. These topics generally reflected how accurately people
 estimated values from different chart types, as well as comparisons
 among chart types and the process of estimating chart values.
 
-\includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q2-bertopic-1.pdf}
+\begin{figure}[H]
+
+{\centering \includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q2-bertopic-1.pdf}
+
+}
+
+\caption[Top Q2 reflection topic words]{Top 5 words from Q2 reflection
+topics using c-TF-IDF score.}
+
+\end{figure}%
 
 We then asked students, ``What hypotheses might the experimenters have
 been testing?'' A correct response would have focused on differences in
@@ -2804,7 +2788,16 @@ physical, or dimension. This value is lower than what we would expect,
 but many other responses tended to include mentions of accuracy or
 estimating values when reading charts.
 
-\includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q3-bertopic-1.pdf}
+\begin{figure}[H]
+
+{\centering \includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q3-bertopic-1.pdf}
+
+}
+
+\caption[Top Q3 reflection topic words]{Top 5 words from Q3 reflection
+topics using c-TF-IDF score.}
+
+\end{figure}%
 
 For Q4, students were asked about sources of error in the experiment,
 and for Q5, they were asked to identify the variables examined and
@@ -2813,9 +2806,27 @@ varied widely. Some students recognized sources of error and variable
 structure accurately, while others focused more on general impressions
 of the graphs than on the specific design features of the experiment.
 
-\includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q4-bertopic-1.pdf}
+\begin{figure}[H]
 
-\includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q5-bertopic-1.pdf}
+{\centering \includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q4-bertopic-1.pdf}
+
+}
+
+\caption[Top Q4 reflection topic words]{Top 5 words from Q4 reflection
+topics using c-TF-IDF score.}
+
+\end{figure}%
+
+\begin{figure}[H]
+
+{\centering \includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q5-bertopic-1.pdf}
+
+}
+
+\caption[Top Q5 reflection topic words]{Top 5 words from Q5 reflection
+topics using c-TF-IDF score.}
+
+\end{figure}%
 
 An important topic covered in STAT 218 is randomization, which we asked
 students with the prompt ``What elements of experimental design, such as
@@ -2844,7 +2855,16 @@ convenience sample since we did not randomly select students to
 participate, which is standard practice for many studies conducted with
 students in collegiate settings.
 
-\includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q6-bertopic-1.pdf}
+\begin{figure}[H]
+
+{\centering \includegraphics{ch2-experiential-learning/writeups/1-dissertation/index_files/figure-pdf/q6-bertopic-1.pdf}
+
+}
+
+\caption[Top Q6 reflection topic words]{Top 5 words from Q6 reflection
+topics using c-TF-IDF score.}
+
+\end{figure}%
 
 \subsection{Responses from Research
 Reflections}\label{responses-from-research-reflections}
@@ -2869,7 +2889,8 @@ Figure~\ref{fig-q7-bigram}
 
 }
 
-\caption{\label{fig-q7-bigram}Top 20 bigrams from abstract reflection}
+\caption[Top 20 abstract reflection bigrams]{\label{fig-q7-bigram}Top 20
+bigrams from abstract reflection}
 
 \end{figure}%
 
@@ -2961,7 +2982,7 @@ course project with the addition of reviewing research material.
 
 What we found was that the graphics project found success within the
 recommendations of the GAISE College Report by using real data to
-illustrate the contextual purpose of scientific research (Carver et al.,
+illustrate the contextual purpose of scientific research (Committee,
 2016). Students were able to demonstrate their ability to think
 statistically through the series of reflections. The graphics project
 made use of real data, along with data collection, within the scope of
@@ -2983,8 +3004,8 @@ Future studies could use a similar framework to conduct experiments on
 other types of data visualizations. The use of graphical experiments in
 the classroom not only provides a readily available convenience sample
 but also adheres to the recommendations of the GAISE College Report
-(Carver et al., 2016). With the framework we provided in this paper, we
-aim to make adjustments to further improve the graphics experiment and
+(Committee, 2016). With the framework we provided in this paper, we aim
+to make adjustments to further improve the graphics experiment and
 corresponding project as an experiential learning opportunity.
 
 \bookmarksetup{startatroot}
@@ -2998,14 +3019,14 @@ Estimations}\label{graphical-perception-of-heatmaps-dimensionality-medium-and-ac
 In the 20th century, advancements in technology made data visualizations
 increasingly more affordable and accessible to a broader population. The
 primary change in formal data visualizations was from hand-drawn charts
-to computer-rendered charts (Tukey, 1965), and with subsequent advances
-in color printing and available software have allowed for data
-visualizations to enter other mediums. These include the ability create
-virtual and physical charts that effectively use the 3-dimensional (3D)
-world around us with the novel use of 3D-printed charts. This newer type
-of visualization has gained a small amount of traction in recent years
-as a method of producing tangible charts (Hu, 2015; Huron et al., 2023;
-Stusak et al., 2016).
+to computer-rendered charts (Tukey, 1965), and subsequent advances in
+color printing and available software have allowed for data
+visualizations to enter other mediums. These include the ability to
+create virtual and physical charts that effectively use the
+3-dimensional (3D) world around us with the novel use of 3D-printed
+charts. This newer type of visualization has gained a small amount of
+traction in recent years as a method of producing tangible charts (Hu,
+2015; Huron et al., 2023; Stusak et al., 2016).
 
 In many disciplines, 3D-printed visualizations have shown mixed or
 promising results compared to alternative rendering formats. Although a
@@ -3082,11 +3103,11 @@ increase in solution time is seen when the third dimension is utilized
 for displaying data, but can sometimes produce better error rates than
 2D charts (Barfield \& Robless, 1989a; Kraus et al., 2020).
 Additionally, when given the option of 2D or 3D charts for extracting
-numerical information, the 2D charts showed increased preference and
-confidence than their 3D counterparts (Barfield \& Robless, 1989a;
-Fisher et al., 1997a). It is worth noting that all of these studies use
-2D or virtual reality renderings of 3D charts and not physical 3D
-charts.
+numerical information, participants showed increased preference and
+confidence for the 2D charts than their 3D counterparts (Barfield \&
+Robless, 1989a; Fisher et al., 1997a). It is worth noting that all of
+these studies use 2D or virtual reality renderings of 3D charts and not
+physical 3D charts.
 
 Many studies that assess 3D charts use computer-rendered displays that
 leverage high levels of precision in their output. Digital renderings
@@ -3096,10 +3117,10 @@ interactivity, and viewing distance. Some of these factors have already
 been suggested to have a measureable effect within computer renderings
 (Tarr \& Kriegman, 2001; Wang et al., 2022). While virtual reality can
 offer similar interactions with 3D objects compared to the real world,
-perceptual judgements can be distorted in virtual environments (Park et
-al., 2021; \textbf{kelly2018?}). The result is that many findings for
-the perception of 3D statistical graphics are limited to the method in
-which they were rendered.
+perceptual judgements can be distorted in virtual environments (Kelly et
+al., 2018; Park et al., 2021). The result is that many findings for the
+perception of 3D statistical graphics are limited to the method in which
+they were rendered.
 
 To date, few empirical studies have investigated 3D-printed charts, and
 it is unclear if they follow the framework of existing theories on data
@@ -3265,9 +3286,8 @@ Z=c\cdot U(0,100)+(1-c)\cdot g(f_i(X,Y))
 \end{minipage}%
 
 \caption{\label{fig-random-z}Mixture distribution of
-Equation~\ref{eq-random-z} using the formula for the top half of a
-sphere. As \(c\) approaches 1, the distribution resembles uniform random
-noise.}
+Equation~\ref{eq-random-z} for Set 1 using different mixture parameters
+\(c\).}
 
 \end{figure}%
 
@@ -3318,9 +3338,8 @@ sets]{\label{fig-placement-2}Placement of stimuli on Set 2}
 
 \end{minipage}%
 
-\caption{\label{fig-placement}Placement of stimuli on the two data sets.
-Tiles with solid fills are the fixed stimuli values, where white tiles
-are randomly generated.}
+\caption{\label{fig-placement}Placement of stimuli on the two data
+sets.}
 
 \end{figure}%
 
@@ -3581,11 +3600,11 @@ interactions participants had with the Shiny application.
 
 \subsection{Demographics}\label{demographics}
 
-Our experiment was conducted with eight sections of Stat 218 between
-August 25th and December 19th in 2025 at the University of Nebraska. To
+Our experiment was conducted with eight sections of STAT 218 in the
+Summer and Fall semesters of 2025 at the University of Nebraska. To
 participate in the experiment, students were instructed to visit
 communal office hour locations to access the 3D printed charts. We
-recorded 482 interactions with the shiny application, of which 259
+recorded 482 interactions with the Shiny application, of which 259
 students completed the entirety of the experiment. Of these students, 92
 were enrolled in online sections of the course and did not have access
 to the 3D printed charts. The vast majority of participants were
@@ -3758,10 +3777,7 @@ media]{\label{fig-q1-eda-2}Exclude random guessers}
 \end{minipage}%
 
 \caption{\label{fig-q1-eda}Proportion of correct responses to Question 1
-across stimuli pairs and media types. For all pairs, with the exception
-of Pair 5, a correct answer was `Larger value'. Stimuli Pair 5 had two
-identical values, meaning that options other than `Both values are the
-same' were incorrect.}
+across stimuli pairs and media types.}
 
 \end{figure}%
 
@@ -3890,7 +3906,7 @@ relationship]{\label{fig-time-summary-2}Time vs.~Error}
 \end{minipage}%
 
 \caption{\label{fig-time-summary}Visual summary of time spent on each
-trial. 137 trials are omitted due to lasting longer than 60 seconds.}
+trial.}
 
 \end{figure}%
 
@@ -4010,399 +4026,8 @@ we were able to show that 3D charts may have a place in the analysis of
 data. When the third dimension is used to display information, the
 mapping of that dimension to height provides better ratio estimations
 than a color gradient scale. This result has been observed previously in
-digital 3D heatmaps (Barfield \& Robless, 1989a; Kraus et al., 2020),
-and our findings suggests that this may hold for physical 3D heatmaps.
-
-\bookmarksetup{startatroot}
-
-\chapter{}\label{section}
-
-In this section, we include multiple models for the transparency of
-model selection. Visual inspections of participant responses indicate
-that several participants clearly did not follow instructions by either
-using alternate estimation strategies or by carelessly responding
-Figure~\ref{fig-q1-eda}. While we should take these cases into
-consideration, there is no singular solution to suggest a ``best'' model
-(Jaso et al., 2021; Ward \& Meade, 2023). Our purpose for including
-these alternate models is to examine model sensitivity to results
-through various levels of participant and response filtering.
-
-For each model, we exclude stimuli pair 5. In theory, participants who
-answer this question correctly will select that both values are the same
-and move the slider to 100. From the included participants, as described
-in Section~\ref{sec-remove-random-categories}, virtually all
-participants who put the slider at 100 answered the first question
-correctly. However, nearly 60 percent of responses indicated that the
-values were the same in the first question but did not move the slider
-to 100. Several factors could have attributed to this, such as slider
-sensitivity or participants using alternate estimation strategies.
-Rather than correcting what we think participants should have answered,
-we removed this stimuli pair and motivate future research into ``just
-noticeable differences'' for 3D heatmaps.
-
-\begin{figure}
-
-\centering{
-
-\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-pair5-issues-1.pdf}
-
-}
-
-\caption[Response behavior for identical-value stimuli
-pair]{\label{fig-pair5-issues}Counts of response behavior for Stimuli
-Pair 5. This pair had identical values, which means that true solutions
-indicates marking that they were the same value and positioning the
-slider at 100.}
-
-\end{figure}%
-
-There are multiple levels of participant and response filtering that we
-considered. For participant-level filtering, we consider the following
-levels: (1) no participant filtering and (2) remove suspected random
-guessers. The process of (2) was described in
-Section~\ref{sec-remove-random-categories}. Filtering individual
-responses is a straightforward process, where we considered (i) include
-all responses, and (ii) remove responses with incorrect Q1 solutions.
-
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1200}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2133}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1933}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2467}}
-  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2267}}@{}}
-\caption{ANOVA Table p-values for model terms}\tabularnewline
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Term
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-All participants, all responses
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-All participants, Q1 correct
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Filtered participants, all responses
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Filtered participants, Q1 correct
-\end{minipage} \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-\begin{minipage}[b]{\linewidth}\raggedright
-Term
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-All participants, all responses
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-All participants, Q1 correct
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Filtered participants, all responses
-\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
-Filtered participants, Q1 correct
-\end{minipage} \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-set & 0.340 & 0.705 & 0.939 & 0.735 \\
-media & 0.010 & 0.018 & 0.035 & 0.041 \\
-pair\_id & 0.244 & 0.333 & 0.089 & 0.063 \\
-set:media & 0.297 & 0.711 & 0.543 & 0.669 \\
-set:pair\_id & 0.003 & 0.145 & 0.001 & 0.073 \\
-media:pair\_id & 0.815 & 0.740 & 0.982 & 0.968 \\
-set:media:pair\_id & 0.489 & 0.764 & 0.255 & 0.833 \\
-\end{longtable}
-
-\begin{figure}
-
-\centering{
-
-\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int1-1.pdf}
-
-}
-
-\caption[Media by filtering interaction
-effects]{\label{fig-model-int1}Interaction plots for media type and
-response filtering, facetted by stimuli pair and dataset.}
-
-\end{figure}%
-
-\begin{figure}
-
-\centering{
-
-\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int2-1.pdf}
-
-}
-
-\caption[Data set by filtering interaction
-effects]{\label{fig-model-int2}Interaction plots for dataset and
-response filtering, facetted by stimuli pair and media type.}
-
-\end{figure}%
-
-\begin{figure}
-
-\centering{
-
-\includegraphics{ch3-heat3d/writeups/7-dissertation/index_files/figure-pdf/fig-model-int3-1.pdf}
-
-}
-
-\caption[Stimuli pair by filtering interaction
-effects]{\label{fig-model-int3}Interaction plots for stimuli pairs and
-response filtering, facetted by dataset and media type.}
-
-\end{figure}%
-
-\newpage
-
-\begin{tcolorbox}[enhanced jigsaw, opacitybacktitle=0.6, toprule=.15mm, colframe=quarto-callout-note-color-frame, colback=white, bottomtitle=1mm, left=2mm, breakable, bottomrule=.15mm, toptitle=1mm, leftrule=.75mm, titlerule=0mm, opacityback=0, colbacktitle=quarto-callout-note-color!10!white, coltitle=black, title=\textcolor{quarto-callout-note-color}{\faInfo}\hspace{0.5em}{Note}, rightrule=.15mm, arc=.35mm]
-
-This paragraph is pushed to a new page since the ANOVA table p-values is
-causing formatting issues
-
-\end{tcolorbox}
-
-Visualizations of the simple effects for media types, datasets, and
-stimuli pairs (Figure~\ref{fig-model-int1}, Figure~\ref{fig-model-int2},
-Figure~\ref{fig-model-int3}) shows that the difference between
-participant filtering is mostly a linear shift in log error. Removing
-participants deemed to be random guessers tended to have smaller errors
-than including all participants. The shift is less prevalent across
-participant filters when filtering out incorrect responses to the first
-question in each trial. This, in addition to the p-values from
-\textbf{?@tbl-all-models-anova}, suggests that our sample size was large
-enough to counteract effects from careless respondents.
-
-We also attempted to fit Gaussian mixture models to the submitted
-responses using the \texttt{flexmix} package (Grün \& Leisch, 2007) to
-account for careless respondents (Jaso et al., 2021). However, these
-models only reliably detected a small subset of participants who were
-would be considered high performers. That is, participants who had a
-near 1:1 relationship with the ratio estimations strategy and small
-variation. Visual inspections of the mixture model components did not
-provide reliable classifications of estimation strategies, so we opted
-to exclude mixture models from consideration.
-
-\subsection{Generalized Additive
-Model}\label{generalized-additive-model-1}
-
-In addition to our parametric methods, we also present the results of a
-generalized additive model (Hastie, 2017). Here, we define the model
-similarly to the parametric models, but replace stimuli pair identifiers
-with their respective numerical ratio value. Thin-plate regression
-splines in the generalized additive model account for nonlinearity which
-could alleviate issues due to different estimation strategies. The
-formal statistical model is as follows:
-
-\begin{equation}\phantomsection\label{eq-gam}{
-y=\mu+S_i\times M_j + s_i^S(R)+s_j^M(R)+P_m+\epsilon
-}\end{equation}
-
-where
-
-\begin{itemize}
-\item
-  \(y=\log_2(|\text{Error}|+1/8)\)
-\item
-  \(S_i\times M_j\) is the fixed effects for main effect and two-way
-  interactions of dataset \(S_i\) and media type \(M_j\)
-\item
-  \(S_i^S(R)\) is a thin-plate spline function for ratio accounting for
-  dataset
-\item
-  \(S_j^M(R)\) is a thin-plate spline function for ratio accounting for
-  media type
-\item
-  \(P_m\) is the random effect of the \(m^{th}\) participant
-\item
-  \(\epsilon\) is random error
-\end{itemize}
-
-A generalized additive model was fit using the \texttt{mgcv} package
-(Wood, 2017b) on the entire dataset and the filtered dataset. The data
-for these models remove stimuli pair 5 and incorrect responses to the
-initial question. In both cases, results of the generalized additive
-models suggest that the 2D heatmaps have larger errors than the 3D
-heatmaps, with no differences detected between the digital and physical
-heatmaps \textbf{?@tbl-gam-emmeans}\textbf{?@tbl-gam-diffs}.
-
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{Parametric coefficients in gam model with all
-participants.}\tabularnewline
-\toprule\noalign{}
-& Estimate & Std. Error & t value &
-Pr(\textgreater\textbar t\textbar) \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-& Estimate & Std. Error & t value &
-Pr(\textgreater\textbar t\textbar) \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-(Intercept) & 3.773 & 0.083 & 45.613 & 0.000 \\
-setset2 & 0.014 & 0.080 & 0.172 & 0.863 \\
-media3dd & -0.317 & 0.077 & -4.094 & 0.000 \\
-media3dp & -0.389 & 0.089 & -4.359 & 0.000 \\
-setset2:media3dd & 0.018 & 0.110 & 0.163 & 0.871 \\
-setset2:media3dp & 0.078 & 0.124 & 0.630 & 0.529 \\
-\end{longtable}
-
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{Approximate significance of smooth terms in gam mode with all
-participants.}\tabularnewline
-\toprule\noalign{}
-Smooth & edf & Ref.df & F & p-value \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Smooth & edf & Ref.df & F & p-value \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-s(target\_ratio):media2dd & 1.002 & 1.003 & 0.058 & 0.813 \\
-s(target\_ratio):media3dd & 1.972 & 2.350 & 1.476 & 0.200 \\
-s(target\_ratio):media3dp & 1.047 & 1.428 & 1.612 & 0.268 \\
-s(target\_ratio):setset1 & 1.005 & 1.009 & 0.650 & 0.422 \\
-s(target\_ratio):setset2 & 1.022 & 1.042 & 0.165 & 0.719 \\
-s(user\_id) & 217.826 & 258.000 & 6.423 & 0.000 \\
-\end{longtable}
-
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{Parametric coefficients in gam model without random
-guessers.}\tabularnewline
-\toprule\noalign{}
-& Estimate & Std. Error & t value &
-Pr(\textgreater\textbar t\textbar) \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-& Estimate & Std. Error & t value &
-Pr(\textgreater\textbar t\textbar) \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-(Intercept) & 3.773 & 0.083 & 45.613 & 0.000 \\
-setset2 & 0.014 & 0.080 & 0.172 & 0.863 \\
-media3dd & -0.317 & 0.077 & -4.094 & 0.000 \\
-media3dp & -0.389 & 0.089 & -4.359 & 0.000 \\
-setset2:media3dd & 0.018 & 0.110 & 0.163 & 0.871 \\
-setset2:media3dp & 0.078 & 0.124 & 0.630 & 0.529 \\
-\end{longtable}
-
-\begin{longtable}[]{@{}lrrrr@{}}
-\caption{Approximate significance of smooth terms in gam model without
-random guessers.}\tabularnewline
-\toprule\noalign{}
-Smooth & edf & Ref.df & F & p-value \\
-\midrule\noalign{}
-\endfirsthead
-\toprule\noalign{}
-Smooth & edf & Ref.df & F & p-value \\
-\midrule\noalign{}
-\endhead
-\bottomrule\noalign{}
-\endlastfoot
-s(target\_ratio):media2dd & 1.002 & 1.003 & 0.058 & 0.813 \\
-s(target\_ratio):media3dd & 1.972 & 2.350 & 1.476 & 0.200 \\
-s(target\_ratio):media3dp & 1.047 & 1.428 & 1.612 & 0.268 \\
-s(target\_ratio):setset1 & 1.005 & 1.009 & 0.650 & 0.422 \\
-s(target\_ratio):setset2 & 1.022 & 1.042 & 0.165 & 0.719 \\
-s(user\_id) & 217.826 & 258.000 & 6.423 & 0.000 \\
-\end{longtable}
-
-\begin{table}
-
-\caption{Estimated marginal means for generalized additive model}
-\centering
-\begin{tabular}[t]{llrrrrr}
-\toprule
-Data filtering & set & emmean & SE & df & lower.CL & upper.CL\\
-\midrule
- &  & 3.773 & 0.083 &  & 3.611 & 3.936\\
-\cmidrule{3-4}
-\cmidrule{6-7}
- &  & 3.532 & 0.090 &  & 3.356 & 3.709\\
-\cmidrule{3-4}
-\cmidrule{6-7}
- & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3.493 & 0.105 &  & 3.286 & 3.700\\
-\cmidrule{2-4}
-\cmidrule{6-7}
- &  & 3.788 & 0.083 &  & 3.625 & 3.951\\
-\cmidrule{3-4}
-\cmidrule{6-7}
- &  & 3.565 & 0.091 &  & 3.387 & 3.742\\
-\cmidrule{3-4}
-\cmidrule{6-7}
-\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash All participants} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3.586 & 0.106 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 3729.128} &  & 3.794\\
-\cmidrule{1-5}
-\cmidrule{7-7}
- &  & 3.593 & 0.109 &  & \multirow{-2}{*}[0.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 3.378} & 3.807\\
-\cmidrule{3-4}
-\cmidrule{6-7}
- &  & 3.150 & 0.107 &  & 2.939 & 3.360\\
-\cmidrule{3-4}
-\cmidrule{6-7}
- & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3.199 & 0.115 &  & 2.973 & 3.425\\
-\cmidrule{2-4}
-\cmidrule{6-7}
- &  & 3.693 & 0.109 &  & 3.479 & 3.906\\
-\cmidrule{3-4}
-\cmidrule{6-7}
- &  & 3.361 & 0.108 &  & 3.149 & 3.574\\
-\cmidrule{3-4}
-\cmidrule{6-7}
-\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Random guessers removed} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3.310 & 0.116 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 2814.776} & 3.081 & 3.538\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-\begin{table}
-
-\caption{Pairwise differences for generalized additive model}
-\centering
-\begin{tabular}[t]{lllrrrrr}
-\toprule
-Data filtering & set & contrast & estimate & SE & df & t.ratio & p.value\\
-\midrule
- &  & 2dd - 3dd & 0.241 & 0.088 &  & 2.736 & 0.017\\
-\cmidrule{3-5}
-\cmidrule{7-8}
- &  & 2dd - 3dp & 0.280 & 0.103 &  & 2.711 & 0.018\\
-\cmidrule{3-5}
-\cmidrule{7-8}
- & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3dd - 3dp & 0.039 & 0.109 &  & 0.361 & 0.931\\
-\cmidrule{2-5}
-\cmidrule{7-8}
- &  & 2dd - 3dd & 0.223 & 0.089 &  & 2.516 & 0.032\\
-\cmidrule{3-5}
-\cmidrule{7-8}
- &  & 2dd - 3dp & 0.202 & 0.104 &  & 1.940 & 0.128\\
-\cmidrule{3-5}
-\cmidrule{7-8}
-\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash All participants} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3dd - 3dp & -0.021 & 0.110 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 3729.128} & -0.192 & 0.980\\
-\cmidrule{1-8}
- &  & 2dd - 3dd & 0.443 & 0.091 &  & 4.868 & \\
-\cmidrule{3-5}
-\cmidrule{7-7}
- &  & 2dd - 3dp & 0.394 & 0.100 &  & 3.925 & \multirow{-2}{*}{\raggedleft\arraybackslash 0.000}\\
-\cmidrule{3-5}
-\cmidrule{7-8}
- & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set1} & 3dd - 3dp & -0.049 & 0.099 &  & -0.499 & 0.872\\
-\cmidrule{2-5}
-\cmidrule{7-8}
- &  & 2dd - 3dd & 0.331 & 0.092 &  & 3.585 & \\
-\cmidrule{3-5}
-\cmidrule{7-7}
- &  & 2dd - 3dp & 0.383 & 0.102 &  & 3.757 & \multirow{-2}{*}{\raggedleft\arraybackslash 0.001}\\
-\cmidrule{3-5}
-\cmidrule{7-8}
-\multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash Random guessers removed} & \multirow{-3}{*}[1\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedright\arraybackslash set2} & 3dd - 3dp & 0.052 & 0.100 & \multirow{-6}{*}[2.5\dimexpr\aboverulesep+\belowrulesep+\cmidrulewidth]{\raggedleft\arraybackslash 2814.776} & 0.521 & 0.861\\
-\bottomrule
-\end{tabular}
-\end{table}
+digital 3D heat maps (Barfield \& Robless, 1989a; Kraus et al., 2020),
+and our findings suggests that this may hold for physical 3D heat maps.
 
 \bookmarksetup{startatroot}
 
@@ -4491,18 +4116,159 @@ serves as the initial framework of bringing 3D-printed charts into
 modern graphical testing and promoting their usage beyond the novelty
 where they currently exist.
 
-\bookmarksetup{startatroot}
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{part}{Appendices}
+\appendix
 
-\chapter{References}\label{references}
+\chapter{Model Fitting for Heat Map
+Experiment}\label{model-fitting-for-heat-map-experiment}
+
+In this section, we include multiple models for the transparency of
+model selection from the analysis of Chapter 3. Visual inspections of
+participant responses indicate that several participants clearly did not
+follow instructions by either using alternate estimation strategies or
+by carelessly responding Figure~\ref{fig-q1-eda}. While we should take
+these cases into consideration, there is no singular solution to suggest
+a ``best'' model (Jaso et al., 2021; Ward \& Meade, 2023). Our purpose
+for including these alternate models is to examine model sensitivity to
+results through various levels of participant and response filtering.
+
+For each model, we exclude stimuli pair 5. In theory, participants who
+answer this question correctly will select that both values are the same
+and move the slider to 100. From the included participants, as described
+in Section~\ref{sec-remove-random-categories}, virtually all
+participants who put the slider at 100 answered the first question
+correctly. However, nearly 60 percent of responses indicated that the
+values were the same in the first question but did not move the slider
+to 100. Several factors could have attributed to this, such as slider
+sensitivity or participants using alternate estimation strategies.
+Rather than correcting what we think participants should have answered,
+we removed this stimuli pair and motivate future research into ``just
+noticeable differences'' for 3D heat maps.
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/appendix3_files/figure-pdf/fig-pair5-issues-1.pdf}
+
+}
+
+\caption[Response behavior for identical-value stimuli
+pair]{\label{fig-pair5-issues}Counts of response behavior for Stimuli
+Pair 5. This pair had identical values, which means that true solutions
+indicates marking that they were the same value and positioning the
+slider at 100.}
+
+\end{figure}%
+
+There are multiple levels of participant and response filtering that we
+considered. For participant-level filtering, we consider the following
+levels: (1) no participant filtering and (2) remove suspected random
+guessers. The process of (2) was described in
+Section~\ref{sec-remove-random-categories}. Filtering individual
+responses is a straightforward process, where we considered (i) include
+all responses, and (ii) remove responses with incorrect Q1 solutions.
+
+Based on Table~\ref{tbl-all-models-anova}, the models produce similar
+p-values for effect sizes. The p-values for media type are consistently
+significant across all model specifications, where each model shows 2D
+charts having higher errors than either of the 3D charts. In contrast,
+the interaction between set and stimuli pair shows more sensitivity to
+participant filtering. When all responses are included, this interaction
+is significant regardless of participant filtering. However, the
+interaction is not significant when removing incorrect Q1 responses for
+all participants and is only marginally significant for the filtered set
+of participants. Figure~\ref{fig-all-models-media-int},
+Figure~\ref{fig-all-models-set-int}, and
+Figure~\ref{fig-all-models-pair-int} show the estimated marginal means
+of the log error for each model.
+
+\newpage
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1200}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2133}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.1933}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2467}}
+  >{\raggedleft\arraybackslash}p{(\columnwidth - 8\tabcolsep) * \real{0.2267}}@{}}
+
+\caption{\label{tbl-all-models-anova}ANOVA Table p-values for model
+terms}
+
+\tabularnewline
+
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+Term
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+All participants, all responses
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+All participants, Q1 correct
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Filtered participants, all responses
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedleft
+Filtered participants, Q1 correct
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+set & 0.340 & 0.705 & 0.939 & 0.735 \\
+media & 0.010 & 0.018 & 0.035 & 0.041 \\
+pair\_id & 0.244 & 0.333 & 0.089 & 0.063 \\
+set:media & 0.297 & 0.711 & 0.543 & 0.669 \\
+set:pair\_id & 0.003 & 0.145 & 0.001 & 0.073 \\
+media:pair\_id & 0.815 & 0.740 & 0.982 & 0.968 \\
+set:media:pair\_id & 0.489 & 0.764 & 0.255 & 0.833 \\
+
+\end{longtable}
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/appendix3_files/figure-pdf/fig-all-models-media-int-1.pdf}
+
+}
+
+\caption[Marginal means by media across filtering
+scenarios]{\label{fig-all-models-media-int}Estimated Marginal Means for
+Participant and Response Filtering (Media).}
+
+\end{figure}%
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/appendix3_files/figure-pdf/fig-all-models-set-int-1.pdf}
+
+}
+
+\caption[Marginal means by data set across filtering
+scenarios]{\label{fig-all-models-set-int}Estimated Marginal Means for
+Participant and Response Filtering (Set).}
+
+\end{figure}%
+
+\begin{figure}
+
+\centering{
+
+\includegraphics{ch3-heat3d/writeups/7-dissertation/appendix3_files/figure-pdf/fig-all-models-pair-int-1.pdf}
+
+}
+
+\caption[Marginal means by stimuli pair across filtering
+scenarios]{\label{fig-all-models-pair-int}Estimated Marginal Means for
+Participant and Response Filtering (Pair).}
+
+\end{figure}%
 
 \phantomsection\label{refs}
 \begin{CSLReferences}{1}{0}
-\bibitem[\citeproctext]{ref-cdi_hathitrust_hathifiles_uva_x030492864}
-\emph{1978 handbook of agricultural charts. Enlargements / {[}u.s.
-Department of agriculture{]}}. (1978). United States. Department of
-Agriculture; U.S. Dept. of Agriculture ; Distributed by Science;
-Education Administration.
-
 \bibitem[\citeproctext]{ref-barfield_effects_1989}
 Barfield, W., \& Robless, R. (1989b). The effects of two- or
 three-dimensional graphics on the problem-solving performance of
@@ -4547,11 +4313,6 @@ Models of the Influence of Color Scale on Data Visualization Tasks.
 Society}, \emph{51}(3), 321--338.
 \url{https://doi.org/10.1177/0018720809338286}
 
-\bibitem[\citeproctext]{ref-carver}
-Carver, R., College, S., \& Everson, M. (2016). \emph{Guidelines for
-Assessment and Instruction in Statistics Education (GAISE) College
-Report}.
-
 \bibitem[\citeproctext]{ref-shiny}
 Chang, W., Cheng, J., Allaire, J., Sievert, C., Schloerke, B., Xie, Y.,
 Allen, J., McPherson, J., Dipert, A., \& Borges, B. (2023). \emph{Shiny:
@@ -4570,6 +4331,18 @@ Experimentation, and Application to the Development of Graphical
 Methods. \emph{Journal of the American Statistical Association},
 \emph{79}(387), 531--554.
 \url{https://doi.org/10.1080/01621459.1984.10478080}
+
+\bibitem[\citeproctext]{ref-colangelo2025}
+Colangelo, M. T., Meleti, M., Guizzardi, S., Calciolari, E., \& Galli,
+C. (2025). A Comparative Analysis of Sentence Transformer Models for
+Automated Journal Recommendation Using PubMed Metadata. \emph{Big Data
+and Cognitive Computing}, \emph{9}(3), 67.
+\url{https://doi.org/10.3390/bdcc9030067}
+
+\bibitem[\citeproctext]{ref-carver}
+Committee, G. C. R. A. R. (2016). \emph{Guidelines for Assessment and
+Instruction in Statistics Education College Report 2016}.
+\url{https://www.amstat.org/education/guidelines-for-assessment-and-instruction-in-statistics-education-(gaise)-reports}
 
 \bibitem[\citeproctext]{ref-croxtonGraphicComparisonsBars1932}
 Croxton, F. E., \& Stein, H. (1932b). Graphic {Comparisons} by {Bars},
@@ -4655,16 +4428,16 @@ Statistics}. \url{https://books.google.com/books?id=bil2sllgR2MC}
 Friendly, M., \& Wainer, H. (2021). \emph{A history of data
 visualization and graphic communication}. Harvard University Press.
 
+\bibitem[\citeproctext]{ref-viridis}
+Garnier, Simon, Ross, Noam, Rudis, Robert, Camargo, Pedro, A., Sciaini,
+Marco, Scherer, \& Cédric. (2024). \emph{{viridis(Lite)} -
+colorblind-friendly color maps for r}.
+\url{https://doi.org/10.5281/zenodo.4679423}
+
 \bibitem[\citeproctext]{ref-grinstein2001}
 Grinstein, G., \& Trutschl, M. (2001). High-dimensional visualizations.
 \emph{In: 7th Data Mining Conference-KDD 2001: San Francisco,
 California}.
-
-\bibitem[\citeproctext]{ref-flexmix}
-Grün, B., \& Leisch, F. (2007). Fitting finite mixtures of generalized
-linear regressions in {R}. \emph{Computational Statistics \& Data
-Analysis}, \emph{51}(11), 5247--5252.
-\url{https://doi.org/10.1016/j.csda.2006.08.014}
 
 \bibitem[\citeproctext]{ref-hagerty1978}
 Hagerty, M., \& Birnbaum, M. H. (1978). Nonmetric tests of ratio vs.
@@ -4790,6 +4563,12 @@ Engineering Technology Students{'} Spatial Visualization Ability.
 \emph{Journal of Technology Education}, \emph{29}(2), 36--53.
 \url{https://doi.org/10.21061/jte.v29i2.a.3}
 
+\bibitem[\citeproctext]{ref-kelly2018}
+Kelly, J. W., Cherep, L. A., Klesel, B., Siegel, Z. D., \& George, S.
+(2018). Comparison of {Two Methods} for {Improving Distance Perception}
+in {Virtual Reality}. \emph{ACM Transactions on Applied Perception},
+\emph{15}(2), 1--11. \url{https://doi.org/10.1145/3165285}
+
 \bibitem[\citeproctext]{ref-kingdom2016}
 Kingdom, F. A. A., \& Prins, N. (2016). \emph{Psychophysics: a practical
 introduction} (Second edition). Elsevier/Academic Press.
@@ -4802,6 +4581,13 @@ Kraus, M., Angerbauer, K., Buchmüller, J., Schweitzer, D., Keim, D. A.,
 Sedlmair, M., \& Fuchs, J. (2020). \emph{CHI '20: CHI Conference on
 Human Factors in Computing Systems}. 1--14.
 \url{https://doi.org/10.1145/3313831.3376675}
+
+\bibitem[\citeproctext]{ref-kumari2026}
+Kumari, P., Kadian, S., Vora, M., Vemuri, P., Kumar, S., Verma, O. P.,
+\& Narayan, R. J. (2026). Recent Advancements in Topic Modeling
+Techniques for Healthcare, Bioinformatics, and Other Potential
+Applications. \emph{Advanced Intelligent Systems}, \emph{8}(1), 2400528.
+\url{https://doi.org/10.1002/aisy.202400528}
 
 \bibitem[\citeproctext]{ref-levy1996}
 Levy, E., Zacks, J., Tversky, B., \& Schiano, D. (1996). \emph{the
@@ -4856,6 +4642,16 @@ McGowan, H. M. (2011). Planning a Comparative Experiment in Educational
 Settings. \emph{Journal of Statistics Education}, \emph{19}(2), 4.
 \url{https://doi.org/10.1080/10691898.2011.11889612}
 
+\bibitem[\citeproctext]{ref-mcinnes2017}
+McInnes, L., Healy, J., \& Astels, S. (2017). Hdbscan: Hierarchical
+density based clustering. \emph{The Journal of Open Source Software},
+\emph{2}(11), 205. \url{https://doi.org/10.21105/joss.00205}
+
+\bibitem[\citeproctext]{ref-mcinnes}
+McInnes, L., Healy, J., \& Melville, J. (n.d.). \emph{UMAP: Uniform
+Manifold Approximation and Projection for Dimension Reduction}.
+\url{https://doi.org/10.48550/arXiv.1802.03426}
+
 \bibitem[\citeproctext]{ref-melodycarswell1991}
 Melody Carswell, C., Frankenberger, S., \& Bernhard, D. (1991). Graphing
 in depth: perspectives on the use of three-dimensional graphs to
@@ -4906,6 +4702,13 @@ Park, Y., Viegut, A. A., \& Matthews, P. G. (2021). More than the sum of
 its parts: Exploring the development of ratio magnitude vs. Simple
 magnitude perception. \emph{Developmental Science}, \emph{24}(3),
 e13043. \url{https://doi.org/10.1111/desc.13043}
+
+\bibitem[\citeproctext]{ref-scikit}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B.,
+Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V.,
+Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., \&
+Duchesnay, E. (2011). Scikit-learn: Machine learning in {P}ython.
+\emph{Journal of Machine Learning Research}, \emph{12}, 2825--2830.
 
 \bibitem[\citeproctext]{ref-peuxf1a2020}
 Peña, A., Ragan, E., \& Harrison, L. (2020). Memorability of enhanced
@@ -4958,6 +4761,11 @@ Physicalizations}. \emph{{CHI Conference} on {Human Factors} in
 \bibitem[\citeproctext]{ref-schmid1983}
 Schmid, C. F. (1983). \emph{Statistical graphics : Design principles and
 practices}. Wiley.
+
+\bibitem[\citeproctext]{ref-sharma}
+Sharma, P., \& Li, Y. (n.d.). \emph{Self-supervised contextual keyword
+and keyphrase retrieval with self-labelling}.
+\url{https://doi.org/10.20944/preprints201908.0073.v1}
 
 \bibitem[\citeproctext]{ref-siegrist1996}
 Siegrist, M. (1996). The use or misuse of three-dimensional graphs to
@@ -5018,6 +4826,11 @@ Thingiverse.com. (n.d.). Chart: {Sales} of 3-{D Printers} under \$5,000
 by {WSJ}. In \emph{Thingiverse}.
 https://www.thingiverse.com/thing:365994.
 
+\bibitem[\citeproctext]{ref-tintle2021}
+Tintle, N., Chance, B. L., Cobb, G. W., Rossman, A. J., Roy, S.,
+Swanson, T., \& VanderStoep, J. (2021). \emph{Introduction to
+statistical investigations}.
+
 \bibitem[\citeproctext]{ref-tractinsky1999}
 Tractinsky, N., \& Meyer, J. (1999). Chartjunk or goldgraph? Effects of
 presentation objectives and content desirability on information
@@ -5032,6 +4845,10 @@ information} (2nd ed). Graphics Press.
 Tukey, J. W. (1965). The technical tools of statistics. \emph{The
 American Statistician}, \emph{19}(2), 23--28.
 \url{https://doi.org/10.2307/2682374}
+
+\bibitem[\citeproctext]{ref-cdi_hathitrust_hathifiles_uva_x030492864}
+United States. Department of Agriculture. (1978). \emph{1978 handbook of
+agricultural charts}. U.S. Department of Agriculture.
 
 \bibitem[\citeproctext]{ref-v2023}
 V, S., Sivakumar, V. L., Raju, A., A, S., \& Richard, T. (2023). The
@@ -5129,12 +4946,8 @@ estimation for generalized additive models. \emph{Journal of the
 American Statistical Association}, \emph{99}(467), 673--686.
 
 \bibitem[\citeproctext]{ref-mgcv2}
-Wood, S. N. (2017a). \emph{Generalized additive models: An introduction
+Wood, S. N. (2017). \emph{Generalized additive models: An introduction
 with r} (2nd ed.). Chapman; Hall/CRC.
-
-\bibitem[\citeproctext]{ref-mgcv}
-Wood, S. N. (2017b). \emph{Generalized {A}dditive {M}odels: An
-introduction with {R}} (2nd ed.). Chapman; Hall/CRC.
 
 \bibitem[\citeproctext]{ref-zacks1998}
 Zacks, J., Levy, E., Tversky, B., \& Schiano, D. J. (1998). Reading bar

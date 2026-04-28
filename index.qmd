@@ -43,15 +43,25 @@ Data can be expressed in the physical world through a wide variety of means. In 
 
 Perhaps one of the most affordable types of data physicalization is through the use of 3D printing. Aside from the startup cost of a 3D-printer, material and labor costs are relatively low. Rolls of PLA filament can be acquired for around \$20 and can be used to create multiple charts. Print times vary depending on the size and complexity of the graphic, but smaller charts can be produced in approximately 2 hours. While needing much more time to produce than computer-generated visualizations, the amount of hands-on labor during the 3D-printing process is mainly limited to the time it takes to create the print file.
 
-Using 3D printers to create statistical graphics has typically been reserved for niche purposes to promote engagement of the displayed data. One of the earliest 3D-printed charts was shared in 2014 by the Wall Street Journal, where the print was used to discuss the rising popularity of 3D printers [@graphicsHowDoes3D; @thingiversecomChartSales3D]. A few additional examples were published by @huronMakingDataPhysical2023 (e.g., @fig-3d-treemap). It is rare to find these types of charts in practice, where images of the charts are often posted to social media or blog posts. This results in limited access to the physical charts, even though source print files can be shared through sites such as [thingiverse.com](thingiverse.com) and [printables.com](printables.com), as well as through GitHub repositories.
+Using 3D printers to create statistical graphics has typically been reserved for niche purposes to promote engagement of the displayed data. One of the earliest 3D-printed charts was shared in 2014 by the Wall Street Journal, where the print was used to discuss the rising popularity of 3D printers [@thingiversecomChartSales3D]. A few additional examples were published by @huronMakingDataPhysical2023 (e.g., @fig-3d-treemap). It is rare to find these types of charts in practice, where images of the charts are often posted to social media or blog posts. This results in limited access to the physical charts, even though source print files can be shared through sites such as [thingiverse.com](thingiverse.com) and [printables.com](printables.com), as well as through GitHub repositories.
 
-::: {#fig-wsj layout-nrow="2" fig-cap="3D-printed volume charts showing the sales of 3D printers under $5,000 [@thingiversecomChartSales3D]." fig-scap="First 3D-printed statistical graphic"}
-![Original 3D printed chart from WSJ](images/wsj-print.jpg){#fig-wsj-orig height="2in" fig-scap="Original WSJ 3D print"}
 
-![Replicated print created in 2025](images/wsj-myprint.jpg){#fig-wsj-myprint height="2in" fig-scap="Replicated WSJ 3D print"}
 
-@fig-wsj-orig shows the original WSJ print from 2014. @fig-wsj-myprint shows two prints created with a Flash Forge Finder 3D Printer, where the smaller chart took 2 hours to print and the larger chart took 6 hours to print.
-:::
+```{r}
+#| label: fig-wsj
+#| layout-ncol: 2
+#| fig-scap: "3D graphic from the Wall Street Journal"
+#| out-width: 90%
+#| fig-cap: "3D-printed volume charts showing the sales of 3D printers under $5,000 [@thingiversecomChartSales3D]."
+#| fig-subcap: 
+#| - "Original WSJ 3D print (2014)"
+#| - "Replicated WSJ 3D print (2025)"
+
+
+knitr::include_graphics('images/wsj-print.jpg')
+knitr::include_graphics('images/wsj-myprint.jpg')
+```
+
 
 ### Creating 3D-Printed Visualizations
 
@@ -93,17 +103,19 @@ NOVEL GRAPHICS CASES
 
 One of the most common types of charts is the bar chart, characterized by the use of rectangular geometries in a 2D space. Two variables are mapped to the geometries of the bar chart, where one axis is dedicated to a categorical variable of nominal or ordinal nature, and the other axis is for a continuous variable to denote magnitude or a response. These charts have been used over 200 years and remain a popular choice for many modern data visualizations [@friendly2021]. The use of 3-dimensional elements in bar charts typically involve converting the rectangular bars into rectangular prisms. @fig-make-bar-3d shows an illustration of this transformation.
 
-::: {#fig-make-bar-3d layout-ncol="2" fig-scap="2D bar to 3D bar construction"}
-![2D bar](images/make-bar-3d-1.png){#fig-bar3d-1 fig-scap="2D bar face"}
 
-![Opposite face](images/make-bar-3d-2.png){#fig-bar3d-2 fig-scap="Opposite bar face"}
+::: {#fig-make-bar-3d layout-ncol=2 fig-scap="2D bar to 3D bar construction"}
+![2D bar face](images/make-bar-3d-1.png){width=90% fig-scap}
 
-![Connecting faces](images/make-bar-3d-3.png){#fig-bar3d-3 fig-scap="Connecting bar faces"}
+![Opposite bar face](images/make-bar-3d-2.png){width=90%}
 
-![Solid object](images/make-bar-3d-4.png){#fig-bar3d-4 fig-scap="Solid 3D bar"}
+![Connecting bar faces](images/make-bar-3d-3.png){width=90%}
 
-Construction of depth cues for a 2D bar chart. In some cases, bar are constructed such that the y-axis corresponds with the front face of the prism (as shown). Other 3D bar charts may have the y-axis aligned with the back face.
+![Solid 3D bar](images/make-bar-3d-4.png){width=90%}
+
+Construction of depth cues for a 2D bar chart where the y-axis corresponds to the front face of the bar.
 :::
+
 
 The naming convention for these types of bar charts is not consistent. Many researchers in the visualization community call these 3D bar charts due to the portrayal of three-dimensional space [e.g., @zacks1998; @fischer2000]. Other times, the lack of information in the third dimension results in the charts referred to as 2.5D charts [e.g., @tractinsky1999]. To be consistent, we will refer to this style as "3D bar charts".
 
@@ -158,7 +170,7 @@ Of course, there are other less-studied factors that could affect perceptual jud
 
 ![FOV: 150 degrees](images/fov-150.png){#fig-fov150 fig-scap="FOV 150 degrees"}
 
-Multiple charts of the volcano dataset [@volcano] rendered using the `rgl` package [@rgl] in R. Each chart has a different field-of-view parameter, with the amount of distortion increasing as the field-of-view (FOV) increases.
+Field-of-view parameters for volcano dataset [@volcano].
 :::
 
 #### Response Times
@@ -176,7 +188,7 @@ The debate between whether to use 2D or 3D graphics stems from a wider adoption 
 
 ![Bar chart with negative values](images/preferance-example2.png){#fig-ag-bar-neg height="2in" fig-scap="Negative-value 3D bar chart"}
 
-Two examples of 3D bar charts found in publication [@cdi_hathitrust_hathifiles_uva_x030492864]. This left image is a stacked bar chart, using shadings to indicate sugarbeats and sugarcane. The image on the right is a bar chart with positive and negative values of changes in canned vegetable consumption.
+Two examples of 3D bar charts found in publication [@cdi_hathitrust_hathifiles_uva_x030492864].
 :::
 
 Preference for data visualizations can be categorized into visual appeal and overall usefulness. Visual appeal is where perceptual tasks are not a priority, and the goal is to have an image that is pleasant to the viewer. Charts chosen for visual appeal may not accurately convey each individual observation, but rather emphasize key trends of the data or promote engagement with the visualization. Usefulness, on the other hand, is a rating of how effective the viewer thought the chart was for answering specific questions. This often comes in the form of comparing multiple values, where accuracy in the comparisons is an essential component of the chart. The purpose of the chart can be an influential factor in deciding which chart type to use for displaying a dataset [@levy1996].
@@ -258,7 +270,7 @@ ggplot(mapping = aes(x = year, y = response, color = label)) +
 -   Experiment 5: Same as 3,4, but included new plot type that made bars by overlapping all volume faces -->
 ```
 
-## Heatmaps in Research and Practice
+## Heat maps in Research and Practice
 
 When creating charts for three or more variables, it becomes increasingly complex to visualize data [@grinstein2001]. One option is to map the additional variables to aesthetics using gestalt principles [@vanderplas2020], which includes making use of color, size, and/or shapes to denote information. However, not every aesthetic is compatible with every type of variable. Color can be used to map either continuous variables with gradient scales or categorical variables with palettes. Size is typically reserved for continuous variables, where larger values correspond to a larger quantity. Shapes tend to have finite distinguishable representations in order to represent categorical variables. Examples of good and poor cases for each of these aesthetics are presented in @fig-gestalt.
 
@@ -312,11 +324,11 @@ penguins %>%
   theme(aspect.ratio = 1) 
 ```
 
-Heatmaps are a type of chart that can be used with two nominal or ordinal variables, and a continuous response variable. In two-dimensional formats, gradient fills are often used to denote the magnitude of the responses, utilizing a gradient scale. When represented in three dimensions, height is the primary mapping of the response of the heatmap. Due to the height aesthetic, 3D heatmaps are sometimes referred to as "height maps", particularly when spatial coordinates are involved. Since the color and/or height of the response variable can only be mapped once to each combination of x and y coordinates, heatmaps are generally used to summarize responses, such as averages or single-point observations. This makes heatmaps especially useful for visualizing patterns and trends across large datasets in a compact and interpretable format.
+Heat maps are a type of chart that can be used with two nominal or ordinal variables, and a continuous response variable. In two-dimensional formats, gradient fills are often used to denote the magnitude of the responses, utilizing a gradient scale. When represented in three dimensions, height is the primary mapping of the response of the heatmap. Due to the height aesthetic, 3D heat maps are sometimes referred to as "height maps", particularly when spatial coordinates are involved. Since the color and/or height of the response variable can only be mapped once to each combination of x and y coordinates, heat maps are generally used to summarize responses, such as averages or single-point observations. This makes heat maps especially useful for visualizing patterns and trends across large datasets in a compact and interpretable format.
 
 ```{r}
 #| label: fig-heatmap2d
-#| fig-cap: "Heatmaps created with data from @national1977condition. The 2D heatmap represents the percentage of high school graduates participating in postsecondary education using a gradient color scale, whereas the 3D heatmap uses height. In each chart, there is an increasing association with postsecondary education with ability level and socioeconomical status."
+#| fig-cap: "2D and 3D heat maps from @national1977condition"
 #| fig-scap: "2D color versus 3D height heatmap encoding"
 #| fig-subcap:
 #| - "2D heatmap"
@@ -356,7 +368,7 @@ Unlike 2D and 3D bar charts, the dimensional comparison for heatmaps has not bee
 
 ![Stretched height scale](images/height-color-2.png){#fig-tall3d fig-scap="Expanded height scale"}
 
-Two figures representing the volcano dataset [@volcano] using different height scaling factors. Both figures use the same color scale, but there is no "correct" translation of color into the measurable height.
+Height-scaling effects in 3D heat maps for the volcano dataset [@volcano].
 :::
 
 In 2D heatmaps, the choice of color palettes can influence the perception of numerical estimations [@liuSomewhereRainbowEmpirical2018; @molinalopezEffectColorPalettes2023; @zhangJustNoticeableDifference2023a]. Some gradient scales are easier to extract values from than others, and other gradient scales are better at displaying contrasts between values. Additionally, the use of colors requires accessibility considerations for people with color deficiencies. The relationship between color and 2D heatmaps possibly contributes to the difficulties of direct translations of 2D heatmaps into 3D heatmaps.
